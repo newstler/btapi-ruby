@@ -81,6 +81,19 @@ describe 'TeamsApi' do
     end
   end
 
+  # unit tests for get_v1_teams_team_id_projects_three
+  # translation missing: en.projects.api.three
+  # @param team_id Team ID
+  # @param [Hash] opts the optional parameters
+  # @option opts [Integer] :page Page of results to fetch.
+  # @option opts [Integer] :per_page Number of results to return per page.
+  # @return [Array<ApiV1ProjectSerializer>]
+  describe 'get_v1_teams_team_id_projects_three test' do
+    it 'should work' do
+      # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
+    end
+  end
+
   # unit tests for get_v1_teams_team_id_scaffolding_absolutely_abstract_creative_concepts
   # List Creative Concepts
   # @param team_id Team ID
