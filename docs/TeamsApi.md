@@ -4,24 +4,20 @@ All URIs are relative to *https://bullettrainapi.eu.ngrok.io/api*
 
 | Method | HTTP request | Description |
 | ------ | ------------ | ----------- |
-| [**get_v1_teams**](TeamsApi.md#get_v1_teams) | **GET** /v1/teams |  |
-| [**get_v1_teams_id**](TeamsApi.md#get_v1_teams_id) | **GET** /v1/teams/{id} |  |
-| [**get_v1_teams_team_id_projects**](TeamsApi.md#get_v1_teams_team_id_projects) | **GET** /v1/teams/{team_id}/projects |  |
-| [**get_v1_teams_team_id_projects_tags**](TeamsApi.md#get_v1_teams_team_id_projects_tags) | **GET** /v1/teams/{team_id}/projects/tags |  |
-| [**get_v1_teams_team_id_projects_three**](TeamsApi.md#get_v1_teams_team_id_projects_three) | **GET** /v1/teams/{team_id}/projects/three |  |
-| [**get_v1_teams_team_id_scaffolding_absolutely_abstract_creative_concepts**](TeamsApi.md#get_v1_teams_team_id_scaffolding_absolutely_abstract_creative_concepts) | **GET** /v1/teams/{team_id}/scaffolding/absolutely_abstract/creative_concepts |  |
-| [**get_v1_teams_team_id_webhooks_outgoing_endpoints**](TeamsApi.md#get_v1_teams_team_id_webhooks_outgoing_endpoints) | **GET** /v1/teams/{team_id}/webhooks/outgoing/endpoints |  |
-| [**post_v1_teams**](TeamsApi.md#post_v1_teams) | **POST** /v1/teams |  |
-| [**post_v1_teams_team_id_projects**](TeamsApi.md#post_v1_teams_team_id_projects) | **POST** /v1/teams/{team_id}/projects |  |
-| [**post_v1_teams_team_id_projects_tags**](TeamsApi.md#post_v1_teams_team_id_projects_tags) | **POST** /v1/teams/{team_id}/projects/tags |  |
-| [**post_v1_teams_team_id_scaffolding_absolutely_abstract_creative_concepts**](TeamsApi.md#post_v1_teams_team_id_scaffolding_absolutely_abstract_creative_concepts) | **POST** /v1/teams/{team_id}/scaffolding/absolutely_abstract/creative_concepts |  |
-| [**post_v1_teams_team_id_webhooks_outgoing_endpoints**](TeamsApi.md#post_v1_teams_team_id_webhooks_outgoing_endpoints) | **POST** /v1/teams/{team_id}/webhooks/outgoing/endpoints |  |
-| [**put_v1_teams_id**](TeamsApi.md#put_v1_teams_id) | **PUT** /v1/teams/{id} |  |
+| [**get_teams**](TeamsApi.md#get_teams) | **GET** /teams |  |
+| [**get_teams_id**](TeamsApi.md#get_teams_id) | **GET** /teams/{id} |  |
+| [**get_teams_team_id_projects**](TeamsApi.md#get_teams_team_id_projects) | **GET** /teams/{team_id}/projects |  |
+| [**get_teams_team_id_projects_tags**](TeamsApi.md#get_teams_team_id_projects_tags) | **GET** /teams/{team_id}/projects/tags |  |
+| [**get_teams_team_id_projects_three**](TeamsApi.md#get_teams_team_id_projects_three) | **GET** /teams/{team_id}/projects/three |  |
+| [**post_teams**](TeamsApi.md#post_teams) | **POST** /teams |  |
+| [**post_teams_team_id_projects**](TeamsApi.md#post_teams_team_id_projects) | **POST** /teams/{team_id}/projects |  |
+| [**post_teams_team_id_projects_tags**](TeamsApi.md#post_teams_team_id_projects_tags) | **POST** /teams/{team_id}/projects/tags |  |
+| [**put_teams_id**](TeamsApi.md#put_teams_id) | **PUT** /teams/{id} |  |
 
 
-## get_v1_teams
+## get_teams
 
-> <Array<ApiV1TeamSerializer>> get_v1_teams(opts)
+> <Array<ApiV1TeamSerializer>> get_teams(opts)
 
 
 
@@ -41,28 +37,28 @@ opts = {
 
 begin
   
-  result = api_instance.get_v1_teams(opts)
+  result = api_instance.get_teams(opts)
   p result
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling TeamsApi->get_v1_teams: #{e}"
+  puts "Error when calling TeamsApi->get_teams: #{e}"
 end
 ```
 
-#### Using the get_v1_teams_with_http_info variant
+#### Using the get_teams_with_http_info variant
 
 This returns an Array which contains the response data, status code and headers.
 
-> <Array(<Array<ApiV1TeamSerializer>>, Integer, Hash)> get_v1_teams_with_http_info(opts)
+> <Array(<Array<ApiV1TeamSerializer>>, Integer, Hash)> get_teams_with_http_info(opts)
 
 ```ruby
 begin
   
-  data, status_code, headers = api_instance.get_v1_teams_with_http_info(opts)
+  data, status_code, headers = api_instance.get_teams_with_http_info(opts)
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <Array<ApiV1TeamSerializer>>
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling TeamsApi->get_v1_teams_with_http_info: #{e}"
+  puts "Error when calling TeamsApi->get_teams_with_http_info: #{e}"
 end
 ```
 
@@ -87,9 +83,9 @@ No authorization required
 - **Accept**: application/vnd.api+json
 
 
-## get_v1_teams_id
+## get_teams_id
 
-> <ApiV1TeamSerializer> get_v1_teams_id(id)
+> <ApiV1TeamSerializer> get_teams_id(id)
 
 
 
@@ -106,28 +102,28 @@ id = 56 # Integer | Team ID
 
 begin
   
-  result = api_instance.get_v1_teams_id(id)
+  result = api_instance.get_teams_id(id)
   p result
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling TeamsApi->get_v1_teams_id: #{e}"
+  puts "Error when calling TeamsApi->get_teams_id: #{e}"
 end
 ```
 
-#### Using the get_v1_teams_id_with_http_info variant
+#### Using the get_teams_id_with_http_info variant
 
 This returns an Array which contains the response data, status code and headers.
 
-> <Array(<ApiV1TeamSerializer>, Integer, Hash)> get_v1_teams_id_with_http_info(id)
+> <Array(<ApiV1TeamSerializer>, Integer, Hash)> get_teams_id_with_http_info(id)
 
 ```ruby
 begin
   
-  data, status_code, headers = api_instance.get_v1_teams_id_with_http_info(id)
+  data, status_code, headers = api_instance.get_teams_id_with_http_info(id)
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiV1TeamSerializer>
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling TeamsApi->get_v1_teams_id_with_http_info: #{e}"
+  puts "Error when calling TeamsApi->get_teams_id_with_http_info: #{e}"
 end
 ```
 
@@ -151,9 +147,9 @@ No authorization required
 - **Accept**: application/vnd.api+json
 
 
-## get_v1_teams_team_id_projects
+## get_teams_team_id_projects
 
-> <Array<ApiV1ProjectSerializer>> get_v1_teams_team_id_projects(team_id, opts)
+> <Array<ApiV1ProjectSerializer>> get_teams_team_id_projects(team_id, opts)
 
 
 
@@ -174,28 +170,28 @@ opts = {
 
 begin
   
-  result = api_instance.get_v1_teams_team_id_projects(team_id, opts)
+  result = api_instance.get_teams_team_id_projects(team_id, opts)
   p result
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling TeamsApi->get_v1_teams_team_id_projects: #{e}"
+  puts "Error when calling TeamsApi->get_teams_team_id_projects: #{e}"
 end
 ```
 
-#### Using the get_v1_teams_team_id_projects_with_http_info variant
+#### Using the get_teams_team_id_projects_with_http_info variant
 
 This returns an Array which contains the response data, status code and headers.
 
-> <Array(<Array<ApiV1ProjectSerializer>>, Integer, Hash)> get_v1_teams_team_id_projects_with_http_info(team_id, opts)
+> <Array(<Array<ApiV1ProjectSerializer>>, Integer, Hash)> get_teams_team_id_projects_with_http_info(team_id, opts)
 
 ```ruby
 begin
   
-  data, status_code, headers = api_instance.get_v1_teams_team_id_projects_with_http_info(team_id, opts)
+  data, status_code, headers = api_instance.get_teams_team_id_projects_with_http_info(team_id, opts)
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <Array<ApiV1ProjectSerializer>>
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling TeamsApi->get_v1_teams_team_id_projects_with_http_info: #{e}"
+  puts "Error when calling TeamsApi->get_teams_team_id_projects_with_http_info: #{e}"
 end
 ```
 
@@ -221,9 +217,9 @@ No authorization required
 - **Accept**: application/vnd.api+json
 
 
-## get_v1_teams_team_id_projects_tags
+## get_teams_team_id_projects_tags
 
-> <Array<ApiV1ProjectsTagSerializer>> get_v1_teams_team_id_projects_tags(team_id, opts)
+> <Array<ApiV1ProjectsTagSerializer>> get_teams_team_id_projects_tags(team_id, opts)
 
 
 
@@ -244,28 +240,28 @@ opts = {
 
 begin
   
-  result = api_instance.get_v1_teams_team_id_projects_tags(team_id, opts)
+  result = api_instance.get_teams_team_id_projects_tags(team_id, opts)
   p result
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling TeamsApi->get_v1_teams_team_id_projects_tags: #{e}"
+  puts "Error when calling TeamsApi->get_teams_team_id_projects_tags: #{e}"
 end
 ```
 
-#### Using the get_v1_teams_team_id_projects_tags_with_http_info variant
+#### Using the get_teams_team_id_projects_tags_with_http_info variant
 
 This returns an Array which contains the response data, status code and headers.
 
-> <Array(<Array<ApiV1ProjectsTagSerializer>>, Integer, Hash)> get_v1_teams_team_id_projects_tags_with_http_info(team_id, opts)
+> <Array(<Array<ApiV1ProjectsTagSerializer>>, Integer, Hash)> get_teams_team_id_projects_tags_with_http_info(team_id, opts)
 
 ```ruby
 begin
   
-  data, status_code, headers = api_instance.get_v1_teams_team_id_projects_tags_with_http_info(team_id, opts)
+  data, status_code, headers = api_instance.get_teams_team_id_projects_tags_with_http_info(team_id, opts)
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <Array<ApiV1ProjectsTagSerializer>>
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling TeamsApi->get_v1_teams_team_id_projects_tags_with_http_info: #{e}"
+  puts "Error when calling TeamsApi->get_teams_team_id_projects_tags_with_http_info: #{e}"
 end
 ```
 
@@ -291,9 +287,9 @@ No authorization required
 - **Accept**: application/vnd.api+json
 
 
-## get_v1_teams_team_id_projects_three
+## get_teams_team_id_projects_three
 
-> <Array<ApiV1ProjectSerializer>> get_v1_teams_team_id_projects_three(team_id, opts)
+> <Array<ApiV1ProjectSerializer>> get_teams_team_id_projects_three(team_id, opts)
 
 
 
@@ -314,28 +310,28 @@ opts = {
 
 begin
   
-  result = api_instance.get_v1_teams_team_id_projects_three(team_id, opts)
+  result = api_instance.get_teams_team_id_projects_three(team_id, opts)
   p result
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling TeamsApi->get_v1_teams_team_id_projects_three: #{e}"
+  puts "Error when calling TeamsApi->get_teams_team_id_projects_three: #{e}"
 end
 ```
 
-#### Using the get_v1_teams_team_id_projects_three_with_http_info variant
+#### Using the get_teams_team_id_projects_three_with_http_info variant
 
 This returns an Array which contains the response data, status code and headers.
 
-> <Array(<Array<ApiV1ProjectSerializer>>, Integer, Hash)> get_v1_teams_team_id_projects_three_with_http_info(team_id, opts)
+> <Array(<Array<ApiV1ProjectSerializer>>, Integer, Hash)> get_teams_team_id_projects_three_with_http_info(team_id, opts)
 
 ```ruby
 begin
   
-  data, status_code, headers = api_instance.get_v1_teams_team_id_projects_three_with_http_info(team_id, opts)
+  data, status_code, headers = api_instance.get_teams_team_id_projects_three_with_http_info(team_id, opts)
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <Array<ApiV1ProjectSerializer>>
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling TeamsApi->get_v1_teams_team_id_projects_three_with_http_info: #{e}"
+  puts "Error when calling TeamsApi->get_teams_team_id_projects_three_with_http_info: #{e}"
 end
 ```
 
@@ -361,149 +357,9 @@ No authorization required
 - **Accept**: application/vnd.api+json
 
 
-## get_v1_teams_team_id_scaffolding_absolutely_abstract_creative_concepts
+## post_teams
 
-> <Array<ApiV1ScaffoldingAbsolutelyAbstractCreativeConceptSerializer>> get_v1_teams_team_id_scaffolding_absolutely_abstract_creative_concepts(team_id, opts)
-
-
-
-List Creative Concepts
-
-### Examples
-
-```ruby
-require 'time'
-require 'bullet_train_test'
-
-api_instance = BulletTrainTest::TeamsApi.new
-team_id = 56 # Integer | Team ID
-opts = {
-  page: 56, # Integer | Page of results to fetch.
-  per_page: 56 # Integer | Number of results to return per page.
-}
-
-begin
-  
-  result = api_instance.get_v1_teams_team_id_scaffolding_absolutely_abstract_creative_concepts(team_id, opts)
-  p result
-rescue BulletTrainTest::ApiError => e
-  puts "Error when calling TeamsApi->get_v1_teams_team_id_scaffolding_absolutely_abstract_creative_concepts: #{e}"
-end
-```
-
-#### Using the get_v1_teams_team_id_scaffolding_absolutely_abstract_creative_concepts_with_http_info variant
-
-This returns an Array which contains the response data, status code and headers.
-
-> <Array(<Array<ApiV1ScaffoldingAbsolutelyAbstractCreativeConceptSerializer>>, Integer, Hash)> get_v1_teams_team_id_scaffolding_absolutely_abstract_creative_concepts_with_http_info(team_id, opts)
-
-```ruby
-begin
-  
-  data, status_code, headers = api_instance.get_v1_teams_team_id_scaffolding_absolutely_abstract_creative_concepts_with_http_info(team_id, opts)
-  p status_code # => 2xx
-  p headers # => { ... }
-  p data # => <Array<ApiV1ScaffoldingAbsolutelyAbstractCreativeConceptSerializer>>
-rescue BulletTrainTest::ApiError => e
-  puts "Error when calling TeamsApi->get_v1_teams_team_id_scaffolding_absolutely_abstract_creative_concepts_with_http_info: #{e}"
-end
-```
-
-### Parameters
-
-| Name | Type | Description | Notes |
-| ---- | ---- | ----------- | ----- |
-| **team_id** | **Integer** | Team ID |  |
-| **page** | **Integer** | Page of results to fetch. | [optional][default to 1] |
-| **per_page** | **Integer** | Number of results to return per page. | [optional][default to 100] |
-
-### Return type
-
-[**Array&lt;ApiV1ScaffoldingAbsolutelyAbstractCreativeConceptSerializer&gt;**](ApiV1ScaffoldingAbsolutelyAbstractCreativeConceptSerializer.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/vnd.api+json
-
-
-## get_v1_teams_team_id_webhooks_outgoing_endpoints
-
-> <Array<ApiV1WebhooksOutgoingEndpointSerializer>> get_v1_teams_team_id_webhooks_outgoing_endpoints(team_id, opts)
-
-
-
-List Endpoints
-
-### Examples
-
-```ruby
-require 'time'
-require 'bullet_train_test'
-
-api_instance = BulletTrainTest::TeamsApi.new
-team_id = 56 # Integer | Team ID
-opts = {
-  page: 56, # Integer | Page of results to fetch.
-  per_page: 56 # Integer | Number of results to return per page.
-}
-
-begin
-  
-  result = api_instance.get_v1_teams_team_id_webhooks_outgoing_endpoints(team_id, opts)
-  p result
-rescue BulletTrainTest::ApiError => e
-  puts "Error when calling TeamsApi->get_v1_teams_team_id_webhooks_outgoing_endpoints: #{e}"
-end
-```
-
-#### Using the get_v1_teams_team_id_webhooks_outgoing_endpoints_with_http_info variant
-
-This returns an Array which contains the response data, status code and headers.
-
-> <Array(<Array<ApiV1WebhooksOutgoingEndpointSerializer>>, Integer, Hash)> get_v1_teams_team_id_webhooks_outgoing_endpoints_with_http_info(team_id, opts)
-
-```ruby
-begin
-  
-  data, status_code, headers = api_instance.get_v1_teams_team_id_webhooks_outgoing_endpoints_with_http_info(team_id, opts)
-  p status_code # => 2xx
-  p headers # => { ... }
-  p data # => <Array<ApiV1WebhooksOutgoingEndpointSerializer>>
-rescue BulletTrainTest::ApiError => e
-  puts "Error when calling TeamsApi->get_v1_teams_team_id_webhooks_outgoing_endpoints_with_http_info: #{e}"
-end
-```
-
-### Parameters
-
-| Name | Type | Description | Notes |
-| ---- | ---- | ----------- | ----- |
-| **team_id** | **Integer** | Team ID |  |
-| **page** | **Integer** | Page of results to fetch. | [optional][default to 1] |
-| **per_page** | **Integer** | Number of results to return per page. | [optional][default to 100] |
-
-### Return type
-
-[**Array&lt;ApiV1WebhooksOutgoingEndpointSerializer&gt;**](ApiV1WebhooksOutgoingEndpointSerializer.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/vnd.api+json
-
-
-## post_v1_teams
-
-> <ApiV1TeamSerializer> post_v1_teams(opts)
+> <ApiV1TeamSerializer> post_teams(opts)
 
 
 
@@ -522,28 +378,28 @@ opts = {
 
 begin
   
-  result = api_instance.post_v1_teams(opts)
+  result = api_instance.post_teams(opts)
   p result
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling TeamsApi->post_v1_teams: #{e}"
+  puts "Error when calling TeamsApi->post_teams: #{e}"
 end
 ```
 
-#### Using the post_v1_teams_with_http_info variant
+#### Using the post_teams_with_http_info variant
 
 This returns an Array which contains the response data, status code and headers.
 
-> <Array(<ApiV1TeamSerializer>, Integer, Hash)> post_v1_teams_with_http_info(opts)
+> <Array(<ApiV1TeamSerializer>, Integer, Hash)> post_teams_with_http_info(opts)
 
 ```ruby
 begin
   
-  data, status_code, headers = api_instance.post_v1_teams_with_http_info(opts)
+  data, status_code, headers = api_instance.post_teams_with_http_info(opts)
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiV1TeamSerializer>
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling TeamsApi->post_v1_teams_with_http_info: #{e}"
+  puts "Error when calling TeamsApi->post_teams_with_http_info: #{e}"
 end
 ```
 
@@ -567,9 +423,9 @@ No authorization required
 - **Accept**: application/vnd.api+json
 
 
-## post_v1_teams_team_id_projects
+## post_teams_team_id_projects
 
-> <ApiV1ProjectSerializer> post_v1_teams_team_id_projects(team_id, opts)
+> <ApiV1ProjectSerializer> post_teams_team_id_projects(team_id, opts)
 
 
 
@@ -589,28 +445,28 @@ opts = {
 
 begin
   
-  result = api_instance.post_v1_teams_team_id_projects(team_id, opts)
+  result = api_instance.post_teams_team_id_projects(team_id, opts)
   p result
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling TeamsApi->post_v1_teams_team_id_projects: #{e}"
+  puts "Error when calling TeamsApi->post_teams_team_id_projects: #{e}"
 end
 ```
 
-#### Using the post_v1_teams_team_id_projects_with_http_info variant
+#### Using the post_teams_team_id_projects_with_http_info variant
 
 This returns an Array which contains the response data, status code and headers.
 
-> <Array(<ApiV1ProjectSerializer>, Integer, Hash)> post_v1_teams_team_id_projects_with_http_info(team_id, opts)
+> <Array(<ApiV1ProjectSerializer>, Integer, Hash)> post_teams_team_id_projects_with_http_info(team_id, opts)
 
 ```ruby
 begin
   
-  data, status_code, headers = api_instance.post_v1_teams_team_id_projects_with_http_info(team_id, opts)
+  data, status_code, headers = api_instance.post_teams_team_id_projects_with_http_info(team_id, opts)
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiV1ProjectSerializer>
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling TeamsApi->post_v1_teams_team_id_projects_with_http_info: #{e}"
+  puts "Error when calling TeamsApi->post_teams_team_id_projects_with_http_info: #{e}"
 end
 ```
 
@@ -635,9 +491,9 @@ No authorization required
 - **Accept**: application/vnd.api+json
 
 
-## post_v1_teams_team_id_projects_tags
+## post_teams_team_id_projects_tags
 
-> <ApiV1ProjectsTagSerializer> post_v1_teams_team_id_projects_tags(team_id, opts)
+> <ApiV1ProjectsTagSerializer> post_teams_team_id_projects_tags(team_id, opts)
 
 
 
@@ -657,28 +513,28 @@ opts = {
 
 begin
   
-  result = api_instance.post_v1_teams_team_id_projects_tags(team_id, opts)
+  result = api_instance.post_teams_team_id_projects_tags(team_id, opts)
   p result
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling TeamsApi->post_v1_teams_team_id_projects_tags: #{e}"
+  puts "Error when calling TeamsApi->post_teams_team_id_projects_tags: #{e}"
 end
 ```
 
-#### Using the post_v1_teams_team_id_projects_tags_with_http_info variant
+#### Using the post_teams_team_id_projects_tags_with_http_info variant
 
 This returns an Array which contains the response data, status code and headers.
 
-> <Array(<ApiV1ProjectsTagSerializer>, Integer, Hash)> post_v1_teams_team_id_projects_tags_with_http_info(team_id, opts)
+> <Array(<ApiV1ProjectsTagSerializer>, Integer, Hash)> post_teams_team_id_projects_tags_with_http_info(team_id, opts)
 
 ```ruby
 begin
   
-  data, status_code, headers = api_instance.post_v1_teams_team_id_projects_tags_with_http_info(team_id, opts)
+  data, status_code, headers = api_instance.post_teams_team_id_projects_tags_with_http_info(team_id, opts)
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiV1ProjectsTagSerializer>
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling TeamsApi->post_v1_teams_team_id_projects_tags_with_http_info: #{e}"
+  puts "Error when calling TeamsApi->post_teams_team_id_projects_tags_with_http_info: #{e}"
 end
 ```
 
@@ -703,145 +559,9 @@ No authorization required
 - **Accept**: application/vnd.api+json
 
 
-## post_v1_teams_team_id_scaffolding_absolutely_abstract_creative_concepts
+## put_teams_id
 
-> <ApiV1ScaffoldingAbsolutelyAbstractCreativeConceptSerializer> post_v1_teams_team_id_scaffolding_absolutely_abstract_creative_concepts(team_id, opts)
-
-
-
-Add a New Creative Concept
-
-### Examples
-
-```ruby
-require 'time'
-require 'bullet_train_test'
-
-api_instance = BulletTrainTest::TeamsApi.new
-team_id = 56 # Integer | Team ID
-opts = {
-  unknown_base_type: TODO # UNKNOWN_BASE_TYPE | 
-}
-
-begin
-  
-  result = api_instance.post_v1_teams_team_id_scaffolding_absolutely_abstract_creative_concepts(team_id, opts)
-  p result
-rescue BulletTrainTest::ApiError => e
-  puts "Error when calling TeamsApi->post_v1_teams_team_id_scaffolding_absolutely_abstract_creative_concepts: #{e}"
-end
-```
-
-#### Using the post_v1_teams_team_id_scaffolding_absolutely_abstract_creative_concepts_with_http_info variant
-
-This returns an Array which contains the response data, status code and headers.
-
-> <Array(<ApiV1ScaffoldingAbsolutelyAbstractCreativeConceptSerializer>, Integer, Hash)> post_v1_teams_team_id_scaffolding_absolutely_abstract_creative_concepts_with_http_info(team_id, opts)
-
-```ruby
-begin
-  
-  data, status_code, headers = api_instance.post_v1_teams_team_id_scaffolding_absolutely_abstract_creative_concepts_with_http_info(team_id, opts)
-  p status_code # => 2xx
-  p headers # => { ... }
-  p data # => <ApiV1ScaffoldingAbsolutelyAbstractCreativeConceptSerializer>
-rescue BulletTrainTest::ApiError => e
-  puts "Error when calling TeamsApi->post_v1_teams_team_id_scaffolding_absolutely_abstract_creative_concepts_with_http_info: #{e}"
-end
-```
-
-### Parameters
-
-| Name | Type | Description | Notes |
-| ---- | ---- | ----------- | ----- |
-| **team_id** | **Integer** | Team ID |  |
-| **unknown_base_type** | [**UNKNOWN_BASE_TYPE**](UNKNOWN_BASE_TYPE.md) |  | [optional] |
-
-### Return type
-
-[**ApiV1ScaffoldingAbsolutelyAbstractCreativeConceptSerializer**](ApiV1ScaffoldingAbsolutelyAbstractCreativeConceptSerializer.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: application/json, multipart/form-data
-- **Accept**: application/vnd.api+json
-
-
-## post_v1_teams_team_id_webhooks_outgoing_endpoints
-
-> <ApiV1WebhooksOutgoingEndpointSerializer> post_v1_teams_team_id_webhooks_outgoing_endpoints(team_id, opts)
-
-
-
-Add a New Endpoint
-
-### Examples
-
-```ruby
-require 'time'
-require 'bullet_train_test'
-
-api_instance = BulletTrainTest::TeamsApi.new
-team_id = 56 # Integer | Team ID
-opts = {
-  unknown_base_type: TODO # UNKNOWN_BASE_TYPE | 
-}
-
-begin
-  
-  result = api_instance.post_v1_teams_team_id_webhooks_outgoing_endpoints(team_id, opts)
-  p result
-rescue BulletTrainTest::ApiError => e
-  puts "Error when calling TeamsApi->post_v1_teams_team_id_webhooks_outgoing_endpoints: #{e}"
-end
-```
-
-#### Using the post_v1_teams_team_id_webhooks_outgoing_endpoints_with_http_info variant
-
-This returns an Array which contains the response data, status code and headers.
-
-> <Array(<ApiV1WebhooksOutgoingEndpointSerializer>, Integer, Hash)> post_v1_teams_team_id_webhooks_outgoing_endpoints_with_http_info(team_id, opts)
-
-```ruby
-begin
-  
-  data, status_code, headers = api_instance.post_v1_teams_team_id_webhooks_outgoing_endpoints_with_http_info(team_id, opts)
-  p status_code # => 2xx
-  p headers # => { ... }
-  p data # => <ApiV1WebhooksOutgoingEndpointSerializer>
-rescue BulletTrainTest::ApiError => e
-  puts "Error when calling TeamsApi->post_v1_teams_team_id_webhooks_outgoing_endpoints_with_http_info: #{e}"
-end
-```
-
-### Parameters
-
-| Name | Type | Description | Notes |
-| ---- | ---- | ----------- | ----- |
-| **team_id** | **Integer** | Team ID |  |
-| **unknown_base_type** | [**UNKNOWN_BASE_TYPE**](UNKNOWN_BASE_TYPE.md) |  | [optional] |
-
-### Return type
-
-[**ApiV1WebhooksOutgoingEndpointSerializer**](ApiV1WebhooksOutgoingEndpointSerializer.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: application/json, multipart/form-data
-- **Accept**: application/vnd.api+json
-
-
-## put_v1_teams_id
-
-> <ApiV1TeamSerializer> put_v1_teams_id(id, opts)
+> <ApiV1TeamSerializer> put_teams_id(id, opts)
 
 
 
@@ -861,28 +581,28 @@ opts = {
 
 begin
   
-  result = api_instance.put_v1_teams_id(id, opts)
+  result = api_instance.put_teams_id(id, opts)
   p result
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling TeamsApi->put_v1_teams_id: #{e}"
+  puts "Error when calling TeamsApi->put_teams_id: #{e}"
 end
 ```
 
-#### Using the put_v1_teams_id_with_http_info variant
+#### Using the put_teams_id_with_http_info variant
 
 This returns an Array which contains the response data, status code and headers.
 
-> <Array(<ApiV1TeamSerializer>, Integer, Hash)> put_v1_teams_id_with_http_info(id, opts)
+> <Array(<ApiV1TeamSerializer>, Integer, Hash)> put_teams_id_with_http_info(id, opts)
 
 ```ruby
 begin
   
-  data, status_code, headers = api_instance.put_v1_teams_id_with_http_info(id, opts)
+  data, status_code, headers = api_instance.put_teams_id_with_http_info(id, opts)
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiV1TeamSerializer>
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling TeamsApi->put_v1_teams_id_with_http_info: #{e}"
+  puts "Error when calling TeamsApi->put_teams_id_with_http_info: #{e}"
 end
 ```
 

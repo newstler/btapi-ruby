@@ -32,94 +32,94 @@ describe 'ProjectsApi' do
     end
   end
 
-  # unit tests for delete_v1_projects_id
+  # unit tests for delete_projects_id
   # Delete a Project
   # @param id Project ID
   # @param [Hash] opts the optional parameters
   # @return [nil]
-  describe 'delete_v1_projects_id test' do
+  describe 'delete_projects_id test' do
     it 'should work' do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for delete_v1_projects_tags_id
+  # unit tests for delete_projects_tags_id
   # Delete a Tag
   # @param id Tag ID
   # @param [Hash] opts the optional parameters
   # @return [nil]
-  describe 'delete_v1_projects_tags_id test' do
+  describe 'delete_projects_tags_id test' do
     it 'should work' do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_v1_projects_id
+  # unit tests for get_projects_id
   # Retrieve a Project
   # @param id Project ID
   # @param [Hash] opts the optional parameters
   # @return [ApiV1ProjectSerializer]
-  describe 'get_v1_projects_id test' do
+  describe 'get_projects_id test' do
     it 'should work' do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_v1_projects_project_id_goals
+  # unit tests for get_projects_project_id_goals
   # List Goals
   # @param project_id Project ID
   # @param [Hash] opts the optional parameters
   # @option opts [Integer] :page Page of results to fetch.
   # @option opts [Integer] :per_page Number of results to return per page.
   # @return [Array<ApiV1GoalSerializer>]
-  describe 'get_v1_projects_project_id_goals test' do
+  describe 'get_projects_project_id_goals test' do
     it 'should work' do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_v1_projects_tags_id
+  # unit tests for get_projects_tags_id
   # Retrieve a Tag
   # @param id Tag ID
   # @param [Hash] opts the optional parameters
   # @return [ApiV1ProjectsTagSerializer]
-  describe 'get_v1_projects_tags_id test' do
+  describe 'get_projects_tags_id test' do
     it 'should work' do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for post_v1_projects_project_id_goals
+  # unit tests for post_projects_project_id_goals
   # Add a New Goal
   # @param project_id Project ID
   # @param [Hash] opts the optional parameters
   # @option opts [UNKNOWN_BASE_TYPE] :unknown_base_type 
   # @return [ApiV1GoalSerializer]
-  describe 'post_v1_projects_project_id_goals test' do
+  describe 'post_projects_project_id_goals test' do
     it 'should work' do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for put_v1_projects_id
+  # unit tests for put_projects_id
   # Update a Project
   # @param id Project ID
   # @param [Hash] opts the optional parameters
   # @option opts [UNKNOWN_BASE_TYPE] :unknown_base_type 
   # @return [ApiV1ProjectSerializer]
-  describe 'put_v1_projects_id test' do
+  describe 'put_projects_id test' do
     it 'should work' do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for put_v1_projects_tags_id
+  # unit tests for put_projects_tags_id
   # Update a Tag
   # @param id Tag ID
   # @param [Hash] opts the optional parameters
   # @option opts [UNKNOWN_BASE_TYPE] :unknown_base_type 
   # @return [ApiV1ProjectsTagSerializer]
-  describe 'put_v1_projects_tags_id test' do
+  describe 'put_projects_tags_id test' do
     it 'should work' do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end

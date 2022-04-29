@@ -1,4 +1,4 @@
-# BulletTrainTest::ApiV1ScaffoldingAbsolutelyAbstractCreativeConceptSerializerDataRelationshipsCompletelyConcreteTangibleThings
+# BulletTrainTest::ApiV1TeamSerializerDataRelationshipsScaffoldingAbsolutelyAbstractCreativeConcepts
 
 ## Properties
 
@@ -11,7 +11,7 @@
 ```ruby
 require 'bullet_train_test'
 
-instance = BulletTrainTest::ApiV1ScaffoldingAbsolutelyAbstractCreativeConceptSerializerDataRelationshipsCompletelyConcreteTangibleThings.new(
+instance = BulletTrainTest::ApiV1TeamSerializerDataRelationshipsScaffoldingAbsolutelyAbstractCreativeConcepts.new(
   data: null
 )
 ```

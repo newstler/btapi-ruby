@@ -23,8 +23,8 @@ module BulletTrainTest
     # @param id [Integer] Project ID
     # @param [Hash] opts the optional parameters
     # @return [nil]
-    def delete_v1_projects_id(id, opts = {})
-      delete_v1_projects_id_with_http_info(id, opts)
+    def delete_projects_id(id, opts = {})
+      delete_projects_id_with_http_info(id, opts)
       nil
     end
 
@@ -32,16 +32,16 @@ module BulletTrainTest
     # @param id [Integer] Project ID
     # @param [Hash] opts the optional parameters
     # @return [Array<(nil, Integer, Hash)>] nil, response status code and response headers
-    def delete_v1_projects_id_with_http_info(id, opts = {})
+    def delete_projects_id_with_http_info(id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: ProjectsApi.delete_v1_projects_id ...'
+        @api_client.config.logger.debug 'Calling API: ProjectsApi.delete_projects_id ...'
       end
       # verify the required parameter 'id' is set
       if @api_client.config.client_side_validation && id.nil?
-        fail ArgumentError, "Missing the required parameter 'id' when calling ProjectsApi.delete_v1_projects_id"
+        fail ArgumentError, "Missing the required parameter 'id' when calling ProjectsApi.delete_projects_id"
       end
       # resource path
-      local_var_path = '/v1/projects/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
+      local_var_path = '/projects/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -62,7 +62,7 @@ module BulletTrainTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"ProjectsApi.delete_v1_projects_id",
+        :operation => :"ProjectsApi.delete_projects_id",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -73,7 +73,7 @@ module BulletTrainTest
 
       data, status_code, headers = @api_client.call_api(:DELETE, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: ProjectsApi#delete_v1_projects_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: ProjectsApi#delete_projects_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -82,8 +82,8 @@ module BulletTrainTest
     # @param id [Integer] Tag ID
     # @param [Hash] opts the optional parameters
     # @return [nil]
-    def delete_v1_projects_tags_id(id, opts = {})
-      delete_v1_projects_tags_id_with_http_info(id, opts)
+    def delete_projects_tags_id(id, opts = {})
+      delete_projects_tags_id_with_http_info(id, opts)
       nil
     end
 
@@ -91,16 +91,16 @@ module BulletTrainTest
     # @param id [Integer] Tag ID
     # @param [Hash] opts the optional parameters
     # @return [Array<(nil, Integer, Hash)>] nil, response status code and response headers
-    def delete_v1_projects_tags_id_with_http_info(id, opts = {})
+    def delete_projects_tags_id_with_http_info(id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: ProjectsApi.delete_v1_projects_tags_id ...'
+        @api_client.config.logger.debug 'Calling API: ProjectsApi.delete_projects_tags_id ...'
       end
       # verify the required parameter 'id' is set
       if @api_client.config.client_side_validation && id.nil?
-        fail ArgumentError, "Missing the required parameter 'id' when calling ProjectsApi.delete_v1_projects_tags_id"
+        fail ArgumentError, "Missing the required parameter 'id' when calling ProjectsApi.delete_projects_tags_id"
       end
       # resource path
-      local_var_path = '/v1/projects/tags/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
+      local_var_path = '/projects/tags/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -121,7 +121,7 @@ module BulletTrainTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"ProjectsApi.delete_v1_projects_tags_id",
+        :operation => :"ProjectsApi.delete_projects_tags_id",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -132,7 +132,7 @@ module BulletTrainTest
 
       data, status_code, headers = @api_client.call_api(:DELETE, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: ProjectsApi#delete_v1_projects_tags_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: ProjectsApi#delete_projects_tags_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -141,8 +141,8 @@ module BulletTrainTest
     # @param id [Integer] Project ID
     # @param [Hash] opts the optional parameters
     # @return [ApiV1ProjectSerializer]
-    def get_v1_projects_id(id, opts = {})
-      data, _status_code, _headers = get_v1_projects_id_with_http_info(id, opts)
+    def get_projects_id(id, opts = {})
+      data, _status_code, _headers = get_projects_id_with_http_info(id, opts)
       data
     end
 
@@ -150,16 +150,16 @@ module BulletTrainTest
     # @param id [Integer] Project ID
     # @param [Hash] opts the optional parameters
     # @return [Array<(ApiV1ProjectSerializer, Integer, Hash)>] ApiV1ProjectSerializer data, response status code and response headers
-    def get_v1_projects_id_with_http_info(id, opts = {})
+    def get_projects_id_with_http_info(id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: ProjectsApi.get_v1_projects_id ...'
+        @api_client.config.logger.debug 'Calling API: ProjectsApi.get_projects_id ...'
       end
       # verify the required parameter 'id' is set
       if @api_client.config.client_side_validation && id.nil?
-        fail ArgumentError, "Missing the required parameter 'id' when calling ProjectsApi.get_v1_projects_id"
+        fail ArgumentError, "Missing the required parameter 'id' when calling ProjectsApi.get_projects_id"
       end
       # resource path
-      local_var_path = '/v1/projects/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
+      local_var_path = '/projects/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -182,7 +182,7 @@ module BulletTrainTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"ProjectsApi.get_v1_projects_id",
+        :operation => :"ProjectsApi.get_projects_id",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -193,7 +193,7 @@ module BulletTrainTest
 
       data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: ProjectsApi#get_v1_projects_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: ProjectsApi#get_projects_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -204,8 +204,8 @@ module BulletTrainTest
     # @option opts [Integer] :page Page of results to fetch. (default to 1)
     # @option opts [Integer] :per_page Number of results to return per page. (default to 100)
     # @return [Array<ApiV1GoalSerializer>]
-    def get_v1_projects_project_id_goals(project_id, opts = {})
-      data, _status_code, _headers = get_v1_projects_project_id_goals_with_http_info(project_id, opts)
+    def get_projects_project_id_goals(project_id, opts = {})
+      data, _status_code, _headers = get_projects_project_id_goals_with_http_info(project_id, opts)
       data
     end
 
@@ -215,16 +215,16 @@ module BulletTrainTest
     # @option opts [Integer] :page Page of results to fetch.
     # @option opts [Integer] :per_page Number of results to return per page.
     # @return [Array<(Array<ApiV1GoalSerializer>, Integer, Hash)>] Array<ApiV1GoalSerializer> data, response status code and response headers
-    def get_v1_projects_project_id_goals_with_http_info(project_id, opts = {})
+    def get_projects_project_id_goals_with_http_info(project_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: ProjectsApi.get_v1_projects_project_id_goals ...'
+        @api_client.config.logger.debug 'Calling API: ProjectsApi.get_projects_project_id_goals ...'
       end
       # verify the required parameter 'project_id' is set
       if @api_client.config.client_side_validation && project_id.nil?
-        fail ArgumentError, "Missing the required parameter 'project_id' when calling ProjectsApi.get_v1_projects_project_id_goals"
+        fail ArgumentError, "Missing the required parameter 'project_id' when calling ProjectsApi.get_projects_project_id_goals"
       end
       # resource path
-      local_var_path = '/v1/projects/{project_id}/goals'.sub('{' + 'project_id' + '}', CGI.escape(project_id.to_s))
+      local_var_path = '/projects/{project_id}/goals'.sub('{' + 'project_id' + '}', CGI.escape(project_id.to_s))
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -249,7 +249,7 @@ module BulletTrainTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"ProjectsApi.get_v1_projects_project_id_goals",
+        :operation => :"ProjectsApi.get_projects_project_id_goals",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -260,7 +260,7 @@ module BulletTrainTest
 
       data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: ProjectsApi#get_v1_projects_project_id_goals\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: ProjectsApi#get_projects_project_id_goals\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -269,8 +269,8 @@ module BulletTrainTest
     # @param id [Integer] Tag ID
     # @param [Hash] opts the optional parameters
     # @return [ApiV1ProjectsTagSerializer]
-    def get_v1_projects_tags_id(id, opts = {})
-      data, _status_code, _headers = get_v1_projects_tags_id_with_http_info(id, opts)
+    def get_projects_tags_id(id, opts = {})
+      data, _status_code, _headers = get_projects_tags_id_with_http_info(id, opts)
       data
     end
 
@@ -278,16 +278,16 @@ module BulletTrainTest
     # @param id [Integer] Tag ID
     # @param [Hash] opts the optional parameters
     # @return [Array<(ApiV1ProjectsTagSerializer, Integer, Hash)>] ApiV1ProjectsTagSerializer data, response status code and response headers
-    def get_v1_projects_tags_id_with_http_info(id, opts = {})
+    def get_projects_tags_id_with_http_info(id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: ProjectsApi.get_v1_projects_tags_id ...'
+        @api_client.config.logger.debug 'Calling API: ProjectsApi.get_projects_tags_id ...'
       end
       # verify the required parameter 'id' is set
       if @api_client.config.client_side_validation && id.nil?
-        fail ArgumentError, "Missing the required parameter 'id' when calling ProjectsApi.get_v1_projects_tags_id"
+        fail ArgumentError, "Missing the required parameter 'id' when calling ProjectsApi.get_projects_tags_id"
       end
       # resource path
-      local_var_path = '/v1/projects/tags/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
+      local_var_path = '/projects/tags/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -310,7 +310,7 @@ module BulletTrainTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"ProjectsApi.get_v1_projects_tags_id",
+        :operation => :"ProjectsApi.get_projects_tags_id",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -321,7 +321,7 @@ module BulletTrainTest
 
       data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: ProjectsApi#get_v1_projects_tags_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: ProjectsApi#get_projects_tags_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -331,8 +331,8 @@ module BulletTrainTest
     # @param [Hash] opts the optional parameters
     # @option opts [UNKNOWN_BASE_TYPE] :unknown_base_type 
     # @return [ApiV1GoalSerializer]
-    def post_v1_projects_project_id_goals(project_id, opts = {})
-      data, _status_code, _headers = post_v1_projects_project_id_goals_with_http_info(project_id, opts)
+    def post_projects_project_id_goals(project_id, opts = {})
+      data, _status_code, _headers = post_projects_project_id_goals_with_http_info(project_id, opts)
       data
     end
 
@@ -341,16 +341,16 @@ module BulletTrainTest
     # @param [Hash] opts the optional parameters
     # @option opts [UNKNOWN_BASE_TYPE] :unknown_base_type 
     # @return [Array<(ApiV1GoalSerializer, Integer, Hash)>] ApiV1GoalSerializer data, response status code and response headers
-    def post_v1_projects_project_id_goals_with_http_info(project_id, opts = {})
+    def post_projects_project_id_goals_with_http_info(project_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: ProjectsApi.post_v1_projects_project_id_goals ...'
+        @api_client.config.logger.debug 'Calling API: ProjectsApi.post_projects_project_id_goals ...'
       end
       # verify the required parameter 'project_id' is set
       if @api_client.config.client_side_validation && project_id.nil?
-        fail ArgumentError, "Missing the required parameter 'project_id' when calling ProjectsApi.post_v1_projects_project_id_goals"
+        fail ArgumentError, "Missing the required parameter 'project_id' when calling ProjectsApi.post_projects_project_id_goals"
       end
       # resource path
-      local_var_path = '/v1/projects/{project_id}/goals'.sub('{' + 'project_id' + '}', CGI.escape(project_id.to_s))
+      local_var_path = '/projects/{project_id}/goals'.sub('{' + 'project_id' + '}', CGI.escape(project_id.to_s))
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -378,7 +378,7 @@ module BulletTrainTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"ProjectsApi.post_v1_projects_project_id_goals",
+        :operation => :"ProjectsApi.post_projects_project_id_goals",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -389,7 +389,7 @@ module BulletTrainTest
 
       data, status_code, headers = @api_client.call_api(:POST, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: ProjectsApi#post_v1_projects_project_id_goals\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: ProjectsApi#post_projects_project_id_goals\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -399,8 +399,8 @@ module BulletTrainTest
     # @param [Hash] opts the optional parameters
     # @option opts [UNKNOWN_BASE_TYPE] :unknown_base_type 
     # @return [ApiV1ProjectSerializer]
-    def put_v1_projects_id(id, opts = {})
-      data, _status_code, _headers = put_v1_projects_id_with_http_info(id, opts)
+    def put_projects_id(id, opts = {})
+      data, _status_code, _headers = put_projects_id_with_http_info(id, opts)
       data
     end
 
@@ -409,16 +409,16 @@ module BulletTrainTest
     # @param [Hash] opts the optional parameters
     # @option opts [UNKNOWN_BASE_TYPE] :unknown_base_type 
     # @return [Array<(ApiV1ProjectSerializer, Integer, Hash)>] ApiV1ProjectSerializer data, response status code and response headers
-    def put_v1_projects_id_with_http_info(id, opts = {})
+    def put_projects_id_with_http_info(id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: ProjectsApi.put_v1_projects_id ...'
+        @api_client.config.logger.debug 'Calling API: ProjectsApi.put_projects_id ...'
       end
       # verify the required parameter 'id' is set
       if @api_client.config.client_side_validation && id.nil?
-        fail ArgumentError, "Missing the required parameter 'id' when calling ProjectsApi.put_v1_projects_id"
+        fail ArgumentError, "Missing the required parameter 'id' when calling ProjectsApi.put_projects_id"
       end
       # resource path
-      local_var_path = '/v1/projects/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
+      local_var_path = '/projects/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -446,7 +446,7 @@ module BulletTrainTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"ProjectsApi.put_v1_projects_id",
+        :operation => :"ProjectsApi.put_projects_id",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -457,7 +457,7 @@ module BulletTrainTest
 
       data, status_code, headers = @api_client.call_api(:PUT, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: ProjectsApi#put_v1_projects_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: ProjectsApi#put_projects_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -467,8 +467,8 @@ module BulletTrainTest
     # @param [Hash] opts the optional parameters
     # @option opts [UNKNOWN_BASE_TYPE] :unknown_base_type 
     # @return [ApiV1ProjectsTagSerializer]
-    def put_v1_projects_tags_id(id, opts = {})
-      data, _status_code, _headers = put_v1_projects_tags_id_with_http_info(id, opts)
+    def put_projects_tags_id(id, opts = {})
+      data, _status_code, _headers = put_projects_tags_id_with_http_info(id, opts)
       data
     end
 
@@ -477,16 +477,16 @@ module BulletTrainTest
     # @param [Hash] opts the optional parameters
     # @option opts [UNKNOWN_BASE_TYPE] :unknown_base_type 
     # @return [Array<(ApiV1ProjectsTagSerializer, Integer, Hash)>] ApiV1ProjectsTagSerializer data, response status code and response headers
-    def put_v1_projects_tags_id_with_http_info(id, opts = {})
+    def put_projects_tags_id_with_http_info(id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: ProjectsApi.put_v1_projects_tags_id ...'
+        @api_client.config.logger.debug 'Calling API: ProjectsApi.put_projects_tags_id ...'
       end
       # verify the required parameter 'id' is set
       if @api_client.config.client_side_validation && id.nil?
-        fail ArgumentError, "Missing the required parameter 'id' when calling ProjectsApi.put_v1_projects_tags_id"
+        fail ArgumentError, "Missing the required parameter 'id' when calling ProjectsApi.put_projects_tags_id"
       end
       # resource path
-      local_var_path = '/v1/projects/tags/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
+      local_var_path = '/projects/tags/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -514,7 +514,7 @@ module BulletTrainTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"ProjectsApi.put_v1_projects_tags_id",
+        :operation => :"ProjectsApi.put_projects_tags_id",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -525,7 +525,7 @@ module BulletTrainTest
 
       data, status_code, headers = @api_client.call_api(:PUT, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: ProjectsApi#put_v1_projects_tags_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: ProjectsApi#put_projects_tags_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end

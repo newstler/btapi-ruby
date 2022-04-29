@@ -32,10 +32,10 @@ describe 'MeApi' do
     end
   end
 
-  # unit tests for get_v1_me
+  # unit tests for get_me
   # @param [Hash] opts the optional parameters
   # @return [nil]
-  describe 'get_v1_me test' do
+  describe 'get_me test' do
     it 'should work' do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end

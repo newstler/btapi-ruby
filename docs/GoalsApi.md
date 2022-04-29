@@ -4,14 +4,14 @@ All URIs are relative to *https://bullettrainapi.eu.ngrok.io/api*
 
 | Method | HTTP request | Description |
 | ------ | ------------ | ----------- |
-| [**delete_v1_goals_id**](GoalsApi.md#delete_v1_goals_id) | **DELETE** /v1/goals/{id} |  |
-| [**get_v1_goals_id**](GoalsApi.md#get_v1_goals_id) | **GET** /v1/goals/{id} |  |
-| [**put_v1_goals_id**](GoalsApi.md#put_v1_goals_id) | **PUT** /v1/goals/{id} |  |
+| [**delete_goals_id**](GoalsApi.md#delete_goals_id) | **DELETE** /goals/{id} |  |
+| [**get_goals_id**](GoalsApi.md#get_goals_id) | **GET** /goals/{id} |  |
+| [**put_goals_id**](GoalsApi.md#put_goals_id) | **PUT** /goals/{id} |  |
 
 
-## delete_v1_goals_id
+## delete_goals_id
 
-> delete_v1_goals_id(id)
+> delete_goals_id(id)
 
 
 
@@ -28,27 +28,27 @@ id = 56 # Integer | Goal ID
 
 begin
   
-  api_instance.delete_v1_goals_id(id)
+  api_instance.delete_goals_id(id)
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling GoalsApi->delete_v1_goals_id: #{e}"
+  puts "Error when calling GoalsApi->delete_goals_id: #{e}"
 end
 ```
 
-#### Using the delete_v1_goals_id_with_http_info variant
+#### Using the delete_goals_id_with_http_info variant
 
 This returns an Array which contains the response data (`nil` in this case), status code and headers.
 
-> <Array(nil, Integer, Hash)> delete_v1_goals_id_with_http_info(id)
+> <Array(nil, Integer, Hash)> delete_goals_id_with_http_info(id)
 
 ```ruby
 begin
   
-  data, status_code, headers = api_instance.delete_v1_goals_id_with_http_info(id)
+  data, status_code, headers = api_instance.delete_goals_id_with_http_info(id)
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling GoalsApi->delete_v1_goals_id_with_http_info: #{e}"
+  puts "Error when calling GoalsApi->delete_goals_id_with_http_info: #{e}"
 end
 ```
 
@@ -72,9 +72,9 @@ No authorization required
 - **Accept**: Not defined
 
 
-## get_v1_goals_id
+## get_goals_id
 
-> <ApiV1GoalSerializer> get_v1_goals_id(id)
+> <ApiV1GoalSerializer> get_goals_id(id)
 
 
 
@@ -91,28 +91,28 @@ id = 56 # Integer | Goal ID
 
 begin
   
-  result = api_instance.get_v1_goals_id(id)
+  result = api_instance.get_goals_id(id)
   p result
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling GoalsApi->get_v1_goals_id: #{e}"
+  puts "Error when calling GoalsApi->get_goals_id: #{e}"
 end
 ```
 
-#### Using the get_v1_goals_id_with_http_info variant
+#### Using the get_goals_id_with_http_info variant
 
 This returns an Array which contains the response data, status code and headers.
 
-> <Array(<ApiV1GoalSerializer>, Integer, Hash)> get_v1_goals_id_with_http_info(id)
+> <Array(<ApiV1GoalSerializer>, Integer, Hash)> get_goals_id_with_http_info(id)
 
 ```ruby
 begin
   
-  data, status_code, headers = api_instance.get_v1_goals_id_with_http_info(id)
+  data, status_code, headers = api_instance.get_goals_id_with_http_info(id)
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiV1GoalSerializer>
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling GoalsApi->get_v1_goals_id_with_http_info: #{e}"
+  puts "Error when calling GoalsApi->get_goals_id_with_http_info: #{e}"
 end
 ```
 
@@ -136,9 +136,9 @@ No authorization required
 - **Accept**: application/vnd.api+json
 
 
-## put_v1_goals_id
+## put_goals_id
 
-> <ApiV1GoalSerializer> put_v1_goals_id(id, opts)
+> <ApiV1GoalSerializer> put_goals_id(id, opts)
 
 
 
@@ -158,28 +158,28 @@ opts = {
 
 begin
   
-  result = api_instance.put_v1_goals_id(id, opts)
+  result = api_instance.put_goals_id(id, opts)
   p result
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling GoalsApi->put_v1_goals_id: #{e}"
+  puts "Error when calling GoalsApi->put_goals_id: #{e}"
 end
 ```
 
-#### Using the put_v1_goals_id_with_http_info variant
+#### Using the put_goals_id_with_http_info variant
 
 This returns an Array which contains the response data, status code and headers.
 
-> <Array(<ApiV1GoalSerializer>, Integer, Hash)> put_v1_goals_id_with_http_info(id, opts)
+> <Array(<ApiV1GoalSerializer>, Integer, Hash)> put_goals_id_with_http_info(id, opts)
 
 ```ruby
 begin
   
-  data, status_code, headers = api_instance.put_v1_goals_id_with_http_info(id, opts)
+  data, status_code, headers = api_instance.put_goals_id_with_http_info(id, opts)
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiV1GoalSerializer>
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling GoalsApi->put_v1_goals_id_with_http_info: #{e}"
+  puts "Error when calling GoalsApi->put_goals_id_with_http_info: #{e}"
 end
 ```
 

@@ -32,7 +32,7 @@ module BulletTrainTest
     # Attribute type mapping.
     def self.openapi_types
       {
-        :'scaffolding_absolutely_abstract_creative_concepts' => :'ApiV1ScaffoldingAbsolutelyAbstractCreativeConceptSerializerDataRelationshipsCompletelyConcreteTangibleThings'
+        :'scaffolding_absolutely_abstract_creative_concepts' => :'ApiV1TeamSerializerDataRelationshipsScaffoldingAbsolutelyAbstractCreativeConcepts'
       }
     end
 
