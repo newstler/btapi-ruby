@@ -140,7 +140,7 @@ module BulletTrainTest
     def initialize
       @scheme = 'https'
       @host = 'bullettrainapi.eu.ngrok.io'
-      @base_path = '/api'
+      @base_path = '/api/v1'
       @server_index = 0
       @server_operation_index = {}
       @server_variables = {}
@@ -222,7 +222,7 @@ module BulletTrainTest
     def server_settings
       [
         {
-          url: "https://bullettrainapi.eu.ngrok.io/api",
+          url: "https://bullettrainapi.eu.ngrok.io/api/v1",
           description: "No description provided",
         }
       ]

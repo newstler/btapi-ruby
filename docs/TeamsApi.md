@@ -1,6 +1,6 @@
 # BulletTrainTest::TeamsApi
 
-All URIs are relative to *https://bullettrainapi.eu.ngrok.io/api*
+All URIs are relative to *https://bullettrainapi.eu.ngrok.io/api/v1*
 
 | Method | HTTP request | Description |
 | ------ | ------------ | ----------- |
