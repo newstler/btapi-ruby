@@ -198,6 +198,73 @@ module BulletTrainTest
       return data, status_code, headers
     end
 
+    # List Goals
+    # @param project_id [Integer] Project ID
+    # @param [Hash] opts the optional parameters
+    # @option opts [Integer] :page Page of results to fetch. (default to 1)
+    # @option opts [Integer] :per_page Number of results to return per page. (default to 100)
+    # @return [Array<ApiV1GoalSerializer>]
+    def get_projects_project_id_goals(project_id, opts = {})
+      data, _status_code, _headers = get_projects_project_id_goals_with_http_info(project_id, opts)
+      data
+    end
+
+    # List Goals
+    # @param project_id [Integer] Project ID
+    # @param [Hash] opts the optional parameters
+    # @option opts [Integer] :page Page of results to fetch.
+    # @option opts [Integer] :per_page Number of results to return per page.
+    # @return [Array<(Array<ApiV1GoalSerializer>, Integer, Hash)>] Array<ApiV1GoalSerializer> data, response status code and response headers
+    def get_projects_project_id_goals_with_http_info(project_id, opts = {})
+      if @api_client.config.debugging
+        @api_client.config.logger.debug 'Calling API: ProjectsApi.get_projects_project_id_goals ...'
+      end
+      # verify the required parameter 'project_id' is set
+      if @api_client.config.client_side_validation && project_id.nil?
+        fail ArgumentError, "Missing the required parameter 'project_id' when calling ProjectsApi.get_projects_project_id_goals"
+      end
+      # resource path
+      local_var_path = '/projects/{project_id}/goals'.sub('{' + 'project_id' + '}', CGI.escape(project_id.to_s))
+
+      # query parameters
+      query_params = opts[:query_params] || {}
+      query_params[:'page'] = opts[:'page'] if !opts[:'page'].nil?
+      query_params[:'per_page'] = opts[:'per_page'] if !opts[:'per_page'].nil?
+
+      # header parameters
+      header_params = opts[:header_params] || {}
+      # HTTP header 'Accept' (if needed)
+      header_params['Accept'] = @api_client.select_header_accept(['application/vnd.api+json'])
+
+      # form parameters
+      form_params = opts[:form_params] || {}
+
+      # http body (model)
+      post_body = opts[:debug_body]
+
+      # return_type
+      return_type = opts[:debug_return_type] || 'Array<ApiV1GoalSerializer>'
+
+      # auth_names
+      auth_names = opts[:debug_auth_names] || []
+
+      new_options = opts.merge(
+        :operation => :"ProjectsApi.get_projects_project_id_goals",
+        :header_params => header_params,
+        :query_params => query_params,
+        :form_params => form_params,
+        :body => post_body,
+        :auth_names => auth_names,
+        :return_type => return_type
+      )
+
+      data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
+      if @api_client.config.debugging
+        @api_client.config.logger.debug "API called: ProjectsApi#get_projects_project_id_goals\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+      end
+      return data, status_code, headers
+    end
+
     # Retrieve a Tag
     # @param id [Integer] Tag ID
     # @param [Hash] opts the optional parameters
