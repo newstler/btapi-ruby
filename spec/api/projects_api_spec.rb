@@ -65,19 +65,6 @@ describe 'ProjectsApi' do
     end
   end
 
-  # unit tests for get_projects_project_id_goals
-  # List Goals
-  # @param project_id Project ID
-  # @param [Hash] opts the optional parameters
-  # @option opts [Integer] :page Page of results to fetch.
-  # @option opts [Integer] :per_page Number of results to return per page.
-  # @return [Array<ApiV1GoalSerializer>]
-  describe 'get_projects_project_id_goals test' do
-    it 'should work' do
-      # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
-    end
-  end
-
   # unit tests for get_projects_tags_id
   # Retrieve a Tag
   # @param id Tag ID
