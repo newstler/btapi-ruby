@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["OpenAPI-Generator"]
   s.email       = [""]
-  s.homepage    = "rubygems.org"
+  s.homepage    = "https://rubygems.org"
   s.summary     = "Bullet Train Test Ruby Gem"
   s.description = "You can update this description in `config/locales/en/application.en.yml`."
   s.license     = "Unlicense"
