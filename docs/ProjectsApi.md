@@ -7,9 +7,9 @@ All URIs are relative to *https://bullettrainapi.eu.ngrok.io/api/v1*
 | [**delete_projects_id**](ProjectsApi.md#delete_projects_id) | **DELETE** /projects/{id} |  |
 | [**delete_projects_tags_id**](ProjectsApi.md#delete_projects_tags_id) | **DELETE** /projects/tags/{id} |  |
 | [**get_projects_id**](ProjectsApi.md#get_projects_id) | **GET** /projects/{id} |  |
-| [**get_projects_project_id_goals**](ProjectsApi.md#get_projects_project_id_goals) | **GET** /projects/{projectId}/goals |  |
+| [**get_projects_project_id_goals**](ProjectsApi.md#get_projects_project_id_goals) | **GET** /projects/{project_id}/goals |  |
 | [**get_projects_tags_id**](ProjectsApi.md#get_projects_tags_id) | **GET** /projects/tags/{id} |  |
-| [**post_projects_project_id_goals**](ProjectsApi.md#post_projects_project_id_goals) | **POST** /projects/{projectId}/goals |  |
+| [**post_projects_project_id_goals**](ProjectsApi.md#post_projects_project_id_goals) | **POST** /projects/{project_id}/goals |  |
 | [**put_projects_id**](ProjectsApi.md#put_projects_id) | **PUT** /projects/{id} |  |
 | [**put_projects_tags_id**](ProjectsApi.md#put_projects_tags_id) | **PUT** /projects/tags/{id} |  |
 

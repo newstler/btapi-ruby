@@ -102,7 +102,7 @@ module BulletTrainTest
         fail ArgumentError, "Missing the required parameter 'id' when calling TeamsApi.get_teams_id"
       end
       # resource path
-      local_var_path = '/teams/{id}'.sub('{' + 'Id' + '}', CGI.escape(id.to_s))
+      local_var_path = '/teams/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -167,7 +167,7 @@ module BulletTrainTest
         fail ArgumentError, "Missing the required parameter 'team_id' when calling TeamsApi.get_teams_team_id_projects"
       end
       # resource path
-      local_var_path = '/teams/{teamId}/projects'.sub('{' + 'teamId' + '}', CGI.escape(team_id.to_s))
+      local_var_path = '/teams/{team_id}/projects'.sub('{' + 'team_id' + '}', CGI.escape(team_id.to_s))
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -234,7 +234,7 @@ module BulletTrainTest
         fail ArgumentError, "Missing the required parameter 'team_id' when calling TeamsApi.get_teams_team_id_projects_tags"
       end
       # resource path
-      local_var_path = '/teams/{teamId}/projects/tags'.sub('{' + 'teamId' + '}', CGI.escape(team_id.to_s))
+      local_var_path = '/teams/{teamId}/projects/tags'.sub('{' + 'team_id' + '}', CGI.escape(team_id.to_s))
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -301,7 +301,7 @@ module BulletTrainTest
         fail ArgumentError, "Missing the required parameter 'team_id' when calling TeamsApi.get_teams_team_id_projects_three"
       end
       # resource path
-      local_var_path = '/teams/{teamId}/projects/three'.sub('{' + 'teamId' + '}', CGI.escape(team_id.to_s))
+      local_var_path = '/teams/{team_id}/projects/three'.sub('{' + 'team_id' + '}', CGI.escape(team_id.to_s))
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -428,7 +428,7 @@ module BulletTrainTest
         fail ArgumentError, "Missing the required parameter 'team_id' when calling TeamsApi.post_teams_team_id_projects"
       end
       # resource path
-      local_var_path = '/teams/{teamId}/projects'.sub('{' + 'teamId' + '}', CGI.escape(team_id.to_s))
+      local_var_path = '/teams/{team_id}/projects'.sub('{' + 'team_id' + '}', CGI.escape(team_id.to_s))
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -564,7 +564,7 @@ module BulletTrainTest
         fail ArgumentError, "Missing the required parameter 'id' when calling TeamsApi.put_teams_id"
       end
       # resource path
-      local_var_path = '/teams/{id}'.sub('{' + 'Id' + '}', CGI.escape(id.to_s))
+      local_var_path = '/teams/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
 
       # query parameters
       query_params = opts[:query_params] || {}

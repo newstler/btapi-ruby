@@ -29,7 +29,7 @@ module BulletTrainTest
     def self.attribute_map
       {
         :'id' => :'id',
-        :'team_id' => :'team_id',
+        :'team_id' => :'teamId',
         :'name' => :'name',
         :'created_at' => :'created_at',
         :'updated_at' => :'updated_at'

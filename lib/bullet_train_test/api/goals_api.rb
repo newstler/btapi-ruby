@@ -41,7 +41,7 @@ module BulletTrainTest
         fail ArgumentError, "Missing the required parameter 'id' when calling GoalsApi.delete_goals_id"
       end
       # resource path
-      local_var_path = '/goals/{id}'.sub('{' + 'Id' + '}', CGI.escape(id.to_s))
+      local_var_path = '/goals/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -100,7 +100,7 @@ module BulletTrainTest
         fail ArgumentError, "Missing the required parameter 'id' when calling GoalsApi.get_goals_id"
       end
       # resource path
-      local_var_path = '/goals/{id}'.sub('{' + 'Id' + '}', CGI.escape(id.to_s))
+      local_var_path = '/goals/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -163,7 +163,7 @@ module BulletTrainTest
         fail ArgumentError, "Missing the required parameter 'id' when calling GoalsApi.put_goals_id"
       end
       # resource path
-      local_var_path = '/goals/{id}'.sub('{' + 'Id' + '}', CGI.escape(id.to_s))
+      local_var_path = '/goals/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
 
       # query parameters
       query_params = opts[:query_params] || {}
