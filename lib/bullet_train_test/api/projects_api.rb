@@ -224,7 +224,7 @@ module BulletTrainTest
         fail ArgumentError, "Missing the required parameter 'project_id' when calling ProjectsApi.get_projects_project_id_goals"
       end
       # resource path
-      local_var_path = '/projects/{project_id}/goals'.sub('{' + 'project_id' + '}', CGI.escape(project_id.to_s))
+      local_var_path = '/projects/{projectId}/goals'.sub('{' + 'project_id' + '}', CGI.escape(project_id.to_s))
 
       # query parameters
       query_params = opts[:query_params] || {}
@@ -350,7 +350,7 @@ module BulletTrainTest
         fail ArgumentError, "Missing the required parameter 'project_id' when calling ProjectsApi.post_projects_project_id_goals"
       end
       # resource path
-      local_var_path = '/projects/{project_id}/goals'.sub('{' + 'project_id' + '}', CGI.escape(project_id.to_s))
+      local_var_path = '/projects/{projectId}/goals'.sub('{' + 'project_id' + '}', CGI.escape(project_id.to_s))
 
       # query parameters
       query_params = opts[:query_params] || {}

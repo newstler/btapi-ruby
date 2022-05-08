@@ -1,4 +1,4 @@
-# BulletTrainTest::ApiV1ProjectsTagSerializerDataRelationshipsTeamData
+# BulletTrainTest::ApiV1MeSerializerDataRelationshipsTeamsData
 
 ## Properties
 
@@ -12,7 +12,7 @@
 ```ruby
 require 'bullet_train_test'
 
-instance = BulletTrainTest::ApiV1ProjectsTagSerializerDataRelationshipsTeamData.new(
+instance = BulletTrainTest::ApiV1MeSerializerDataRelationshipsTeamsData.new(
   id: null,
   type: null
 )

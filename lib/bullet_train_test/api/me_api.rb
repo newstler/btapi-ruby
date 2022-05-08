@@ -19,15 +19,17 @@ module BulletTrainTest
     def initialize(api_client = ApiClient.default)
       @api_client = api_client
     end
+    # Retrieve info about the current user
     # @param [Hash] opts the optional parameters
-    # @return [nil]
+    # @return [ApiV1MeSerializer]
     def get_me(opts = {})
-      get_me_with_http_info(opts)
-      nil
+      data, _status_code, _headers = get_me_with_http_info(opts)
+      data
     end
 
+    # Retrieve info about the current user
     # @param [Hash] opts the optional parameters
-    # @return [Array<(nil, Integer, Hash)>] nil, response status code and response headers
+    # @return [Array<(ApiV1MeSerializer, Integer, Hash)>] ApiV1MeSerializer data, response status code and response headers
     def get_me_with_http_info(opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: MeApi.get_me ...'
@@ -40,6 +42,8 @@ module BulletTrainTest
 
       # header parameters
       header_params = opts[:header_params] || {}
+      # HTTP header 'Accept' (if needed)
+      header_params['Accept'] = @api_client.select_header_accept(['application/vnd.api+json'])
 
       # form parameters
       form_params = opts[:form_params] || {}
@@ -48,7 +52,7 @@ module BulletTrainTest
       post_body = opts[:debug_body]
 
       # return_type
-      return_type = opts[:debug_return_type]
+      return_type = opts[:debug_return_type] || 'ApiV1MeSerializer'
 
       # auth_names
       auth_names = opts[:debug_auth_names] || []

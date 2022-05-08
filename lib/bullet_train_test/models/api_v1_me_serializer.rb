@@ -14,13 +14,14 @@ require 'date'
 require 'time'
 
 module BulletTrainTest
-  class ApiV1TeamSerializerDataRelationships
-    attr_accessor :scaffolding_absolutely_abstract_creative_concepts
+  # Api_V1_MeSerializer model
+  class ApiV1MeSerializer
+    attr_accessor :data
 
     # Attribute mapping from ruby-style variable name to JSON key.
     def self.attribute_map
       {
-        :'scaffolding_absolutely_abstract_creative_concepts' => :'scaffolding_absolutely_abstract_creative_concepts'
+        :'data' => :'data'
       }
     end
 
@@ -32,7 +33,7 @@ module BulletTrainTest
     # Attribute type mapping.
     def self.openapi_types
       {
-        :'scaffolding_absolutely_abstract_creative_concepts' => :'ApiV1MeSerializerDataRelationshipsTeams'
+        :'data' => :'ApiV1MeSerializerData'
       }
     end
 
@@ -46,19 +47,19 @@ module BulletTrainTest
     # @param [Hash] attributes Model attributes in the form of hash
     def initialize(attributes = {})
       if (!attributes.is_a?(Hash))
-        fail ArgumentError, "The input argument (attributes) must be a hash in `BulletTrainTest::ApiV1TeamSerializerDataRelationships` initialize method"
+        fail ArgumentError, "The input argument (attributes) must be a hash in `BulletTrainTest::ApiV1MeSerializer` initialize method"
       end
 
       # check to see if the attribute exists and convert string to symbol for hash key
       attributes = attributes.each_with_object({}) { |(k, v), h|
         if (!self.class.attribute_map.key?(k.to_sym))
-          fail ArgumentError, "`#{k}` is not a valid attribute in `BulletTrainTest::ApiV1TeamSerializerDataRelationships`. Please check the name to make sure it's valid. List of attributes: " + self.class.attribute_map.keys.inspect
+          fail ArgumentError, "`#{k}` is not a valid attribute in `BulletTrainTest::ApiV1MeSerializer`. Please check the name to make sure it's valid. List of attributes: " + self.class.attribute_map.keys.inspect
         end
         h[k.to_sym] = v
       }
 
-      if attributes.key?(:'scaffolding_absolutely_abstract_creative_concepts')
-        self.scaffolding_absolutely_abstract_creative_concepts = attributes[:'scaffolding_absolutely_abstract_creative_concepts']
+      if attributes.key?(:'data')
+        self.data = attributes[:'data']
       end
     end
 
@@ -80,7 +81,7 @@ module BulletTrainTest
     def ==(o)
       return true if self.equal?(o)
       self.class == o.class &&
-          scaffolding_absolutely_abstract_creative_concepts == o.scaffolding_absolutely_abstract_creative_concepts
+          data == o.data
     end
 
     # @see the `==` method
@@ -92,7 +93,7 @@ module BulletTrainTest
     # Calculates hash code according to all attributes.
     # @return [Integer] Hash code
     def hash
-      [scaffolding_absolutely_abstract_creative_concepts].hash
+      [data].hash
     end
 
     # Builds the object from hash

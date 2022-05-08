@@ -6,12 +6,12 @@ All URIs are relative to *https://bullettrainapi.eu.ngrok.io/api/v1*
 | ------ | ------------ | ----------- |
 | [**get_teams**](TeamsApi.md#get_teams) | **GET** /teams |  |
 | [**get_teams_id**](TeamsApi.md#get_teams_id) | **GET** /teams/{id} |  |
-| [**get_teams_team_id_projects**](TeamsApi.md#get_teams_team_id_projects) | **GET** /teams/{team_id}/projects |  |
-| [**get_teams_team_id_projects_tags**](TeamsApi.md#get_teams_team_id_projects_tags) | **GET** /teams/{team_id}/projects/tags |  |
-| [**get_teams_team_id_projects_three**](TeamsApi.md#get_teams_team_id_projects_three) | **GET** /teams/{team_id}/projects/three |  |
+| [**get_teams_team_id_projects**](TeamsApi.md#get_teams_team_id_projects) | **GET** /teams/{teamId}/projects |  |
+| [**get_teams_team_id_projects_tags**](TeamsApi.md#get_teams_team_id_projects_tags) | **GET** /teams/{teamId}/projects/tags |  |
+| [**get_teams_team_id_projects_three**](TeamsApi.md#get_teams_team_id_projects_three) | **GET** /teams/{teamId}/projects/three |  |
 | [**post_teams**](TeamsApi.md#post_teams) | **POST** /teams |  |
-| [**post_teams_team_id_projects**](TeamsApi.md#post_teams_team_id_projects) | **POST** /teams/{team_id}/projects |  |
-| [**post_teams_team_id_projects_tags**](TeamsApi.md#post_teams_team_id_projects_tags) | **POST** /teams/{team_id}/projects/tags |  |
+| [**post_teams_team_id_projects**](TeamsApi.md#post_teams_team_id_projects) | **POST** /teams/{teamId}/projects |  |
+| [**post_teams_team_id_projects_tags**](TeamsApi.md#post_teams_team_id_projects_tags) | **POST** /teams/{teamId}/projects/tags |  |
 | [**put_teams_id**](TeamsApi.md#put_teams_id) | **PUT** /teams/{id} |  |
 
 

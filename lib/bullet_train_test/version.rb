@@ -11,5 +11,5 @@ OpenAPI Generator version: 5.3.0
 =end
 
 module BulletTrainTest
-  VERSION = '1.0.7'
+  VERSION = '1.0.8'
 end

@@ -32,7 +32,7 @@ module BulletTrainTest
     # Attribute type mapping.
     def self.openapi_types
       {
-        :'data' => :'ApiV1ProjectsTagSerializerDataRelationshipsTeamData'
+        :'data' => :'ApiV1MeSerializerDataRelationshipsTeamsData'
       }
     end
 

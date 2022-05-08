@@ -14,16 +14,43 @@ require 'date'
 require 'time'
 
 module BulletTrainTest
-  class ApiV1ProjectsTagSerializerDataRelationshipsTeamData
+  class ApiV1MeSerializerDataAttributes
     attr_accessor :id
 
-    attr_accessor :type
+    attr_accessor :email
+
+    attr_accessor :first_name
+
+    attr_accessor :last_name
+
+    attr_accessor :time_zone
+
+    attr_accessor :profile_photo_id
+
+    attr_accessor :former_user
+
+    attr_accessor :locale
+
+    attr_accessor :platform_agent_of_id
+
+    attr_accessor :created_at
+
+    attr_accessor :updated_at
 
     # Attribute mapping from ruby-style variable name to JSON key.
     def self.attribute_map
       {
         :'id' => :'id',
-        :'type' => :'type'
+        :'email' => :'email',
+        :'first_name' => :'first_name',
+        :'last_name' => :'last_name',
+        :'time_zone' => :'time_zone',
+        :'profile_photo_id' => :'profile_photo_id',
+        :'former_user' => :'former_user',
+        :'locale' => :'locale',
+        :'platform_agent_of_id' => :'platform_agent_of_id',
+        :'created_at' => :'created_at',
+        :'updated_at' => :'updated_at'
       }
     end
 
@@ -35,8 +62,17 @@ module BulletTrainTest
     # Attribute type mapping.
     def self.openapi_types
       {
-        :'id' => :'Integer',
-        :'type' => :'String'
+        :'id' => :'String',
+        :'email' => :'String',
+        :'first_name' => :'String',
+        :'last_name' => :'String',
+        :'time_zone' => :'String',
+        :'profile_photo_id' => :'String',
+        :'former_user' => :'String',
+        :'locale' => :'String',
+        :'platform_agent_of_id' => :'String',
+        :'created_at' => :'String',
+        :'updated_at' => :'String'
       }
     end
 
@@ -50,13 +86,13 @@ module BulletTrainTest
     # @param [Hash] attributes Model attributes in the form of hash
     def initialize(attributes = {})
       if (!attributes.is_a?(Hash))
-        fail ArgumentError, "The input argument (attributes) must be a hash in `BulletTrainTest::ApiV1ProjectsTagSerializerDataRelationshipsTeamData` initialize method"
+        fail ArgumentError, "The input argument (attributes) must be a hash in `BulletTrainTest::ApiV1MeSerializerDataAttributes` initialize method"
       end
 
       # check to see if the attribute exists and convert string to symbol for hash key
       attributes = attributes.each_with_object({}) { |(k, v), h|
         if (!self.class.attribute_map.key?(k.to_sym))
-          fail ArgumentError, "`#{k}` is not a valid attribute in `BulletTrainTest::ApiV1ProjectsTagSerializerDataRelationshipsTeamData`. Please check the name to make sure it's valid. List of attributes: " + self.class.attribute_map.keys.inspect
+          fail ArgumentError, "`#{k}` is not a valid attribute in `BulletTrainTest::ApiV1MeSerializerDataAttributes`. Please check the name to make sure it's valid. List of attributes: " + self.class.attribute_map.keys.inspect
         end
         h[k.to_sym] = v
       }
@@ -65,8 +101,44 @@ module BulletTrainTest
         self.id = attributes[:'id']
       end
 
-      if attributes.key?(:'type')
-        self.type = attributes[:'type']
+      if attributes.key?(:'email')
+        self.email = attributes[:'email']
+      end
+
+      if attributes.key?(:'first_name')
+        self.first_name = attributes[:'first_name']
+      end
+
+      if attributes.key?(:'last_name')
+        self.last_name = attributes[:'last_name']
+      end
+
+      if attributes.key?(:'time_zone')
+        self.time_zone = attributes[:'time_zone']
+      end
+
+      if attributes.key?(:'profile_photo_id')
+        self.profile_photo_id = attributes[:'profile_photo_id']
+      end
+
+      if attributes.key?(:'former_user')
+        self.former_user = attributes[:'former_user']
+      end
+
+      if attributes.key?(:'locale')
+        self.locale = attributes[:'locale']
+      end
+
+      if attributes.key?(:'platform_agent_of_id')
+        self.platform_agent_of_id = attributes[:'platform_agent_of_id']
+      end
+
+      if attributes.key?(:'created_at')
+        self.created_at = attributes[:'created_at']
+      end
+
+      if attributes.key?(:'updated_at')
+        self.updated_at = attributes[:'updated_at']
       end
     end
 
@@ -89,7 +161,16 @@ module BulletTrainTest
       return true if self.equal?(o)
       self.class == o.class &&
           id == o.id &&
-          type == o.type
+          email == o.email &&
+          first_name == o.first_name &&
+          last_name == o.last_name &&
+          time_zone == o.time_zone &&
+          profile_photo_id == o.profile_photo_id &&
+          former_user == o.former_user &&
+          locale == o.locale &&
+          platform_agent_of_id == o.platform_agent_of_id &&
+          created_at == o.created_at &&
+          updated_at == o.updated_at
     end
 
     # @see the `==` method
@@ -101,7 +182,7 @@ module BulletTrainTest
     # Calculates hash code according to all attributes.
     # @return [Integer] Hash code
     def hash
-      [id, type].hash
+      [id, email, first_name, last_name, time_zone, profile_photo_id, former_user, locale, platform_agent_of_id, created_at, updated_at].hash
     end
 
     # Builds the object from hash

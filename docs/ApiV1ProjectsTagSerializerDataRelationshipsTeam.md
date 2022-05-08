@@ -4,7 +4,7 @@
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **data** | [**ApiV1ProjectsTagSerializerDataRelationshipsTeamData**](ApiV1ProjectsTagSerializerDataRelationshipsTeamData.md) |  | [optional] |
+| **data** | [**ApiV1MeSerializerDataRelationshipsTeamsData**](ApiV1MeSerializerDataRelationshipsTeamsData.md) |  | [optional] |
 
 ## Example
 

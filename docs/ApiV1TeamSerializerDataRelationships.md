@@ -4,7 +4,7 @@
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **scaffolding_absolutely_abstract_creative_concepts** | [**ApiV1TeamSerializerDataRelationshipsScaffoldingAbsolutelyAbstractCreativeConcepts**](ApiV1TeamSerializerDataRelationshipsScaffoldingAbsolutelyAbstractCreativeConcepts.md) |  | [optional] |
+| **scaffolding_absolutely_abstract_creative_concepts** | [**ApiV1MeSerializerDataRelationshipsTeams**](ApiV1MeSerializerDataRelationshipsTeams.md) |  | [optional] |
 
 ## Example
 

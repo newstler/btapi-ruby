@@ -9,9 +9,11 @@ All URIs are relative to *https://bullettrainapi.eu.ngrok.io/api/v1*
 
 ## get_me
 
-> get_me
+> <ApiV1MeSerializer> get_me
 
 
+
+Retrieve info about the current user
 
 ### Examples
 
@@ -23,7 +25,8 @@ api_instance = BulletTrainTest::MeApi.new
 
 begin
   
-  api_instance.get_me
+  result = api_instance.get_me
+  p result
 rescue BulletTrainTest::ApiError => e
   puts "Error when calling MeApi->get_me: #{e}"
 end
@@ -31,9 +34,9 @@ end
 
 #### Using the get_me_with_http_info variant
 
-This returns an Array which contains the response data (`nil` in this case), status code and headers.
+This returns an Array which contains the response data, status code and headers.
 
-> <Array(nil, Integer, Hash)> get_me_with_http_info
+> <Array(<ApiV1MeSerializer>, Integer, Hash)> get_me_with_http_info
 
 ```ruby
 begin
@@ -41,7 +44,7 @@ begin
   data, status_code, headers = api_instance.get_me_with_http_info
   p status_code # => 2xx
   p headers # => { ... }
-  p data # => nil
+  p data # => <ApiV1MeSerializer>
 rescue BulletTrainTest::ApiError => e
   puts "Error when calling MeApi->get_me_with_http_info: #{e}"
 end
@@ -53,7 +56,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-nil (empty response body)
+[**ApiV1MeSerializer**](ApiV1MeSerializer.md)
 
 ### Authorization
 
@@ -62,5 +65,5 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: Not defined
+- **Accept**: application/vnd.api+json
 

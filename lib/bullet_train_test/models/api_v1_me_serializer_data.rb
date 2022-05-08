@@ -14,13 +14,22 @@ require 'date'
 require 'time'
 
 module BulletTrainTest
-  class ApiV1TeamSerializerDataRelationships
-    attr_accessor :scaffolding_absolutely_abstract_creative_concepts
+  class ApiV1MeSerializerData
+    attr_accessor :id
+
+    attr_accessor :type
+
+    attr_accessor :attributes
+
+    attr_accessor :relationships
 
     # Attribute mapping from ruby-style variable name to JSON key.
     def self.attribute_map
       {
-        :'scaffolding_absolutely_abstract_creative_concepts' => :'scaffolding_absolutely_abstract_creative_concepts'
+        :'id' => :'id',
+        :'type' => :'type',
+        :'attributes' => :'attributes',
+        :'relationships' => :'relationships'
       }
     end
 
@@ -32,7 +41,10 @@ module BulletTrainTest
     # Attribute type mapping.
     def self.openapi_types
       {
-        :'scaffolding_absolutely_abstract_creative_concepts' => :'ApiV1MeSerializerDataRelationshipsTeams'
+        :'id' => :'Integer',
+        :'type' => :'String',
+        :'attributes' => :'ApiV1MeSerializerDataAttributes',
+        :'relationships' => :'ApiV1MeSerializerDataRelationships'
       }
     end
 
@@ -46,19 +58,31 @@ module BulletTrainTest
     # @param [Hash] attributes Model attributes in the form of hash
     def initialize(attributes = {})
       if (!attributes.is_a?(Hash))
-        fail ArgumentError, "The input argument (attributes) must be a hash in `BulletTrainTest::ApiV1TeamSerializerDataRelationships` initialize method"
+        fail ArgumentError, "The input argument (attributes) must be a hash in `BulletTrainTest::ApiV1MeSerializerData` initialize method"
       end
 
       # check to see if the attribute exists and convert string to symbol for hash key
       attributes = attributes.each_with_object({}) { |(k, v), h|
         if (!self.class.attribute_map.key?(k.to_sym))
-          fail ArgumentError, "`#{k}` is not a valid attribute in `BulletTrainTest::ApiV1TeamSerializerDataRelationships`. Please check the name to make sure it's valid. List of attributes: " + self.class.attribute_map.keys.inspect
+          fail ArgumentError, "`#{k}` is not a valid attribute in `BulletTrainTest::ApiV1MeSerializerData`. Please check the name to make sure it's valid. List of attributes: " + self.class.attribute_map.keys.inspect
         end
         h[k.to_sym] = v
       }
 
-      if attributes.key?(:'scaffolding_absolutely_abstract_creative_concepts')
-        self.scaffolding_absolutely_abstract_creative_concepts = attributes[:'scaffolding_absolutely_abstract_creative_concepts']
+      if attributes.key?(:'id')
+        self.id = attributes[:'id']
+      end
+
+      if attributes.key?(:'type')
+        self.type = attributes[:'type']
+      end
+
+      if attributes.key?(:'attributes')
+        self.attributes = attributes[:'attributes']
+      end
+
+      if attributes.key?(:'relationships')
+        self.relationships = attributes[:'relationships']
       end
     end
 
@@ -80,7 +104,10 @@ module BulletTrainTest
     def ==(o)
       return true if self.equal?(o)
       self.class == o.class &&
-          scaffolding_absolutely_abstract_creative_concepts == o.scaffolding_absolutely_abstract_creative_concepts
+          id == o.id &&
+          type == o.type &&
+          attributes == o.attributes &&
+          relationships == o.relationships
     end
 
     # @see the `==` method
@@ -92,7 +119,7 @@ module BulletTrainTest
     # Calculates hash code according to all attributes.
     # @return [Integer] Hash code
     def hash
-      [scaffolding_absolutely_abstract_creative_concepts].hash
+      [id, type, attributes, relationships].hash
     end
 
     # Builds the object from hash
