@@ -82,8 +82,8 @@ module BulletTrainTest
     # @param id [Integer] Goal ID
     # @param [Hash] opts the optional parameters
     # @return [ApiV1GoalSerializer]
-    def get_goals_id(id, opts = {})
-      data, _status_code, _headers = get_goals_id_with_http_info(id, opts)
+    def get_goal(id, opts = {})
+      data, _status_code, _headers = get_goal_with_http_info(id, opts)
       data
     end
 
@@ -91,13 +91,13 @@ module BulletTrainTest
     # @param id [Integer] Goal ID
     # @param [Hash] opts the optional parameters
     # @return [Array<(ApiV1GoalSerializer, Integer, Hash)>] ApiV1GoalSerializer data, response status code and response headers
-    def get_goals_id_with_http_info(id, opts = {})
+    def get_goal_with_http_info(id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: GoalsApi.get_goals_id ...'
+        @api_client.config.logger.debug 'Calling API: GoalsApi.get_goal ...'
       end
       # verify the required parameter 'id' is set
       if @api_client.config.client_side_validation && id.nil?
-        fail ArgumentError, "Missing the required parameter 'id' when calling GoalsApi.get_goals_id"
+        fail ArgumentError, "Missing the required parameter 'id' when calling GoalsApi.get_goal"
       end
       # resource path
       local_var_path = '/goals/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
@@ -123,7 +123,7 @@ module BulletTrainTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"GoalsApi.get_goals_id",
+        :operation => :"GoalsApi.get_goal",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -134,7 +134,7 @@ module BulletTrainTest
 
       data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: GoalsApi#get_goals_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: GoalsApi#get_goal\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end

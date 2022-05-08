@@ -43,12 +43,12 @@ describe 'GoalsApi' do
     end
   end
 
-  # unit tests for get_goals_id
+  # unit tests for get_goal
   # Retrieve a Goal
   # @param id Goal ID
   # @param [Hash] opts the optional parameters
   # @return [ApiV1GoalSerializer]
-  describe 'get_goals_id test' do
+  describe 'get_goal test' do
     it 'should work' do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
