@@ -19,12 +19,335 @@ module BulletTrainTest
     def initialize(api_client = ApiClient.default)
       @api_client = api_client
     end
+    # Retrieve a Team
+    # @param id [Integer] Team ID
+    # @param [Hash] opts the optional parameters
+    # @return [ApiV1TeamSerializer]
+    def get_team(id, opts = {})
+      data, _status_code, _headers = get_team_with_http_info(id, opts)
+      data
+    end
+
+    # Retrieve a Team
+    # @param id [Integer] Team ID
+    # @param [Hash] opts the optional parameters
+    # @return [Array<(ApiV1TeamSerializer, Integer, Hash)>] ApiV1TeamSerializer data, response status code and response headers
+    def get_team_with_http_info(id, opts = {})
+      if @api_client.config.debugging
+        @api_client.config.logger.debug 'Calling API: TeamsApi.get_team ...'
+      end
+      # verify the required parameter 'id' is set
+      if @api_client.config.client_side_validation && id.nil?
+        fail ArgumentError, "Missing the required parameter 'id' when calling TeamsApi.get_team"
+      end
+      # resource path
+      local_var_path = '/teams/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
+
+      # query parameters
+      query_params = opts[:query_params] || {}
+
+      # header parameters
+      header_params = opts[:header_params] || {}
+      # HTTP header 'Accept' (if needed)
+      header_params['Accept'] = @api_client.select_header_accept(['application/vnd.api+json'])
+
+      # form parameters
+      form_params = opts[:form_params] || {}
+
+      # http body (model)
+      post_body = opts[:debug_body]
+
+      # return_type
+      return_type = opts[:debug_return_type] || 'ApiV1TeamSerializer'
+
+      # auth_names
+      auth_names = opts[:debug_auth_names] || []
+
+      new_options = opts.merge(
+        :operation => :"TeamsApi.get_team",
+        :header_params => header_params,
+        :query_params => query_params,
+        :form_params => form_params,
+        :body => post_body,
+        :auth_names => auth_names,
+        :return_type => return_type
+      )
+
+      data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
+      if @api_client.config.debugging
+        @api_client.config.logger.debug "API called: TeamsApi#get_team\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+      end
+      return data, status_code, headers
+    end
+
+    # List Tags
+    # @param team_id [Integer] Team ID
+    # @param [Hash] opts the optional parameters
+    # @option opts [Integer] :page Page of results to fetch. (default to 1)
+    # @option opts [Integer] :per_page Number of results to return per page. (default to 100)
+    # @return [Array<ApiV1ProjectsTagSerializer>]
+    def get_team_project_tags(team_id, opts = {})
+      data, _status_code, _headers = get_team_project_tags_with_http_info(team_id, opts)
+      data
+    end
+
+    # List Tags
+    # @param team_id [Integer] Team ID
+    # @param [Hash] opts the optional parameters
+    # @option opts [Integer] :page Page of results to fetch.
+    # @option opts [Integer] :per_page Number of results to return per page.
+    # @return [Array<(Array<ApiV1ProjectsTagSerializer>, Integer, Hash)>] Array<ApiV1ProjectsTagSerializer> data, response status code and response headers
+    def get_team_project_tags_with_http_info(team_id, opts = {})
+      if @api_client.config.debugging
+        @api_client.config.logger.debug 'Calling API: TeamsApi.get_team_project_tags ...'
+      end
+      # verify the required parameter 'team_id' is set
+      if @api_client.config.client_side_validation && team_id.nil?
+        fail ArgumentError, "Missing the required parameter 'team_id' when calling TeamsApi.get_team_project_tags"
+      end
+      # resource path
+      local_var_path = '/teams/{team_id}/projects/tags'.sub('{' + 'team_id' + '}', CGI.escape(team_id.to_s))
+
+      # query parameters
+      query_params = opts[:query_params] || {}
+      query_params[:'page'] = opts[:'page'] if !opts[:'page'].nil?
+      query_params[:'per_page'] = opts[:'per_page'] if !opts[:'per_page'].nil?
+
+      # header parameters
+      header_params = opts[:header_params] || {}
+      # HTTP header 'Accept' (if needed)
+      header_params['Accept'] = @api_client.select_header_accept(['application/vnd.api+json'])
+
+      # form parameters
+      form_params = opts[:form_params] || {}
+
+      # http body (model)
+      post_body = opts[:debug_body]
+
+      # return_type
+      return_type = opts[:debug_return_type] || 'Array<ApiV1ProjectsTagSerializer>'
+
+      # auth_names
+      auth_names = opts[:debug_auth_names] || []
+
+      new_options = opts.merge(
+        :operation => :"TeamsApi.get_team_project_tags",
+        :header_params => header_params,
+        :query_params => query_params,
+        :form_params => form_params,
+        :body => post_body,
+        :auth_names => auth_names,
+        :return_type => return_type
+      )
+
+      data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
+      if @api_client.config.debugging
+        @api_client.config.logger.debug "API called: TeamsApi#get_team_project_tags\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+      end
+      return data, status_code, headers
+    end
+
+    # List Projects
+    # @param team_id [Integer] Team ID
+    # @param [Hash] opts the optional parameters
+    # @option opts [Integer] :page Page of results to fetch. (default to 1)
+    # @option opts [Integer] :per_page Number of results to return per page. (default to 100)
+    # @return [Array<ApiV1ProjectSerializer>]
+    def get_team_projects(team_id, opts = {})
+      data, _status_code, _headers = get_team_projects_with_http_info(team_id, opts)
+      data
+    end
+
+    # List Projects
+    # @param team_id [Integer] Team ID
+    # @param [Hash] opts the optional parameters
+    # @option opts [Integer] :page Page of results to fetch.
+    # @option opts [Integer] :per_page Number of results to return per page.
+    # @return [Array<(Array<ApiV1ProjectSerializer>, Integer, Hash)>] Array<ApiV1ProjectSerializer> data, response status code and response headers
+    def get_team_projects_with_http_info(team_id, opts = {})
+      if @api_client.config.debugging
+        @api_client.config.logger.debug 'Calling API: TeamsApi.get_team_projects ...'
+      end
+      # verify the required parameter 'team_id' is set
+      if @api_client.config.client_side_validation && team_id.nil?
+        fail ArgumentError, "Missing the required parameter 'team_id' when calling TeamsApi.get_team_projects"
+      end
+      # resource path
+      local_var_path = '/teams/{team_id}/projects'.sub('{' + 'team_id' + '}', CGI.escape(team_id.to_s))
+
+      # query parameters
+      query_params = opts[:query_params] || {}
+      query_params[:'page'] = opts[:'page'] if !opts[:'page'].nil?
+      query_params[:'per_page'] = opts[:'per_page'] if !opts[:'per_page'].nil?
+
+      # header parameters
+      header_params = opts[:header_params] || {}
+      # HTTP header 'Accept' (if needed)
+      header_params['Accept'] = @api_client.select_header_accept(['application/vnd.api+json'])
+
+      # form parameters
+      form_params = opts[:form_params] || {}
+
+      # http body (model)
+      post_body = opts[:debug_body]
+
+      # return_type
+      return_type = opts[:debug_return_type] || 'Array<ApiV1ProjectSerializer>'
+
+      # auth_names
+      auth_names = opts[:debug_auth_names] || []
+
+      new_options = opts.merge(
+        :operation => :"TeamsApi.get_team_projects",
+        :header_params => header_params,
+        :query_params => query_params,
+        :form_params => form_params,
+        :body => post_body,
+        :auth_names => auth_names,
+        :return_type => return_type
+      )
+
+      data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
+      if @api_client.config.debugging
+        @api_client.config.logger.debug "API called: TeamsApi#get_team_projects\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+      end
+      return data, status_code, headers
+    end
+
+    # translation missing: en.projects.api.three
+    # @param team_id [Integer] Team ID
+    # @param [Hash] opts the optional parameters
+    # @option opts [Integer] :page Page of results to fetch. (default to 1)
+    # @option opts [Integer] :per_page Number of results to return per page. (default to 3)
+    # @return [Array<ApiV1ProjectSerializer>]
+    def get_team_projects_three(team_id, opts = {})
+      data, _status_code, _headers = get_team_projects_three_with_http_info(team_id, opts)
+      data
+    end
+
+    # translation missing: en.projects.api.three
+    # @param team_id [Integer] Team ID
+    # @param [Hash] opts the optional parameters
+    # @option opts [Integer] :page Page of results to fetch.
+    # @option opts [Integer] :per_page Number of results to return per page.
+    # @return [Array<(Array<ApiV1ProjectSerializer>, Integer, Hash)>] Array<ApiV1ProjectSerializer> data, response status code and response headers
+    def get_team_projects_three_with_http_info(team_id, opts = {})
+      if @api_client.config.debugging
+        @api_client.config.logger.debug 'Calling API: TeamsApi.get_team_projects_three ...'
+      end
+      # verify the required parameter 'team_id' is set
+      if @api_client.config.client_side_validation && team_id.nil?
+        fail ArgumentError, "Missing the required parameter 'team_id' when calling TeamsApi.get_team_projects_three"
+      end
+      # resource path
+      local_var_path = '/teams/{team_id}/projects/three'.sub('{' + 'team_id' + '}', CGI.escape(team_id.to_s))
+
+      # query parameters
+      query_params = opts[:query_params] || {}
+      query_params[:'page'] = opts[:'page'] if !opts[:'page'].nil?
+      query_params[:'per_page'] = opts[:'per_page'] if !opts[:'per_page'].nil?
+
+      # header parameters
+      header_params = opts[:header_params] || {}
+      # HTTP header 'Accept' (if needed)
+      header_params['Accept'] = @api_client.select_header_accept(['application/vnd.api+json'])
+
+      # form parameters
+      form_params = opts[:form_params] || {}
+
+      # http body (model)
+      post_body = opts[:debug_body]
+
+      # return_type
+      return_type = opts[:debug_return_type] || 'Array<ApiV1ProjectSerializer>'
+
+      # auth_names
+      auth_names = opts[:debug_auth_names] || []
+
+      new_options = opts.merge(
+        :operation => :"TeamsApi.get_team_projects_three",
+        :header_params => header_params,
+        :query_params => query_params,
+        :form_params => form_params,
+        :body => post_body,
+        :auth_names => auth_names,
+        :return_type => return_type
+      )
+
+      data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
+      if @api_client.config.debugging
+        @api_client.config.logger.debug "API called: TeamsApi#get_team_projects_three\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+      end
+      return data, status_code, headers
+    end
+
+    # List Teams
+    # @param [Hash] opts the optional parameters
+    # @option opts [Integer] :page Page of results to fetch. (default to 1)
+    # @option opts [Integer] :per_page Number of results to return per page. (default to 100)
+    # @return [Array<ApiV1TeamSerializer>]
+    def get_teams(opts = {})
+      data, _status_code, _headers = get_teams_with_http_info(opts)
+      data
+    end
+
+    # List Teams
+    # @param [Hash] opts the optional parameters
+    # @option opts [Integer] :page Page of results to fetch.
+    # @option opts [Integer] :per_page Number of results to return per page.
+    # @return [Array<(Array<ApiV1TeamSerializer>, Integer, Hash)>] Array<ApiV1TeamSerializer> data, response status code and response headers
+    def get_teams_with_http_info(opts = {})
+      if @api_client.config.debugging
+        @api_client.config.logger.debug 'Calling API: TeamsApi.get_teams ...'
+      end
+      # resource path
+      local_var_path = '/teams'
+
+      # query parameters
+      query_params = opts[:query_params] || {}
+      query_params[:'page'] = opts[:'page'] if !opts[:'page'].nil?
+      query_params[:'per_page'] = opts[:'per_page'] if !opts[:'per_page'].nil?
+
+      # header parameters
+      header_params = opts[:header_params] || {}
+      # HTTP header 'Accept' (if needed)
+      header_params['Accept'] = @api_client.select_header_accept(['application/vnd.api+json'])
+
+      # form parameters
+      form_params = opts[:form_params] || {}
+
+      # http body (model)
+      post_body = opts[:debug_body]
+
+      # return_type
+      return_type = opts[:debug_return_type] || 'Array<ApiV1TeamSerializer>'
+
+      # auth_names
+      auth_names = opts[:debug_auth_names] || []
+
+      new_options = opts.merge(
+        :operation => :"TeamsApi.get_teams",
+        :header_params => header_params,
+        :query_params => query_params,
+        :form_params => form_params,
+        :body => post_body,
+        :auth_names => auth_names,
+        :return_type => return_type
+      )
+
+      data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
+      if @api_client.config.debugging
+        @api_client.config.logger.debug "API called: TeamsApi#get_teams\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+      end
+      return data, status_code, headers
+    end
+
     # Add a New Team
     # @param [Hash] opts the optional parameters
     # @option opts [UNKNOWN_BASE_TYPE] :unknown_base_type 
     # @return [ApiV1TeamSerializer]
-    def create(opts = {})
-      data, _status_code, _headers = create_with_http_info(opts)
+    def post_team(opts = {})
+      data, _status_code, _headers = post_team_with_http_info(opts)
       data
     end
 
@@ -32,9 +355,9 @@ module BulletTrainTest
     # @param [Hash] opts the optional parameters
     # @option opts [UNKNOWN_BASE_TYPE] :unknown_base_type 
     # @return [Array<(ApiV1TeamSerializer, Integer, Hash)>] ApiV1TeamSerializer data, response status code and response headers
-    def create_with_http_info(opts = {})
+    def post_team_with_http_info(opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: TeamsApi.create ...'
+        @api_client.config.logger.debug 'Calling API: TeamsApi.post_team ...'
       end
       # resource path
       local_var_path = '/teams'
@@ -65,7 +388,7 @@ module BulletTrainTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"TeamsApi.create",
+        :operation => :"TeamsApi.post_team",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -76,7 +399,7 @@ module BulletTrainTest
 
       data, status_code, headers = @api_client.call_api(:POST, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: TeamsApi#create\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: TeamsApi#post_team\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -86,8 +409,8 @@ module BulletTrainTest
     # @param [Hash] opts the optional parameters
     # @option opts [UNKNOWN_BASE_TYPE] :unknown_base_type 
     # @return [ApiV1ProjectSerializer]
-    def create_project(team_id, opts = {})
-      data, _status_code, _headers = create_project_with_http_info(team_id, opts)
+    def post_team_projects(team_id, opts = {})
+      data, _status_code, _headers = post_team_projects_with_http_info(team_id, opts)
       data
     end
 
@@ -96,13 +419,13 @@ module BulletTrainTest
     # @param [Hash] opts the optional parameters
     # @option opts [UNKNOWN_BASE_TYPE] :unknown_base_type 
     # @return [Array<(ApiV1ProjectSerializer, Integer, Hash)>] ApiV1ProjectSerializer data, response status code and response headers
-    def create_project_with_http_info(team_id, opts = {})
+    def post_team_projects_with_http_info(team_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: TeamsApi.create_project ...'
+        @api_client.config.logger.debug 'Calling API: TeamsApi.post_team_projects ...'
       end
       # verify the required parameter 'team_id' is set
       if @api_client.config.client_side_validation && team_id.nil?
-        fail ArgumentError, "Missing the required parameter 'team_id' when calling TeamsApi.create_project"
+        fail ArgumentError, "Missing the required parameter 'team_id' when calling TeamsApi.post_team_projects"
       end
       # resource path
       local_var_path = '/teams/{team_id}/projects'.sub('{' + 'team_id' + '}', CGI.escape(team_id.to_s))
@@ -133,7 +456,7 @@ module BulletTrainTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"TeamsApi.create_project",
+        :operation => :"TeamsApi.post_team_projects",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -144,398 +467,7 @@ module BulletTrainTest
 
       data, status_code, headers = @api_client.call_api(:POST, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: TeamsApi#create_project\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
-      end
-      return data, status_code, headers
-    end
-
-    # Retrieve a Team
-    # @param id [Integer] Team ID
-    # @param [Hash] opts the optional parameters
-    # @return [ApiV1TeamSerializer]
-    def get(id, opts = {})
-      data, _status_code, _headers = get_with_http_info(id, opts)
-      data
-    end
-
-    # Retrieve a Team
-    # @param id [Integer] Team ID
-    # @param [Hash] opts the optional parameters
-    # @return [Array<(ApiV1TeamSerializer, Integer, Hash)>] ApiV1TeamSerializer data, response status code and response headers
-    def get_with_http_info(id, opts = {})
-      if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: TeamsApi.get ...'
-      end
-      # verify the required parameter 'id' is set
-      if @api_client.config.client_side_validation && id.nil?
-        fail ArgumentError, "Missing the required parameter 'id' when calling TeamsApi.get"
-      end
-      # resource path
-      local_var_path = '/teams/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
-
-      # query parameters
-      query_params = opts[:query_params] || {}
-
-      # header parameters
-      header_params = opts[:header_params] || {}
-      # HTTP header 'Accept' (if needed)
-      header_params['Accept'] = @api_client.select_header_accept(['application/vnd.api+json'])
-
-      # form parameters
-      form_params = opts[:form_params] || {}
-
-      # http body (model)
-      post_body = opts[:debug_body]
-
-      # return_type
-      return_type = opts[:debug_return_type] || 'ApiV1TeamSerializer'
-
-      # auth_names
-      auth_names = opts[:debug_auth_names] || []
-
-      new_options = opts.merge(
-        :operation => :"TeamsApi.get",
-        :header_params => header_params,
-        :query_params => query_params,
-        :form_params => form_params,
-        :body => post_body,
-        :auth_names => auth_names,
-        :return_type => return_type
-      )
-
-      data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
-      if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: TeamsApi#get\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
-      end
-      return data, status_code, headers
-    end
-
-    # translation missing: en.projects.api.three
-    # @param team_id [Integer] Team ID
-    # @param [Hash] opts the optional parameters
-    # @option opts [Integer] :page Page of results to fetch. (default to 1)
-    # @option opts [Integer] :per_page Number of results to return per page. (default to 3)
-    # @return [Array<ApiV1ProjectSerializer>]
-    def get_projects_three(team_id, opts = {})
-      data, _status_code, _headers = get_projects_three_with_http_info(team_id, opts)
-      data
-    end
-
-    # translation missing: en.projects.api.three
-    # @param team_id [Integer] Team ID
-    # @param [Hash] opts the optional parameters
-    # @option opts [Integer] :page Page of results to fetch.
-    # @option opts [Integer] :per_page Number of results to return per page.
-    # @return [Array<(Array<ApiV1ProjectSerializer>, Integer, Hash)>] Array<ApiV1ProjectSerializer> data, response status code and response headers
-    def get_projects_three_with_http_info(team_id, opts = {})
-      if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: TeamsApi.get_projects_three ...'
-      end
-      # verify the required parameter 'team_id' is set
-      if @api_client.config.client_side_validation && team_id.nil?
-        fail ArgumentError, "Missing the required parameter 'team_id' when calling TeamsApi.get_projects_three"
-      end
-      # resource path
-      local_var_path = '/teams/{team_id}/projects/three'.sub('{' + 'team_id' + '}', CGI.escape(team_id.to_s))
-
-      # query parameters
-      query_params = opts[:query_params] || {}
-      query_params[:'page'] = opts[:'page'] if !opts[:'page'].nil?
-      query_params[:'per_page'] = opts[:'per_page'] if !opts[:'per_page'].nil?
-
-      # header parameters
-      header_params = opts[:header_params] || {}
-      # HTTP header 'Accept' (if needed)
-      header_params['Accept'] = @api_client.select_header_accept(['application/vnd.api+json'])
-
-      # form parameters
-      form_params = opts[:form_params] || {}
-
-      # http body (model)
-      post_body = opts[:debug_body]
-
-      # return_type
-      return_type = opts[:debug_return_type] || 'Array<ApiV1ProjectSerializer>'
-
-      # auth_names
-      auth_names = opts[:debug_auth_names] || []
-
-      new_options = opts.merge(
-        :operation => :"TeamsApi.get_projects_three",
-        :header_params => header_params,
-        :query_params => query_params,
-        :form_params => form_params,
-        :body => post_body,
-        :auth_names => auth_names,
-        :return_type => return_type
-      )
-
-      data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
-      if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: TeamsApi#get_projects_three\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
-      end
-      return data, status_code, headers
-    end
-
-    # List Teams
-    # @param [Hash] opts the optional parameters
-    # @option opts [Integer] :page Page of results to fetch. (default to 1)
-    # @option opts [Integer] :per_page Number of results to return per page. (default to 100)
-    # @return [Array<ApiV1TeamSerializer>]
-    def list(opts = {})
-      data, _status_code, _headers = list_with_http_info(opts)
-      data
-    end
-
-    # List Teams
-    # @param [Hash] opts the optional parameters
-    # @option opts [Integer] :page Page of results to fetch.
-    # @option opts [Integer] :per_page Number of results to return per page.
-    # @return [Array<(Array<ApiV1TeamSerializer>, Integer, Hash)>] Array<ApiV1TeamSerializer> data, response status code and response headers
-    def list_with_http_info(opts = {})
-      if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: TeamsApi.list ...'
-      end
-      # resource path
-      local_var_path = '/teams'
-
-      # query parameters
-      query_params = opts[:query_params] || {}
-      query_params[:'page'] = opts[:'page'] if !opts[:'page'].nil?
-      query_params[:'per_page'] = opts[:'per_page'] if !opts[:'per_page'].nil?
-
-      # header parameters
-      header_params = opts[:header_params] || {}
-      # HTTP header 'Accept' (if needed)
-      header_params['Accept'] = @api_client.select_header_accept(['application/vnd.api+json'])
-
-      # form parameters
-      form_params = opts[:form_params] || {}
-
-      # http body (model)
-      post_body = opts[:debug_body]
-
-      # return_type
-      return_type = opts[:debug_return_type] || 'Array<ApiV1TeamSerializer>'
-
-      # auth_names
-      auth_names = opts[:debug_auth_names] || []
-
-      new_options = opts.merge(
-        :operation => :"TeamsApi.list",
-        :header_params => header_params,
-        :query_params => query_params,
-        :form_params => form_params,
-        :body => post_body,
-        :auth_names => auth_names,
-        :return_type => return_type
-      )
-
-      data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
-      if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: TeamsApi#list\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
-      end
-      return data, status_code, headers
-    end
-
-    # List Tags
-    # @param team_id [Integer] Team ID
-    # @param [Hash] opts the optional parameters
-    # @option opts [Integer] :page Page of results to fetch. (default to 1)
-    # @option opts [Integer] :per_page Number of results to return per page. (default to 100)
-    # @return [Array<ApiV1ProjectsTagSerializer>]
-    def list_project_tags(team_id, opts = {})
-      data, _status_code, _headers = list_project_tags_with_http_info(team_id, opts)
-      data
-    end
-
-    # List Tags
-    # @param team_id [Integer] Team ID
-    # @param [Hash] opts the optional parameters
-    # @option opts [Integer] :page Page of results to fetch.
-    # @option opts [Integer] :per_page Number of results to return per page.
-    # @return [Array<(Array<ApiV1ProjectsTagSerializer>, Integer, Hash)>] Array<ApiV1ProjectsTagSerializer> data, response status code and response headers
-    def list_project_tags_with_http_info(team_id, opts = {})
-      if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: TeamsApi.list_project_tags ...'
-      end
-      # verify the required parameter 'team_id' is set
-      if @api_client.config.client_side_validation && team_id.nil?
-        fail ArgumentError, "Missing the required parameter 'team_id' when calling TeamsApi.list_project_tags"
-      end
-      # resource path
-      local_var_path = '/teams/{team_id}/projects/tags'.sub('{' + 'team_id' + '}', CGI.escape(team_id.to_s))
-
-      # query parameters
-      query_params = opts[:query_params] || {}
-      query_params[:'page'] = opts[:'page'] if !opts[:'page'].nil?
-      query_params[:'per_page'] = opts[:'per_page'] if !opts[:'per_page'].nil?
-
-      # header parameters
-      header_params = opts[:header_params] || {}
-      # HTTP header 'Accept' (if needed)
-      header_params['Accept'] = @api_client.select_header_accept(['application/vnd.api+json'])
-
-      # form parameters
-      form_params = opts[:form_params] || {}
-
-      # http body (model)
-      post_body = opts[:debug_body]
-
-      # return_type
-      return_type = opts[:debug_return_type] || 'Array<ApiV1ProjectsTagSerializer>'
-
-      # auth_names
-      auth_names = opts[:debug_auth_names] || []
-
-      new_options = opts.merge(
-        :operation => :"TeamsApi.list_project_tags",
-        :header_params => header_params,
-        :query_params => query_params,
-        :form_params => form_params,
-        :body => post_body,
-        :auth_names => auth_names,
-        :return_type => return_type
-      )
-
-      data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
-      if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: TeamsApi#list_project_tags\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
-      end
-      return data, status_code, headers
-    end
-
-    # List Projects
-    # @param team_id [Integer] Team ID
-    # @param [Hash] opts the optional parameters
-    # @option opts [Integer] :page Page of results to fetch. (default to 1)
-    # @option opts [Integer] :per_page Number of results to return per page. (default to 100)
-    # @return [Array<ApiV1ProjectSerializer>]
-    def list_projects(team_id, opts = {})
-      data, _status_code, _headers = list_projects_with_http_info(team_id, opts)
-      data
-    end
-
-    # List Projects
-    # @param team_id [Integer] Team ID
-    # @param [Hash] opts the optional parameters
-    # @option opts [Integer] :page Page of results to fetch.
-    # @option opts [Integer] :per_page Number of results to return per page.
-    # @return [Array<(Array<ApiV1ProjectSerializer>, Integer, Hash)>] Array<ApiV1ProjectSerializer> data, response status code and response headers
-    def list_projects_with_http_info(team_id, opts = {})
-      if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: TeamsApi.list_projects ...'
-      end
-      # verify the required parameter 'team_id' is set
-      if @api_client.config.client_side_validation && team_id.nil?
-        fail ArgumentError, "Missing the required parameter 'team_id' when calling TeamsApi.list_projects"
-      end
-      # resource path
-      local_var_path = '/teams/{team_id}/projects'.sub('{' + 'team_id' + '}', CGI.escape(team_id.to_s))
-
-      # query parameters
-      query_params = opts[:query_params] || {}
-      query_params[:'page'] = opts[:'page'] if !opts[:'page'].nil?
-      query_params[:'per_page'] = opts[:'per_page'] if !opts[:'per_page'].nil?
-
-      # header parameters
-      header_params = opts[:header_params] || {}
-      # HTTP header 'Accept' (if needed)
-      header_params['Accept'] = @api_client.select_header_accept(['application/vnd.api+json'])
-
-      # form parameters
-      form_params = opts[:form_params] || {}
-
-      # http body (model)
-      post_body = opts[:debug_body]
-
-      # return_type
-      return_type = opts[:debug_return_type] || 'Array<ApiV1ProjectSerializer>'
-
-      # auth_names
-      auth_names = opts[:debug_auth_names] || []
-
-      new_options = opts.merge(
-        :operation => :"TeamsApi.list_projects",
-        :header_params => header_params,
-        :query_params => query_params,
-        :form_params => form_params,
-        :body => post_body,
-        :auth_names => auth_names,
-        :return_type => return_type
-      )
-
-      data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
-      if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: TeamsApi#list_projects\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
-      end
-      return data, status_code, headers
-    end
-
-    # Add a New Tag
-    # @param team_id [Integer] Team ID
-    # @param [Hash] opts the optional parameters
-    # @option opts [UNKNOWN_BASE_TYPE] :unknown_base_type 
-    # @return [ApiV1ProjectsTagSerializer]
-    def post_team_project_tags(team_id, opts = {})
-      data, _status_code, _headers = post_team_project_tags_with_http_info(team_id, opts)
-      data
-    end
-
-    # Add a New Tag
-    # @param team_id [Integer] Team ID
-    # @param [Hash] opts the optional parameters
-    # @option opts [UNKNOWN_BASE_TYPE] :unknown_base_type 
-    # @return [Array<(ApiV1ProjectsTagSerializer, Integer, Hash)>] ApiV1ProjectsTagSerializer data, response status code and response headers
-    def post_team_project_tags_with_http_info(team_id, opts = {})
-      if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: TeamsApi.post_team_project_tags ...'
-      end
-      # verify the required parameter 'team_id' is set
-      if @api_client.config.client_side_validation && team_id.nil?
-        fail ArgumentError, "Missing the required parameter 'team_id' when calling TeamsApi.post_team_project_tags"
-      end
-      # resource path
-      local_var_path = '/teams/{team_id}/projects/tags'.sub('{' + 'team_id' + '}', CGI.escape(team_id.to_s))
-
-      # query parameters
-      query_params = opts[:query_params] || {}
-
-      # header parameters
-      header_params = opts[:header_params] || {}
-      # HTTP header 'Accept' (if needed)
-      header_params['Accept'] = @api_client.select_header_accept(['application/vnd.api+json'])
-      # HTTP header 'Content-Type'
-      content_type = @api_client.select_header_content_type(['application/json', 'multipart/form-data'])
-      if !content_type.nil?
-          header_params['Content-Type'] = content_type
-      end
-
-      # form parameters
-      form_params = opts[:form_params] || {}
-
-      # http body (model)
-      post_body = opts[:debug_body] || @api_client.object_to_http_body(opts[:'unknown_base_type'])
-
-      # return_type
-      return_type = opts[:debug_return_type] || 'ApiV1ProjectsTagSerializer'
-
-      # auth_names
-      auth_names = opts[:debug_auth_names] || []
-
-      new_options = opts.merge(
-        :operation => :"TeamsApi.post_team_project_tags",
-        :header_params => header_params,
-        :query_params => query_params,
-        :form_params => form_params,
-        :body => post_body,
-        :auth_names => auth_names,
-        :return_type => return_type
-      )
-
-      data, status_code, headers = @api_client.call_api(:POST, local_var_path, new_options)
-      if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: TeamsApi#post_team_project_tags\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: TeamsApi#post_team_projects\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -545,8 +477,8 @@ module BulletTrainTest
     # @param [Hash] opts the optional parameters
     # @option opts [UNKNOWN_BASE_TYPE] :unknown_base_type 
     # @return [ApiV1TeamSerializer]
-    def update(id, opts = {})
-      data, _status_code, _headers = update_with_http_info(id, opts)
+    def update_team(id, opts = {})
+      data, _status_code, _headers = update_team_with_http_info(id, opts)
       data
     end
 
@@ -555,13 +487,13 @@ module BulletTrainTest
     # @param [Hash] opts the optional parameters
     # @option opts [UNKNOWN_BASE_TYPE] :unknown_base_type 
     # @return [Array<(ApiV1TeamSerializer, Integer, Hash)>] ApiV1TeamSerializer data, response status code and response headers
-    def update_with_http_info(id, opts = {})
+    def update_team_with_http_info(id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: TeamsApi.update ...'
+        @api_client.config.logger.debug 'Calling API: TeamsApi.update_team ...'
       end
       # verify the required parameter 'id' is set
       if @api_client.config.client_side_validation && id.nil?
-        fail ArgumentError, "Missing the required parameter 'id' when calling TeamsApi.update"
+        fail ArgumentError, "Missing the required parameter 'id' when calling TeamsApi.update_team"
       end
       # resource path
       local_var_path = '/teams/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
@@ -592,7 +524,7 @@ module BulletTrainTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"TeamsApi.update",
+        :operation => :"TeamsApi.update_team",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -603,7 +535,7 @@ module BulletTrainTest
 
       data, status_code, headers = @api_client.call_api(:PUT, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: TeamsApi#update\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: TeamsApi#update_team\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end

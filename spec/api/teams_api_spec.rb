@@ -32,110 +32,98 @@ describe 'TeamsApi' do
     end
   end
 
-  # unit tests for create
-  # Add a New Team
-  # @param [Hash] opts the optional parameters
-  # @option opts [UNKNOWN_BASE_TYPE] :unknown_base_type 
-  # @return [ApiV1TeamSerializer]
-  describe 'create test' do
-    it 'should work' do
-      # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
-    end
-  end
-
-  # unit tests for create_project
-  # Add a New Project
-  # @param team_id Team ID
-  # @param [Hash] opts the optional parameters
-  # @option opts [UNKNOWN_BASE_TYPE] :unknown_base_type 
-  # @return [ApiV1ProjectSerializer]
-  describe 'create_project test' do
-    it 'should work' do
-      # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
-    end
-  end
-
-  # unit tests for get
+  # unit tests for get_team
   # Retrieve a Team
   # @param id Team ID
   # @param [Hash] opts the optional parameters
   # @return [ApiV1TeamSerializer]
-  describe 'get test' do
+  describe 'get_team test' do
     it 'should work' do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for get_projects_three
-  # translation missing: en.projects.api.three
-  # @param team_id Team ID
-  # @param [Hash] opts the optional parameters
-  # @option opts [Integer] :page Page of results to fetch.
-  # @option opts [Integer] :per_page Number of results to return per page.
-  # @return [Array<ApiV1ProjectSerializer>]
-  describe 'get_projects_three test' do
-    it 'should work' do
-      # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
-    end
-  end
-
-  # unit tests for list
-  # List Teams
-  # @param [Hash] opts the optional parameters
-  # @option opts [Integer] :page Page of results to fetch.
-  # @option opts [Integer] :per_page Number of results to return per page.
-  # @return [Array<ApiV1TeamSerializer>]
-  describe 'list test' do
-    it 'should work' do
-      # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
-    end
-  end
-
-  # unit tests for list_project_tags
+  # unit tests for get_team_project_tags
   # List Tags
   # @param team_id Team ID
   # @param [Hash] opts the optional parameters
   # @option opts [Integer] :page Page of results to fetch.
   # @option opts [Integer] :per_page Number of results to return per page.
   # @return [Array<ApiV1ProjectsTagSerializer>]
-  describe 'list_project_tags test' do
+  describe 'get_team_project_tags test' do
     it 'should work' do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for list_projects
+  # unit tests for get_team_projects
   # List Projects
   # @param team_id Team ID
   # @param [Hash] opts the optional parameters
   # @option opts [Integer] :page Page of results to fetch.
   # @option opts [Integer] :per_page Number of results to return per page.
   # @return [Array<ApiV1ProjectSerializer>]
-  describe 'list_projects test' do
+  describe 'get_team_projects test' do
     it 'should work' do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for post_team_project_tags
-  # Add a New Tag
+  # unit tests for get_team_projects_three
+  # translation missing: en.projects.api.three
+  # @param team_id Team ID
+  # @param [Hash] opts the optional parameters
+  # @option opts [Integer] :page Page of results to fetch.
+  # @option opts [Integer] :per_page Number of results to return per page.
+  # @return [Array<ApiV1ProjectSerializer>]
+  describe 'get_team_projects_three test' do
+    it 'should work' do
+      # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
+    end
+  end
+
+  # unit tests for get_teams
+  # List Teams
+  # @param [Hash] opts the optional parameters
+  # @option opts [Integer] :page Page of results to fetch.
+  # @option opts [Integer] :per_page Number of results to return per page.
+  # @return [Array<ApiV1TeamSerializer>]
+  describe 'get_teams test' do
+    it 'should work' do
+      # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
+    end
+  end
+
+  # unit tests for post_team
+  # Add a New Team
+  # @param [Hash] opts the optional parameters
+  # @option opts [UNKNOWN_BASE_TYPE] :unknown_base_type 
+  # @return [ApiV1TeamSerializer]
+  describe 'post_team test' do
+    it 'should work' do
+      # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
+    end
+  end
+
+  # unit tests for post_team_projects
+  # Add a New Project
   # @param team_id Team ID
   # @param [Hash] opts the optional parameters
   # @option opts [UNKNOWN_BASE_TYPE] :unknown_base_type 
-  # @return [ApiV1ProjectsTagSerializer]
-  describe 'post_team_project_tags test' do
+  # @return [ApiV1ProjectSerializer]
+  describe 'post_team_projects test' do
     it 'should work' do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for update
+  # unit tests for update_team
   # Update a Team
   # @param id Team ID
   # @param [Hash] opts the optional parameters
   # @option opts [UNKNOWN_BASE_TYPE] :unknown_base_type 
   # @return [ApiV1TeamSerializer]
-  describe 'update test' do
+  describe 'update_team test' do
     it 'should work' do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
