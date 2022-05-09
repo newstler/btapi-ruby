@@ -29,14 +29,14 @@ docs/ApiV1TeamSerializer.md
 docs/ApiV1TeamSerializerData.md
 docs/ApiV1TeamSerializerDataAttributes.md
 docs/ApiV1TeamSerializerDataRelationships.md
-docs/DefaultApi.md
+docs/Class7Api.md
 docs/GoalsApi.md
 docs/ProjectsApi.md
 docs/PublicApi.md
 docs/TeamsApi.md
 git_push.sh
 lib/bullet_train_test.rb
-lib/bullet_train_test/api/_api.rb
+lib/bullet_train_test/api/class7_api.rb
 lib/bullet_train_test/api/goals_api.rb
 lib/bullet_train_test/api/projects_api.rb
 lib/bullet_train_test/api/public_api.rb
@@ -67,7 +67,7 @@ lib/bullet_train_test/models/api_v1_team_serializer_data.rb
 lib/bullet_train_test/models/api_v1_team_serializer_data_attributes.rb
 lib/bullet_train_test/models/api_v1_team_serializer_data_relationships.rb
 lib/bullet_train_test/version.rb
-spec/api/_api_spec.rb
+spec/api/class7_api_spec.rb
 spec/api/goals_api_spec.rb
 spec/api/projects_api_spec.rb
 spec/api/public_api_spec.rb
