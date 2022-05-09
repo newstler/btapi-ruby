@@ -5,7 +5,7 @@ All URIs are relative to *https://bullettrainapi.eu.ngrok.io/api/v1*
 | Method | HTTP request | Description |
 | ------ | ------------ | ----------- |
 | [**delete_goals_id**](GoalsApi.md#delete_goals_id) | **DELETE** /goals/{id} |  |
-| [**get_goal**](GoalsApi.md#get_goal) | **GET** /goals/{id} |  |
+| [**get_goals_id**](GoalsApi.md#get_goals_id) | **GET** /goals/{id} |  |
 | [**put_goals_id**](GoalsApi.md#put_goals_id) | **PUT** /goals/{id} |  |
 
 
@@ -72,9 +72,9 @@ No authorization required
 - **Accept**: Not defined
 
 
-## get_goal
+## get_goals_id
 
-> <ApiV1GoalSerializer> get_goal(id)
+> <ApiV1GoalSerializer> get_goals_id(id)
 
 
 
@@ -91,28 +91,28 @@ id = 56 # Integer | Goal ID
 
 begin
   
-  result = api_instance.get_goal(id)
+  result = api_instance.get_goals_id(id)
   p result
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling GoalsApi->get_goal: #{e}"
+  puts "Error when calling GoalsApi->get_goals_id: #{e}"
 end
 ```
 
-#### Using the get_goal_with_http_info variant
+#### Using the get_goals_id_with_http_info variant
 
 This returns an Array which contains the response data, status code and headers.
 
-> <Array(<ApiV1GoalSerializer>, Integer, Hash)> get_goal_with_http_info(id)
+> <Array(<ApiV1GoalSerializer>, Integer, Hash)> get_goals_id_with_http_info(id)
 
 ```ruby
 begin
   
-  data, status_code, headers = api_instance.get_goal_with_http_info(id)
+  data, status_code, headers = api_instance.get_goals_id_with_http_info(id)
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ApiV1GoalSerializer>
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling GoalsApi->get_goal_with_http_info: #{e}"
+  puts "Error when calling GoalsApi->get_goals_id_with_http_info: #{e}"
 end
 ```
 
