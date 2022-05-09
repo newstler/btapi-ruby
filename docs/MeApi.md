@@ -1,10 +1,10 @@
-# BulletTrainTest::PublicApi
+# BulletTrainTest::MeApi
 
 All URIs are relative to *https://bullettrainapi.eu.ngrok.io/api/v1*
 
 | Method | HTTP request | Description |
 | ------ | ------------ | ----------- |
-| [**get_me**](PublicApi.md#get_me) | **GET** /me |  |
+| [**get_me**](MeApi.md#get_me) | **GET** /me |  |
 
 
 ## get_me
@@ -21,14 +21,14 @@ Retrieve info about the current user
 require 'time'
 require 'bullet_train_test'
 
-api_instance = BulletTrainTest::PublicApi.new
+api_instance = BulletTrainTest::MeApi.new
 
 begin
   
   result = api_instance.get_me
   p result
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling PublicApi->get_me: #{e}"
+  puts "Error when calling MeApi->get_me: #{e}"
 end
 ```
 
@@ -46,7 +46,7 @@ begin
   p headers # => { ... }
   p data # => <ApiV1MeSerializer>
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling PublicApi->get_me_with_http_info: #{e}"
+  puts "Error when calling MeApi->get_me_with_http_info: #{e}"
 end
 ```
 

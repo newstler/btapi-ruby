@@ -11,4 +11,4 @@ script:
   - bundle install --path vendor/bundle
   - bundle exec rspec
   - gem build bullet_train_test.gemspec
-  - gem install ./bullet_train_test-1.0.26.gem
+  - gem install ./bullet_train_test-1.0.27.gem

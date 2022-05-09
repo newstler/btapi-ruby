@@ -32,12 +32,12 @@ describe 'GoalsApi' do
     end
   end
 
-  # unit tests for delete_goals_id
+  # unit tests for delete_goal
   # Delete a Goal
   # @param id Goal ID
   # @param [Hash] opts the optional parameters
   # @return [nil]
-  describe 'delete_goals_id test' do
+  describe 'delete_goal test' do
     it 'should work' do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
@@ -54,13 +54,13 @@ describe 'GoalsApi' do
     end
   end
 
-  # unit tests for put_goals_id
+  # unit tests for update_goal
   # Update a Goal
   # @param id Goal ID
   # @param [Hash] opts the optional parameters
   # @option opts [UNKNOWN_BASE_TYPE] :unknown_base_type 
   # @return [ApiV1GoalSerializer]
-  describe 'put_goals_id test' do
+  describe 'update_goal test' do
     it 'should work' do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end

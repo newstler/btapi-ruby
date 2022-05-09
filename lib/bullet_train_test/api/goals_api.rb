@@ -23,8 +23,8 @@ module BulletTrainTest
     # @param id [Integer] Goal ID
     # @param [Hash] opts the optional parameters
     # @return [nil]
-    def delete_goals_id(id, opts = {})
-      delete_goals_id_with_http_info(id, opts)
+    def delete_goal(id, opts = {})
+      delete_goal_with_http_info(id, opts)
       nil
     end
 
@@ -32,13 +32,13 @@ module BulletTrainTest
     # @param id [Integer] Goal ID
     # @param [Hash] opts the optional parameters
     # @return [Array<(nil, Integer, Hash)>] nil, response status code and response headers
-    def delete_goals_id_with_http_info(id, opts = {})
+    def delete_goal_with_http_info(id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: GoalsApi.delete_goals_id ...'
+        @api_client.config.logger.debug 'Calling API: GoalsApi.delete_goal ...'
       end
       # verify the required parameter 'id' is set
       if @api_client.config.client_side_validation && id.nil?
-        fail ArgumentError, "Missing the required parameter 'id' when calling GoalsApi.delete_goals_id"
+        fail ArgumentError, "Missing the required parameter 'id' when calling GoalsApi.delete_goal"
       end
       # resource path
       local_var_path = '/goals/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
@@ -62,7 +62,7 @@ module BulletTrainTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"GoalsApi.delete_goals_id",
+        :operation => :"GoalsApi.delete_goal",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -73,7 +73,7 @@ module BulletTrainTest
 
       data, status_code, headers = @api_client.call_api(:DELETE, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: GoalsApi#delete_goals_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: GoalsApi#delete_goal\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -144,8 +144,8 @@ module BulletTrainTest
     # @param [Hash] opts the optional parameters
     # @option opts [UNKNOWN_BASE_TYPE] :unknown_base_type 
     # @return [ApiV1GoalSerializer]
-    def put_goals_id(id, opts = {})
-      data, _status_code, _headers = put_goals_id_with_http_info(id, opts)
+    def update_goal(id, opts = {})
+      data, _status_code, _headers = update_goal_with_http_info(id, opts)
       data
     end
 
@@ -154,13 +154,13 @@ module BulletTrainTest
     # @param [Hash] opts the optional parameters
     # @option opts [UNKNOWN_BASE_TYPE] :unknown_base_type 
     # @return [Array<(ApiV1GoalSerializer, Integer, Hash)>] ApiV1GoalSerializer data, response status code and response headers
-    def put_goals_id_with_http_info(id, opts = {})
+    def update_goal_with_http_info(id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: GoalsApi.put_goals_id ...'
+        @api_client.config.logger.debug 'Calling API: GoalsApi.update_goal ...'
       end
       # verify the required parameter 'id' is set
       if @api_client.config.client_side_validation && id.nil?
-        fail ArgumentError, "Missing the required parameter 'id' when calling GoalsApi.put_goals_id"
+        fail ArgumentError, "Missing the required parameter 'id' when calling GoalsApi.update_goal"
       end
       # resource path
       local_var_path = '/goals/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
@@ -191,7 +191,7 @@ module BulletTrainTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"GoalsApi.put_goals_id",
+        :operation => :"GoalsApi.update_goal",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -202,7 +202,7 @@ module BulletTrainTest
 
       data, status_code, headers = @api_client.call_api(:PUT, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: GoalsApi#put_goals_id\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: GoalsApi#update_goal\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
