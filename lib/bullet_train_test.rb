@@ -42,6 +42,7 @@ require 'bullet_train_test/models/api_v1_team_serializer_data_relationships'
 
 # APIs
 require 'bullet_train_test/api/goals_api'
+require 'bullet_train_test/api/n_api'
 require 'bullet_train_test/api/projects_api'
 require 'bullet_train_test/api/public_api'
 require 'bullet_train_test/api/teams_api'
