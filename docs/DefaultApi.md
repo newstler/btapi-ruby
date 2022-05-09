@@ -1,10 +1,10 @@
-# BulletTrainTest::Class7Api
+# BulletTrainTest::DefaultApi
 
 All URIs are relative to *https://bullettrainapi.eu.ngrok.io/api/v1*
 
 | Method | HTTP request | Description |
 | ------ | ------------ | ----------- |
-| [**post_team_project_tags**](Class7Api.md#post_team_project_tags) | **POST** /teams/{team_id}/projects/tags |  |
+| [**post_team_project_tags**](DefaultApi.md#post_team_project_tags) | **POST** /teams/{team_id}/projects/tags |  |
 
 
 ## post_team_project_tags
@@ -21,7 +21,7 @@ Add a New Tag
 require 'time'
 require 'bullet_train_test'
 
-api_instance = BulletTrainTest::Class7Api.new
+api_instance = BulletTrainTest::DefaultApi.new
 team_id = 56 # Integer | Team ID
 opts = {
   unknown_base_type: TODO # UNKNOWN_BASE_TYPE | 
@@ -32,7 +32,7 @@ begin
   result = api_instance.post_team_project_tags(team_id, opts)
   p result
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling Class7Api->post_team_project_tags: #{e}"
+  puts "Error when calling DefaultApi->post_team_project_tags: #{e}"
 end
 ```
 
@@ -50,7 +50,7 @@ begin
   p headers # => { ... }
   p data # => <ApiV1ProjectsTagSerializer>
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling Class7Api->post_team_project_tags_with_http_info: #{e}"
+  puts "Error when calling DefaultApi->post_team_project_tags_with_http_info: #{e}"
 end
 ```
 

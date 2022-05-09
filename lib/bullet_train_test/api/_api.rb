@@ -13,7 +13,7 @@ OpenAPI Generator version: 5.3.0
 require 'cgi'
 
 module BulletTrainTest
-  class Class7Api
+  class DefaultApi
     attr_accessor :api_client
 
     def initialize(api_client = ApiClient.default)
@@ -36,11 +36,11 @@ module BulletTrainTest
     # @return [Array<(ApiV1ProjectsTagSerializer, Integer, Hash)>] ApiV1ProjectsTagSerializer data, response status code and response headers
     def post_team_project_tags_with_http_info(team_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: Class7Api.post_team_project_tags ...'
+        @api_client.config.logger.debug 'Calling API: DefaultApi.post_team_project_tags ...'
       end
       # verify the required parameter 'team_id' is set
       if @api_client.config.client_side_validation && team_id.nil?
-        fail ArgumentError, "Missing the required parameter 'team_id' when calling Class7Api.post_team_project_tags"
+        fail ArgumentError, "Missing the required parameter 'team_id' when calling DefaultApi.post_team_project_tags"
       end
       # resource path
       local_var_path = '/teams/{team_id}/projects/tags'.sub('{' + 'team_id' + '}', CGI.escape(team_id.to_s))
@@ -71,7 +71,7 @@ module BulletTrainTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"Class7Api.post_team_project_tags",
+        :operation => :"DefaultApi.post_team_project_tags",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -82,7 +82,7 @@ module BulletTrainTest
 
       data, status_code, headers = @api_client.call_api(:POST, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: Class7Api#post_team_project_tags\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: DefaultApi#post_team_project_tags\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
