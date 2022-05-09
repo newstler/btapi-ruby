@@ -198,67 +198,6 @@ module BulletTrainTest
       return data, status_code, headers
     end
 
-    # Delete user
-    # This can only be done by the logged in user.
-    # @param username [String] The name that needs to be deleted
-    # @param [Hash] opts the optional parameters
-    # @return [nil]
-    def delete_user(username, opts = {})
-      delete_user_with_http_info(username, opts)
-      nil
-    end
-
-    # Delete user
-    # This can only be done by the logged in user.
-    # @param username [String] The name that needs to be deleted
-    # @param [Hash] opts the optional parameters
-    # @return [Array<(nil, Integer, Hash)>] nil, response status code and response headers
-    def delete_user_with_http_info(username, opts = {})
-      if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: UserApi.delete_user ...'
-      end
-      # verify the required parameter 'username' is set
-      if @api_client.config.client_side_validation && username.nil?
-        fail ArgumentError, "Missing the required parameter 'username' when calling UserApi.delete_user"
-      end
-      # resource path
-      local_var_path = '/super_user/{username}'.sub('{' + 'username' + '}', CGI.escape(username.to_s))
-
-      # query parameters
-      query_params = opts[:query_params] || {}
-
-      # header parameters
-      header_params = opts[:header_params] || {}
-
-      # form parameters
-      form_params = opts[:form_params] || {}
-
-      # http body (model)
-      post_body = opts[:debug_body]
-
-      # return_type
-      return_type = opts[:debug_return_type]
-
-      # auth_names
-      auth_names = opts[:debug_auth_names] || []
-
-      new_options = opts.merge(
-        :operation => :"UserApi.delete_user",
-        :header_params => header_params,
-        :query_params => query_params,
-        :form_params => form_params,
-        :body => post_body,
-        :auth_names => auth_names,
-        :return_type => return_type
-      )
-
-      data, status_code, headers = @api_client.call_api(:DELETE, local_var_path, new_options)
-      if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: UserApi#delete_user\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
-      end
-      return data, status_code, headers
-    end
-
     # Get user by user name
     # @param username [String] The name that needs to be fetched. Use user1 for testing.
     # @param [Hash] opts the optional parameters

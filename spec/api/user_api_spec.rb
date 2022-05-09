@@ -66,18 +66,6 @@ describe 'UserApi' do
     end
   end
 
-  # unit tests for delete_user
-  # Delete user
-  # This can only be done by the logged in user.
-  # @param username The name that needs to be deleted
-  # @param [Hash] opts the optional parameters
-  # @return [nil]
-  describe 'delete_user test' do
-    it 'should work' do
-      # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
-    end
-  end
-
   # unit tests for get_user_by_name
   # Get user by user name
   # @param username The name that needs to be fetched. Use user1 for testing.

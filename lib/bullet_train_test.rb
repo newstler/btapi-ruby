@@ -27,6 +27,7 @@ require 'bullet_train_test/models/user'
 # APIs
 require 'bullet_train_test/api/pet_api'
 require 'bullet_train_test/api/store_api'
+require 'bullet_train_test/api/super_user_api'
 require 'bullet_train_test/api/user_api'
 
 module BulletTrainTest

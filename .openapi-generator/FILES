@@ -13,6 +13,7 @@ docs/Order.md
 docs/Pet.md
 docs/PetApi.md
 docs/StoreApi.md
+docs/SuperUserApi.md
 docs/Tag.md
 docs/User.md
 docs/UserApi.md
@@ -20,6 +21,7 @@ git_push.sh
 lib/bullet_train_test.rb
 lib/bullet_train_test/api/pet_api.rb
 lib/bullet_train_test/api/store_api.rb
+lib/bullet_train_test/api/super_user_api.rb
 lib/bullet_train_test/api/user_api.rb
 lib/bullet_train_test/api_client.rb
 lib/bullet_train_test/api_error.rb
@@ -33,6 +35,7 @@ lib/bullet_train_test/models/user.rb
 lib/bullet_train_test/version.rb
 spec/api/pet_api_spec.rb
 spec/api/store_api_spec.rb
+spec/api/super_user_api_spec.rb
 spec/api/user_api_spec.rb
 spec/api_client_spec.rb
 spec/configuration_spec.rb

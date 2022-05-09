@@ -7,7 +7,6 @@ All URIs are relative to *http://petstore.swagger.io/v2*
 | [**create_user**](UserApi.md#create_user) | **POST** /user | Create user |
 | [**create_users_with_array_input**](UserApi.md#create_users_with_array_input) | **POST** /super_user/createWithArray | Creates list of users with given input array |
 | [**create_users_with_list_input**](UserApi.md#create_users_with_list_input) | **POST** /super_user/createWithList | Creates list of users with given input array |
-| [**delete_user**](UserApi.md#delete_user) | **DELETE** /super_user/{username} | Delete user |
 | [**get_user_by_name**](UserApi.md#get_user_by_name) | **GET** /super_user/{username} | Get user by user name |
 | [**login_user**](UserApi.md#login_user) | **GET** /super_user/login | Logs user into the system |
 | [**logout_user**](UserApi.md#logout_user) | **GET** /super_user/logout | Logs out current logged in user session |
@@ -184,69 +183,6 @@ end
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
 | **body** | [**Array&lt;User&gt;**](User.md) | List of user object |  |
-
-### Return type
-
-nil (empty response body)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: Not defined
-
-
-## delete_user
-
-> delete_user(username)
-
-Delete user
-
-This can only be done by the logged in user.
-
-### Examples
-
-```ruby
-require 'time'
-require 'bullet_train_test'
-
-api_instance = BulletTrainTest::UserApi.new
-username = 'username_example' # String | The name that needs to be deleted
-
-begin
-  # Delete user
-  api_instance.delete_user(username)
-rescue BulletTrainTest::ApiError => e
-  puts "Error when calling UserApi->delete_user: #{e}"
-end
-```
-
-#### Using the delete_user_with_http_info variant
-
-This returns an Array which contains the response data (`nil` in this case), status code and headers.
-
-> <Array(nil, Integer, Hash)> delete_user_with_http_info(username)
-
-```ruby
-begin
-  # Delete user
-  data, status_code, headers = api_instance.delete_user_with_http_info(username)
-  p status_code # => 2xx
-  p headers # => { ... }
-  p data # => nil
-rescue BulletTrainTest::ApiError => e
-  puts "Error when calling UserApi->delete_user_with_http_info: #{e}"
-end
-```
-
-### Parameters
-
-| Name | Type | Description | Notes |
-| ---- | ---- | ----------- | ----- |
-| **username** | **String** | The name that needs to be deleted |  |
 
 ### Return type
 
