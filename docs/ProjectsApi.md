@@ -9,7 +9,7 @@ All URIs are relative to *https://bullettrainapi.eu.ngrok.io/api/v1*
 | [**delete_projects_tag**](ProjectsApi.md#delete_projects_tag) | **DELETE** /projects/tags/{id} |  |
 | [**get_project**](ProjectsApi.md#get_project) | **GET** /projects/{id} |  |
 | [**get_projects_tag**](ProjectsApi.md#get_projects_tag) | **GET** /projects/tags/{id} |  |
-| [**list_goal**](ProjectsApi.md#list_goal) | **GET** /projects/{project_id}/goals |  |
+| [**list_goals**](ProjectsApi.md#list_goals) | **GET** /projects/{project_id}/goals |  |
 | [**update_project**](ProjectsApi.md#update_project) | **PUT** /projects/{id} |  |
 | [**update_projects_tag**](ProjectsApi.md#update_projects_tag) | **PUT** /projects/tags/{id} |  |
 
@@ -336,9 +336,9 @@ No authorization required
 - **Accept**: application/vnd.api+json
 
 
-## list_goal
+## list_goals
 
-> <Array<ApiV1GoalSerializer>> list_goal(project_id, opts)
+> <Array<ApiV1GoalSerializer>> list_goals(project_id, opts)
 
 
 
@@ -359,28 +359,28 @@ opts = {
 
 begin
   
-  result = api_instance.list_goal(project_id, opts)
+  result = api_instance.list_goals(project_id, opts)
   p result
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling ProjectsApi->list_goal: #{e}"
+  puts "Error when calling ProjectsApi->list_goals: #{e}"
 end
 ```
 
-#### Using the list_goal_with_http_info variant
+#### Using the list_goals_with_http_info variant
 
 This returns an Array which contains the response data, status code and headers.
 
-> <Array(<Array<ApiV1GoalSerializer>>, Integer, Hash)> list_goal_with_http_info(project_id, opts)
+> <Array(<Array<ApiV1GoalSerializer>>, Integer, Hash)> list_goals_with_http_info(project_id, opts)
 
 ```ruby
 begin
   
-  data, status_code, headers = api_instance.list_goal_with_http_info(project_id, opts)
+  data, status_code, headers = api_instance.list_goals_with_http_info(project_id, opts)
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <Array<ApiV1GoalSerializer>>
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling ProjectsApi->list_goal_with_http_info: #{e}"
+  puts "Error when calling ProjectsApi->list_goals_with_http_info: #{e}"
 end
 ```
 

@@ -333,8 +333,8 @@ module BulletTrainTest
     # @option opts [Integer] :page Page of results to fetch. (default to 1)
     # @option opts [Integer] :per_page Number of results to return per page. (default to 100)
     # @return [Array<ApiV1GoalSerializer>]
-    def list_goal(project_id, opts = {})
-      data, _status_code, _headers = list_goal_with_http_info(project_id, opts)
+    def list_goals(project_id, opts = {})
+      data, _status_code, _headers = list_goals_with_http_info(project_id, opts)
       data
     end
 
@@ -344,13 +344,13 @@ module BulletTrainTest
     # @option opts [Integer] :page Page of results to fetch.
     # @option opts [Integer] :per_page Number of results to return per page.
     # @return [Array<(Array<ApiV1GoalSerializer>, Integer, Hash)>] Array<ApiV1GoalSerializer> data, response status code and response headers
-    def list_goal_with_http_info(project_id, opts = {})
+    def list_goals_with_http_info(project_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: ProjectsApi.list_goal ...'
+        @api_client.config.logger.debug 'Calling API: ProjectsApi.list_goals ...'
       end
       # verify the required parameter 'project_id' is set
       if @api_client.config.client_side_validation && project_id.nil?
-        fail ArgumentError, "Missing the required parameter 'project_id' when calling ProjectsApi.list_goal"
+        fail ArgumentError, "Missing the required parameter 'project_id' when calling ProjectsApi.list_goals"
       end
       # resource path
       local_var_path = '/projects/{project_id}/goals'.sub('{' + 'project_id' + '}', CGI.escape(project_id.to_s))
@@ -378,7 +378,7 @@ module BulletTrainTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"ProjectsApi.list_goal",
+        :operation => :"ProjectsApi.list_goals",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -389,7 +389,7 @@ module BulletTrainTest
 
       data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: ProjectsApi#list_goal\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: ProjectsApi#list_goals\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end

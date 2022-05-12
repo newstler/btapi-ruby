@@ -78,52 +78,39 @@ describe 'TeamsApi' do
     end
   end
 
-  # unit tests for list_project
+  # unit tests for list_projects
   # List Projects
   # @param team_id Team ID
   # @param [Hash] opts the optional parameters
   # @option opts [Integer] :page Page of results to fetch.
   # @option opts [Integer] :per_page Number of results to return per page.
   # @return [Array<ApiV1ProjectSerializer>]
-  describe 'list_project test' do
+  describe 'list_projects test' do
     it 'should work' do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for list_project_0
-  # translation missing: en.projects.api.three
-  # @param team_id Team ID
-  # @param [Hash] opts the optional parameters
-  # @option opts [Integer] :page Page of results to fetch.
-  # @option opts [Integer] :per_page Number of results to return per page.
-  # @return [Array<ApiV1ProjectSerializer>]
-  describe 'list_project_0 test' do
-    it 'should work' do
-      # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
-    end
-  end
-
-  # unit tests for list_projects_tag
+  # unit tests for list_projects_tags
   # List Tags
   # @param team_id Team ID
   # @param [Hash] opts the optional parameters
   # @option opts [Integer] :page Page of results to fetch.
   # @option opts [Integer] :per_page Number of results to return per page.
   # @return [Array<ApiV1ProjectsTagSerializer>]
-  describe 'list_projects_tag test' do
+  describe 'list_projects_tags test' do
     it 'should work' do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
   end
 
-  # unit tests for list_team
+  # unit tests for list_teams
   # List Teams
   # @param [Hash] opts the optional parameters
   # @option opts [Integer] :page Page of results to fetch.
   # @option opts [Integer] :per_page Number of results to return per page.
   # @return [Array<ApiV1TeamSerializer>]
-  describe 'list_team test' do
+  describe 'list_teams test' do
     it 'should work' do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end

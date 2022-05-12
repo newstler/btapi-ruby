@@ -284,8 +284,8 @@ module BulletTrainTest
     # @option opts [Integer] :page Page of results to fetch. (default to 1)
     # @option opts [Integer] :per_page Number of results to return per page. (default to 100)
     # @return [Array<ApiV1ProjectSerializer>]
-    def list_project(team_id, opts = {})
-      data, _status_code, _headers = list_project_with_http_info(team_id, opts)
+    def list_projects(team_id, opts = {})
+      data, _status_code, _headers = list_projects_with_http_info(team_id, opts)
       data
     end
 
@@ -295,13 +295,13 @@ module BulletTrainTest
     # @option opts [Integer] :page Page of results to fetch.
     # @option opts [Integer] :per_page Number of results to return per page.
     # @return [Array<(Array<ApiV1ProjectSerializer>, Integer, Hash)>] Array<ApiV1ProjectSerializer> data, response status code and response headers
-    def list_project_with_http_info(team_id, opts = {})
+    def list_projects_with_http_info(team_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: TeamsApi.list_project ...'
+        @api_client.config.logger.debug 'Calling API: TeamsApi.list_projects ...'
       end
       # verify the required parameter 'team_id' is set
       if @api_client.config.client_side_validation && team_id.nil?
-        fail ArgumentError, "Missing the required parameter 'team_id' when calling TeamsApi.list_project"
+        fail ArgumentError, "Missing the required parameter 'team_id' when calling TeamsApi.list_projects"
       end
       # resource path
       local_var_path = '/teams/{team_id}/projects'.sub('{' + 'team_id' + '}', CGI.escape(team_id.to_s))
@@ -329,7 +329,7 @@ module BulletTrainTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"TeamsApi.list_project",
+        :operation => :"TeamsApi.list_projects",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -340,74 +340,7 @@ module BulletTrainTest
 
       data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: TeamsApi#list_project\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
-      end
-      return data, status_code, headers
-    end
-
-    # translation missing: en.projects.api.three
-    # @param team_id [Integer] Team ID
-    # @param [Hash] opts the optional parameters
-    # @option opts [Integer] :page Page of results to fetch. (default to 1)
-    # @option opts [Integer] :per_page Number of results to return per page. (default to 3)
-    # @return [Array<ApiV1ProjectSerializer>]
-    def list_project_0(team_id, opts = {})
-      data, _status_code, _headers = list_project_0_with_http_info(team_id, opts)
-      data
-    end
-
-    # translation missing: en.projects.api.three
-    # @param team_id [Integer] Team ID
-    # @param [Hash] opts the optional parameters
-    # @option opts [Integer] :page Page of results to fetch.
-    # @option opts [Integer] :per_page Number of results to return per page.
-    # @return [Array<(Array<ApiV1ProjectSerializer>, Integer, Hash)>] Array<ApiV1ProjectSerializer> data, response status code and response headers
-    def list_project_0_with_http_info(team_id, opts = {})
-      if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: TeamsApi.list_project_0 ...'
-      end
-      # verify the required parameter 'team_id' is set
-      if @api_client.config.client_side_validation && team_id.nil?
-        fail ArgumentError, "Missing the required parameter 'team_id' when calling TeamsApi.list_project_0"
-      end
-      # resource path
-      local_var_path = '/teams/{team_id}/projects/three'.sub('{' + 'team_id' + '}', CGI.escape(team_id.to_s))
-
-      # query parameters
-      query_params = opts[:query_params] || {}
-      query_params[:'page'] = opts[:'page'] if !opts[:'page'].nil?
-      query_params[:'per_page'] = opts[:'per_page'] if !opts[:'per_page'].nil?
-
-      # header parameters
-      header_params = opts[:header_params] || {}
-      # HTTP header 'Accept' (if needed)
-      header_params['Accept'] = @api_client.select_header_accept(['application/vnd.api+json'])
-
-      # form parameters
-      form_params = opts[:form_params] || {}
-
-      # http body (model)
-      post_body = opts[:debug_body]
-
-      # return_type
-      return_type = opts[:debug_return_type] || 'Array<ApiV1ProjectSerializer>'
-
-      # auth_names
-      auth_names = opts[:debug_auth_names] || []
-
-      new_options = opts.merge(
-        :operation => :"TeamsApi.list_project_0",
-        :header_params => header_params,
-        :query_params => query_params,
-        :form_params => form_params,
-        :body => post_body,
-        :auth_names => auth_names,
-        :return_type => return_type
-      )
-
-      data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
-      if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: TeamsApi#list_project_0\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: TeamsApi#list_projects\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -418,8 +351,8 @@ module BulletTrainTest
     # @option opts [Integer] :page Page of results to fetch. (default to 1)
     # @option opts [Integer] :per_page Number of results to return per page. (default to 100)
     # @return [Array<ApiV1ProjectsTagSerializer>]
-    def list_projects_tag(team_id, opts = {})
-      data, _status_code, _headers = list_projects_tag_with_http_info(team_id, opts)
+    def list_projects_tags(team_id, opts = {})
+      data, _status_code, _headers = list_projects_tags_with_http_info(team_id, opts)
       data
     end
 
@@ -429,13 +362,13 @@ module BulletTrainTest
     # @option opts [Integer] :page Page of results to fetch.
     # @option opts [Integer] :per_page Number of results to return per page.
     # @return [Array<(Array<ApiV1ProjectsTagSerializer>, Integer, Hash)>] Array<ApiV1ProjectsTagSerializer> data, response status code and response headers
-    def list_projects_tag_with_http_info(team_id, opts = {})
+    def list_projects_tags_with_http_info(team_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: TeamsApi.list_projects_tag ...'
+        @api_client.config.logger.debug 'Calling API: TeamsApi.list_projects_tags ...'
       end
       # verify the required parameter 'team_id' is set
       if @api_client.config.client_side_validation && team_id.nil?
-        fail ArgumentError, "Missing the required parameter 'team_id' when calling TeamsApi.list_projects_tag"
+        fail ArgumentError, "Missing the required parameter 'team_id' when calling TeamsApi.list_projects_tags"
       end
       # resource path
       local_var_path = '/teams/{team_id}/projects/tags'.sub('{' + 'team_id' + '}', CGI.escape(team_id.to_s))
@@ -463,7 +396,7 @@ module BulletTrainTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"TeamsApi.list_projects_tag",
+        :operation => :"TeamsApi.list_projects_tags",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -474,7 +407,7 @@ module BulletTrainTest
 
       data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: TeamsApi#list_projects_tag\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: TeamsApi#list_projects_tags\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -484,8 +417,8 @@ module BulletTrainTest
     # @option opts [Integer] :page Page of results to fetch. (default to 1)
     # @option opts [Integer] :per_page Number of results to return per page. (default to 100)
     # @return [Array<ApiV1TeamSerializer>]
-    def list_team(opts = {})
-      data, _status_code, _headers = list_team_with_http_info(opts)
+    def list_teams(opts = {})
+      data, _status_code, _headers = list_teams_with_http_info(opts)
       data
     end
 
@@ -494,9 +427,9 @@ module BulletTrainTest
     # @option opts [Integer] :page Page of results to fetch.
     # @option opts [Integer] :per_page Number of results to return per page.
     # @return [Array<(Array<ApiV1TeamSerializer>, Integer, Hash)>] Array<ApiV1TeamSerializer> data, response status code and response headers
-    def list_team_with_http_info(opts = {})
+    def list_teams_with_http_info(opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: TeamsApi.list_team ...'
+        @api_client.config.logger.debug 'Calling API: TeamsApi.list_teams ...'
       end
       # resource path
       local_var_path = '/teams'
@@ -524,7 +457,7 @@ module BulletTrainTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"TeamsApi.list_team",
+        :operation => :"TeamsApi.list_teams",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -535,7 +468,7 @@ module BulletTrainTest
 
       data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: TeamsApi#list_team\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: TeamsApi#list_teams\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end

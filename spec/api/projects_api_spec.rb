@@ -88,14 +88,14 @@ describe 'ProjectsApi' do
     end
   end
 
-  # unit tests for list_goal
+  # unit tests for list_goals
   # List Goals
   # @param project_id Project ID
   # @param [Hash] opts the optional parameters
   # @option opts [Integer] :page Page of results to fetch.
   # @option opts [Integer] :per_page Number of results to return per page.
   # @return [Array<ApiV1GoalSerializer>]
-  describe 'list_goal test' do
+  describe 'list_goals test' do
     it 'should work' do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end
