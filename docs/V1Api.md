@@ -1,29 +1,30 @@
-# BulletTrainTest::DefaultApi
+# BulletTrainTest::V1Api
 
 All URIs are relative to *https://bullettrainapi.eu.ngrok.io/api/v1*
 
 | Method | HTTP request | Description |
 | ------ | ------------ | ----------- |
-| [**create_goal**](DefaultApi.md#create_goal) | **POST** /projects/{project_id}/goals |  |
-| [**create_project**](DefaultApi.md#create_project) | **POST** /teams/{team_id}/projects |  |
-| [**create_projects_tag**](DefaultApi.md#create_projects_tag) | **POST** /teams/{team_id}/projects/tags |  |
-| [**create_team**](DefaultApi.md#create_team) | **POST** /teams |  |
-| [**delete_goal**](DefaultApi.md#delete_goal) | **DELETE** /goals/{id} |  |
-| [**delete_project**](DefaultApi.md#delete_project) | **DELETE** /projects/{id} |  |
-| [**delete_projects_tag**](DefaultApi.md#delete_projects_tag) | **DELETE** /projects/tags/{id} |  |
-| [**get_goal**](DefaultApi.md#get_goal) | **GET** /goals/{id} |  |
-| [**get_me**](DefaultApi.md#get_me) | **GET** /me |  |
-| [**get_project**](DefaultApi.md#get_project) | **GET** /projects/{id} |  |
-| [**get_projects_tag**](DefaultApi.md#get_projects_tag) | **GET** /projects/tags/{id} |  |
-| [**get_team**](DefaultApi.md#get_team) | **GET** /teams/{id} |  |
-| [**list_goals**](DefaultApi.md#list_goals) | **GET** /projects/{project_id}/goals |  |
-| [**list_projects**](DefaultApi.md#list_projects) | **GET** /teams/{team_id}/projects |  |
-| [**list_projects_tags**](DefaultApi.md#list_projects_tags) | **GET** /teams/{team_id}/projects/tags |  |
-| [**list_teams**](DefaultApi.md#list_teams) | **GET** /teams |  |
-| [**update_goal**](DefaultApi.md#update_goal) | **PUT** /goals/{id} |  |
-| [**update_project**](DefaultApi.md#update_project) | **PUT** /projects/{id} |  |
-| [**update_projects_tag**](DefaultApi.md#update_projects_tag) | **PUT** /projects/tags/{id} |  |
-| [**update_team**](DefaultApi.md#update_team) | **PUT** /teams/{id} |  |
+| [**create_goal**](V1Api.md#create_goal) | **POST** /projects/{project_id}/goals |  |
+| [**create_project**](V1Api.md#create_project) | **POST** /teams/{team_id}/projects |  |
+| [**create_projects_tag**](V1Api.md#create_projects_tag) | **POST** /teams/{team_id}/projects/tags |  |
+| [**create_team**](V1Api.md#create_team) | **POST** /teams |  |
+| [**delete_goal**](V1Api.md#delete_goal) | **DELETE** /goals/{id} |  |
+| [**delete_project**](V1Api.md#delete_project) | **DELETE** /projects/{id} |  |
+| [**delete_projects_tag**](V1Api.md#delete_projects_tag) | **DELETE** /projects/tags/{id} |  |
+| [**get_goal**](V1Api.md#get_goal) | **GET** /goals/{id} |  |
+| [**get_me**](V1Api.md#get_me) | **GET** /me |  |
+| [**get_project**](V1Api.md#get_project) | **GET** /projects/{id} |  |
+| [**get_projects_tag**](V1Api.md#get_projects_tag) | **GET** /projects/tags/{id} |  |
+| [**get_team**](V1Api.md#get_team) | **GET** /teams/{id} |  |
+| [**list_goals**](V1Api.md#list_goals) | **GET** /projects/{project_id}/goals |  |
+| [**list_projects**](V1Api.md#list_projects) | **GET** /teams/{team_id}/projects |  |
+| [**list_projects_0**](V1Api.md#list_projects_0) | **GET** /teams/{team_id}/projects/three |  |
+| [**list_projects_tags**](V1Api.md#list_projects_tags) | **GET** /teams/{team_id}/projects/tags |  |
+| [**list_teams**](V1Api.md#list_teams) | **GET** /teams |  |
+| [**update_goal**](V1Api.md#update_goal) | **PUT** /goals/{id} |  |
+| [**update_project**](V1Api.md#update_project) | **PUT** /projects/{id} |  |
+| [**update_projects_tag**](V1Api.md#update_projects_tag) | **PUT** /projects/tags/{id} |  |
+| [**update_team**](V1Api.md#update_team) | **PUT** /teams/{id} |  |
 
 
 ## create_goal
@@ -40,7 +41,7 @@ Add a New Goal
 require 'time'
 require 'bullet_train_test'
 
-api_instance = BulletTrainTest::DefaultApi.new
+api_instance = BulletTrainTest::V1Api.new
 project_id = 56 # Integer | Project ID
 opts = {
   unknown_base_type: TODO # UNKNOWN_BASE_TYPE | 
@@ -51,7 +52,7 @@ begin
   result = api_instance.create_goal(project_id, opts)
   p result
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->create_goal: #{e}"
+  puts "Error when calling V1Api->create_goal: #{e}"
 end
 ```
 
@@ -69,7 +70,7 @@ begin
   p headers # => { ... }
   p data # => <ApiV1GoalSerializer>
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->create_goal_with_http_info: #{e}"
+  puts "Error when calling V1Api->create_goal_with_http_info: #{e}"
 end
 ```
 
@@ -108,7 +109,7 @@ Add a New Project
 require 'time'
 require 'bullet_train_test'
 
-api_instance = BulletTrainTest::DefaultApi.new
+api_instance = BulletTrainTest::V1Api.new
 team_id = 56 # Integer | Team ID
 opts = {
   unknown_base_type: TODO # UNKNOWN_BASE_TYPE | 
@@ -119,7 +120,7 @@ begin
   result = api_instance.create_project(team_id, opts)
   p result
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->create_project: #{e}"
+  puts "Error when calling V1Api->create_project: #{e}"
 end
 ```
 
@@ -137,7 +138,7 @@ begin
   p headers # => { ... }
   p data # => <ApiV1ProjectSerializer>
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->create_project_with_http_info: #{e}"
+  puts "Error when calling V1Api->create_project_with_http_info: #{e}"
 end
 ```
 
@@ -176,7 +177,7 @@ Add a New Tag
 require 'time'
 require 'bullet_train_test'
 
-api_instance = BulletTrainTest::DefaultApi.new
+api_instance = BulletTrainTest::V1Api.new
 team_id = 56 # Integer | Team ID
 opts = {
   unknown_base_type: TODO # UNKNOWN_BASE_TYPE | 
@@ -187,7 +188,7 @@ begin
   result = api_instance.create_projects_tag(team_id, opts)
   p result
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->create_projects_tag: #{e}"
+  puts "Error when calling V1Api->create_projects_tag: #{e}"
 end
 ```
 
@@ -205,7 +206,7 @@ begin
   p headers # => { ... }
   p data # => <ApiV1ProjectsTagSerializer>
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->create_projects_tag_with_http_info: #{e}"
+  puts "Error when calling V1Api->create_projects_tag_with_http_info: #{e}"
 end
 ```
 
@@ -244,7 +245,7 @@ Add a New Team
 require 'time'
 require 'bullet_train_test'
 
-api_instance = BulletTrainTest::DefaultApi.new
+api_instance = BulletTrainTest::V1Api.new
 opts = {
   unknown_base_type: TODO # UNKNOWN_BASE_TYPE | 
 }
@@ -254,7 +255,7 @@ begin
   result = api_instance.create_team(opts)
   p result
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->create_team: #{e}"
+  puts "Error when calling V1Api->create_team: #{e}"
 end
 ```
 
@@ -272,7 +273,7 @@ begin
   p headers # => { ... }
   p data # => <ApiV1TeamSerializer>
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->create_team_with_http_info: #{e}"
+  puts "Error when calling V1Api->create_team_with_http_info: #{e}"
 end
 ```
 
@@ -310,14 +311,14 @@ Delete a Goal
 require 'time'
 require 'bullet_train_test'
 
-api_instance = BulletTrainTest::DefaultApi.new
+api_instance = BulletTrainTest::V1Api.new
 id = 56 # Integer | Goal ID
 
 begin
   
   api_instance.delete_goal(id)
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->delete_goal: #{e}"
+  puts "Error when calling V1Api->delete_goal: #{e}"
 end
 ```
 
@@ -335,7 +336,7 @@ begin
   p headers # => { ... }
   p data # => nil
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->delete_goal_with_http_info: #{e}"
+  puts "Error when calling V1Api->delete_goal_with_http_info: #{e}"
 end
 ```
 
@@ -373,14 +374,14 @@ Delete a Project
 require 'time'
 require 'bullet_train_test'
 
-api_instance = BulletTrainTest::DefaultApi.new
+api_instance = BulletTrainTest::V1Api.new
 id = 56 # Integer | Project ID
 
 begin
   
   api_instance.delete_project(id)
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->delete_project: #{e}"
+  puts "Error when calling V1Api->delete_project: #{e}"
 end
 ```
 
@@ -398,7 +399,7 @@ begin
   p headers # => { ... }
   p data # => nil
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->delete_project_with_http_info: #{e}"
+  puts "Error when calling V1Api->delete_project_with_http_info: #{e}"
 end
 ```
 
@@ -436,14 +437,14 @@ Delete a Tag
 require 'time'
 require 'bullet_train_test'
 
-api_instance = BulletTrainTest::DefaultApi.new
+api_instance = BulletTrainTest::V1Api.new
 id = 56 # Integer | Tag ID
 
 begin
   
   api_instance.delete_projects_tag(id)
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->delete_projects_tag: #{e}"
+  puts "Error when calling V1Api->delete_projects_tag: #{e}"
 end
 ```
 
@@ -461,7 +462,7 @@ begin
   p headers # => { ... }
   p data # => nil
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->delete_projects_tag_with_http_info: #{e}"
+  puts "Error when calling V1Api->delete_projects_tag_with_http_info: #{e}"
 end
 ```
 
@@ -499,7 +500,7 @@ Retrieve a Goal
 require 'time'
 require 'bullet_train_test'
 
-api_instance = BulletTrainTest::DefaultApi.new
+api_instance = BulletTrainTest::V1Api.new
 id = 56 # Integer | Goal ID
 
 begin
@@ -507,7 +508,7 @@ begin
   result = api_instance.get_goal(id)
   p result
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->get_goal: #{e}"
+  puts "Error when calling V1Api->get_goal: #{e}"
 end
 ```
 
@@ -525,7 +526,7 @@ begin
   p headers # => { ... }
   p data # => <ApiV1GoalSerializer>
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->get_goal_with_http_info: #{e}"
+  puts "Error when calling V1Api->get_goal_with_http_info: #{e}"
 end
 ```
 
@@ -563,14 +564,14 @@ Retrieve info about the current user
 require 'time'
 require 'bullet_train_test'
 
-api_instance = BulletTrainTest::DefaultApi.new
+api_instance = BulletTrainTest::V1Api.new
 
 begin
   
   result = api_instance.get_me
   p result
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->get_me: #{e}"
+  puts "Error when calling V1Api->get_me: #{e}"
 end
 ```
 
@@ -588,7 +589,7 @@ begin
   p headers # => { ... }
   p data # => <ApiV1MeSerializer>
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->get_me_with_http_info: #{e}"
+  puts "Error when calling V1Api->get_me_with_http_info: #{e}"
 end
 ```
 
@@ -624,7 +625,7 @@ Retrieve a Project
 require 'time'
 require 'bullet_train_test'
 
-api_instance = BulletTrainTest::DefaultApi.new
+api_instance = BulletTrainTest::V1Api.new
 id = 56 # Integer | Project ID
 
 begin
@@ -632,7 +633,7 @@ begin
   result = api_instance.get_project(id)
   p result
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->get_project: #{e}"
+  puts "Error when calling V1Api->get_project: #{e}"
 end
 ```
 
@@ -650,7 +651,7 @@ begin
   p headers # => { ... }
   p data # => <ApiV1ProjectSerializer>
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->get_project_with_http_info: #{e}"
+  puts "Error when calling V1Api->get_project_with_http_info: #{e}"
 end
 ```
 
@@ -688,7 +689,7 @@ Retrieve a Tag
 require 'time'
 require 'bullet_train_test'
 
-api_instance = BulletTrainTest::DefaultApi.new
+api_instance = BulletTrainTest::V1Api.new
 id = 56 # Integer | Tag ID
 
 begin
@@ -696,7 +697,7 @@ begin
   result = api_instance.get_projects_tag(id)
   p result
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->get_projects_tag: #{e}"
+  puts "Error when calling V1Api->get_projects_tag: #{e}"
 end
 ```
 
@@ -714,7 +715,7 @@ begin
   p headers # => { ... }
   p data # => <ApiV1ProjectsTagSerializer>
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->get_projects_tag_with_http_info: #{e}"
+  puts "Error when calling V1Api->get_projects_tag_with_http_info: #{e}"
 end
 ```
 
@@ -752,7 +753,7 @@ Retrieve a Team
 require 'time'
 require 'bullet_train_test'
 
-api_instance = BulletTrainTest::DefaultApi.new
+api_instance = BulletTrainTest::V1Api.new
 id = 56 # Integer | Team ID
 
 begin
@@ -760,7 +761,7 @@ begin
   result = api_instance.get_team(id)
   p result
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->get_team: #{e}"
+  puts "Error when calling V1Api->get_team: #{e}"
 end
 ```
 
@@ -778,7 +779,7 @@ begin
   p headers # => { ... }
   p data # => <ApiV1TeamSerializer>
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->get_team_with_http_info: #{e}"
+  puts "Error when calling V1Api->get_team_with_http_info: #{e}"
 end
 ```
 
@@ -816,7 +817,7 @@ List Goals
 require 'time'
 require 'bullet_train_test'
 
-api_instance = BulletTrainTest::DefaultApi.new
+api_instance = BulletTrainTest::V1Api.new
 project_id = 56 # Integer | Project ID
 opts = {
   page: 56, # Integer | Page of results to fetch.
@@ -828,7 +829,7 @@ begin
   result = api_instance.list_goals(project_id, opts)
   p result
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->list_goals: #{e}"
+  puts "Error when calling V1Api->list_goals: #{e}"
 end
 ```
 
@@ -846,7 +847,7 @@ begin
   p headers # => { ... }
   p data # => <Array<ApiV1GoalSerializer>>
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->list_goals_with_http_info: #{e}"
+  puts "Error when calling V1Api->list_goals_with_http_info: #{e}"
 end
 ```
 
@@ -886,7 +887,7 @@ List Projects
 require 'time'
 require 'bullet_train_test'
 
-api_instance = BulletTrainTest::DefaultApi.new
+api_instance = BulletTrainTest::V1Api.new
 team_id = 56 # Integer | Team ID
 opts = {
   page: 56, # Integer | Page of results to fetch.
@@ -898,7 +899,7 @@ begin
   result = api_instance.list_projects(team_id, opts)
   p result
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->list_projects: #{e}"
+  puts "Error when calling V1Api->list_projects: #{e}"
 end
 ```
 
@@ -916,7 +917,7 @@ begin
   p headers # => { ... }
   p data # => <Array<ApiV1ProjectSerializer>>
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->list_projects_with_http_info: #{e}"
+  puts "Error when calling V1Api->list_projects_with_http_info: #{e}"
 end
 ```
 
@@ -927,6 +928,76 @@ end
 | **team_id** | **Integer** | Team ID |  |
 | **page** | **Integer** | Page of results to fetch. | [optional][default to 1] |
 | **per_page** | **Integer** | Number of results to return per page. | [optional][default to 100] |
+
+### Return type
+
+[**Array&lt;ApiV1ProjectSerializer&gt;**](ApiV1ProjectSerializer.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/vnd.api+json
+
+
+## list_projects_0
+
+> <Array<ApiV1ProjectSerializer>> list_projects_0(team_id, opts)
+
+
+
+translation missing: en.projects.api.three
+
+### Examples
+
+```ruby
+require 'time'
+require 'bullet_train_test'
+
+api_instance = BulletTrainTest::V1Api.new
+team_id = 56 # Integer | Team ID
+opts = {
+  page: 56, # Integer | Page of results to fetch.
+  per_page: 56 # Integer | Number of results to return per page.
+}
+
+begin
+  
+  result = api_instance.list_projects_0(team_id, opts)
+  p result
+rescue BulletTrainTest::ApiError => e
+  puts "Error when calling V1Api->list_projects_0: #{e}"
+end
+```
+
+#### Using the list_projects_0_with_http_info variant
+
+This returns an Array which contains the response data, status code and headers.
+
+> <Array(<Array<ApiV1ProjectSerializer>>, Integer, Hash)> list_projects_0_with_http_info(team_id, opts)
+
+```ruby
+begin
+  
+  data, status_code, headers = api_instance.list_projects_0_with_http_info(team_id, opts)
+  p status_code # => 2xx
+  p headers # => { ... }
+  p data # => <Array<ApiV1ProjectSerializer>>
+rescue BulletTrainTest::ApiError => e
+  puts "Error when calling V1Api->list_projects_0_with_http_info: #{e}"
+end
+```
+
+### Parameters
+
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
+| **team_id** | **Integer** | Team ID |  |
+| **page** | **Integer** | Page of results to fetch. | [optional][default to 1] |
+| **per_page** | **Integer** | Number of results to return per page. | [optional][default to 3] |
 
 ### Return type
 
@@ -956,7 +1027,7 @@ List Tags
 require 'time'
 require 'bullet_train_test'
 
-api_instance = BulletTrainTest::DefaultApi.new
+api_instance = BulletTrainTest::V1Api.new
 team_id = 56 # Integer | Team ID
 opts = {
   page: 56, # Integer | Page of results to fetch.
@@ -968,7 +1039,7 @@ begin
   result = api_instance.list_projects_tags(team_id, opts)
   p result
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->list_projects_tags: #{e}"
+  puts "Error when calling V1Api->list_projects_tags: #{e}"
 end
 ```
 
@@ -986,7 +1057,7 @@ begin
   p headers # => { ... }
   p data # => <Array<ApiV1ProjectsTagSerializer>>
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->list_projects_tags_with_http_info: #{e}"
+  puts "Error when calling V1Api->list_projects_tags_with_http_info: #{e}"
 end
 ```
 
@@ -1026,7 +1097,7 @@ List Teams
 require 'time'
 require 'bullet_train_test'
 
-api_instance = BulletTrainTest::DefaultApi.new
+api_instance = BulletTrainTest::V1Api.new
 opts = {
   page: 56, # Integer | Page of results to fetch.
   per_page: 56 # Integer | Number of results to return per page.
@@ -1037,7 +1108,7 @@ begin
   result = api_instance.list_teams(opts)
   p result
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->list_teams: #{e}"
+  puts "Error when calling V1Api->list_teams: #{e}"
 end
 ```
 
@@ -1055,7 +1126,7 @@ begin
   p headers # => { ... }
   p data # => <Array<ApiV1TeamSerializer>>
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->list_teams_with_http_info: #{e}"
+  puts "Error when calling V1Api->list_teams_with_http_info: #{e}"
 end
 ```
 
@@ -1094,7 +1165,7 @@ Update a Goal
 require 'time'
 require 'bullet_train_test'
 
-api_instance = BulletTrainTest::DefaultApi.new
+api_instance = BulletTrainTest::V1Api.new
 id = 56 # Integer | Goal ID
 opts = {
   unknown_base_type: TODO # UNKNOWN_BASE_TYPE | 
@@ -1105,7 +1176,7 @@ begin
   result = api_instance.update_goal(id, opts)
   p result
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->update_goal: #{e}"
+  puts "Error when calling V1Api->update_goal: #{e}"
 end
 ```
 
@@ -1123,7 +1194,7 @@ begin
   p headers # => { ... }
   p data # => <ApiV1GoalSerializer>
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->update_goal_with_http_info: #{e}"
+  puts "Error when calling V1Api->update_goal_with_http_info: #{e}"
 end
 ```
 
@@ -1162,7 +1233,7 @@ Update a Project
 require 'time'
 require 'bullet_train_test'
 
-api_instance = BulletTrainTest::DefaultApi.new
+api_instance = BulletTrainTest::V1Api.new
 id = 56 # Integer | Project ID
 opts = {
   unknown_base_type: TODO # UNKNOWN_BASE_TYPE | 
@@ -1173,7 +1244,7 @@ begin
   result = api_instance.update_project(id, opts)
   p result
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->update_project: #{e}"
+  puts "Error when calling V1Api->update_project: #{e}"
 end
 ```
 
@@ -1191,7 +1262,7 @@ begin
   p headers # => { ... }
   p data # => <ApiV1ProjectSerializer>
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->update_project_with_http_info: #{e}"
+  puts "Error when calling V1Api->update_project_with_http_info: #{e}"
 end
 ```
 
@@ -1230,7 +1301,7 @@ Update a Tag
 require 'time'
 require 'bullet_train_test'
 
-api_instance = BulletTrainTest::DefaultApi.new
+api_instance = BulletTrainTest::V1Api.new
 id = 56 # Integer | Tag ID
 opts = {
   unknown_base_type: TODO # UNKNOWN_BASE_TYPE | 
@@ -1241,7 +1312,7 @@ begin
   result = api_instance.update_projects_tag(id, opts)
   p result
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->update_projects_tag: #{e}"
+  puts "Error when calling V1Api->update_projects_tag: #{e}"
 end
 ```
 
@@ -1259,7 +1330,7 @@ begin
   p headers # => { ... }
   p data # => <ApiV1ProjectsTagSerializer>
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->update_projects_tag_with_http_info: #{e}"
+  puts "Error when calling V1Api->update_projects_tag_with_http_info: #{e}"
 end
 ```
 
@@ -1298,7 +1369,7 @@ Update a Team
 require 'time'
 require 'bullet_train_test'
 
-api_instance = BulletTrainTest::DefaultApi.new
+api_instance = BulletTrainTest::V1Api.new
 id = 56 # Integer | Team ID
 opts = {
   unknown_base_type: TODO # UNKNOWN_BASE_TYPE | 
@@ -1309,7 +1380,7 @@ begin
   result = api_instance.update_team(id, opts)
   p result
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->update_team: #{e}"
+  puts "Error when calling V1Api->update_team: #{e}"
 end
 ```
 
@@ -1327,7 +1398,7 @@ begin
   p headers # => { ... }
   p data # => <ApiV1TeamSerializer>
 rescue BulletTrainTest::ApiError => e
-  puts "Error when calling DefaultApi->update_team_with_http_info: #{e}"
+  puts "Error when calling V1Api->update_team_with_http_info: #{e}"
 end
 ```
 

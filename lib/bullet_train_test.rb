@@ -41,7 +41,7 @@ require 'bullet_train_test/models/api_v1_team_serializer_data_attributes'
 require 'bullet_train_test/models/api_v1_team_serializer_data_relationships'
 
 # APIs
-require 'bullet_train_test/api/default_api'
+require 'bullet_train_test/api/v1_api'
 
 module BulletTrainTest
   class << self
