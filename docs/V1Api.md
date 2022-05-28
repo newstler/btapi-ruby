@@ -62,7 +62,7 @@ require 'bt_test'
 api_instance = BtTest::V1Api.new
 project_id = 56 # Integer | Project ID
 opts = {
-  unknown_base_type: TODO # UNKNOWN_BASE_TYPE | 
+  create_goal_request: BtTest::CreateGoalRequest.new # CreateGoalRequest | 
 }
 
 begin
@@ -97,7 +97,7 @@ end
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
 | **project_id** | **Integer** | Project ID |  |
-| **unknown_base_type** | [**UNKNOWN_BASE_TYPE**](UNKNOWN_BASE_TYPE.md) |  | [optional] |
+| **create_goal_request** | [**CreateGoalRequest**](CreateGoalRequest.md) |  | [optional] |
 
 ### Return type
 
@@ -130,7 +130,7 @@ require 'bt_test'
 api_instance = BtTest::V1Api.new
 team_id = 56 # Integer | Team ID
 opts = {
-  unknown_base_type: TODO # UNKNOWN_BASE_TYPE | 
+  create_project_request: BtTest::CreateProjectRequest.new # CreateProjectRequest | 
 }
 
 begin
@@ -165,7 +165,7 @@ end
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
 | **team_id** | **Integer** | Team ID |  |
-| **unknown_base_type** | [**UNKNOWN_BASE_TYPE**](UNKNOWN_BASE_TYPE.md) |  | [optional] |
+| **create_project_request** | [**CreateProjectRequest**](CreateProjectRequest.md) |  | [optional] |
 
 ### Return type
 
@@ -198,7 +198,7 @@ require 'bt_test'
 api_instance = BtTest::V1Api.new
 team_id = 56 # Integer | Team ID
 opts = {
-  unknown_base_type: TODO # UNKNOWN_BASE_TYPE | 
+  create_projects_tag_request: BtTest::CreateProjectsTagRequest.new # CreateProjectsTagRequest | 
 }
 
 begin
@@ -233,7 +233,7 @@ end
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
 | **team_id** | **Integer** | Team ID |  |
-| **unknown_base_type** | [**UNKNOWN_BASE_TYPE**](UNKNOWN_BASE_TYPE.md) |  | [optional] |
+| **create_projects_tag_request** | [**CreateProjectsTagRequest**](CreateProjectsTagRequest.md) |  | [optional] |
 
 ### Return type
 
@@ -266,7 +266,7 @@ require 'bt_test'
 api_instance = BtTest::V1Api.new
 team_id = 56 # Integer | Team ID
 opts = {
-  unknown_base_type: TODO # UNKNOWN_BASE_TYPE | 
+  create_scaffolding_absolutely_abstract_creative_concept_request: BtTest::CreateScaffoldingAbsolutelyAbstractCreativeConceptRequest.new # CreateScaffoldingAbsolutelyAbstractCreativeConceptRequest | 
 }
 
 begin
@@ -301,7 +301,7 @@ end
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
 | **team_id** | **Integer** | Team ID |  |
-| **unknown_base_type** | [**UNKNOWN_BASE_TYPE**](UNKNOWN_BASE_TYPE.md) |  | [optional] |
+| **create_scaffolding_absolutely_abstract_creative_concept_request** | [**CreateScaffoldingAbsolutelyAbstractCreativeConceptRequest**](CreateScaffoldingAbsolutelyAbstractCreativeConceptRequest.md) |  | [optional] |
 
 ### Return type
 
@@ -334,7 +334,7 @@ require 'bt_test'
 api_instance = BtTest::V1Api.new
 absolutely_abstract_creative_concept_id = 56 # Integer | Creative Concept ID
 opts = {
-  unknown_base_type: TODO # UNKNOWN_BASE_TYPE | 
+  update_scaffolding_completely_concrete_tangible_thing_request: BtTest::UpdateScaffoldingCompletelyConcreteTangibleThingRequest.new # UpdateScaffoldingCompletelyConcreteTangibleThingRequest | 
 }
 
 begin
@@ -369,7 +369,7 @@ end
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
 | **absolutely_abstract_creative_concept_id** | **Integer** | Creative Concept ID |  |
-| **unknown_base_type** | [**UNKNOWN_BASE_TYPE**](UNKNOWN_BASE_TYPE.md) |  | [optional] |
+| **update_scaffolding_completely_concrete_tangible_thing_request** | [**UpdateScaffoldingCompletelyConcreteTangibleThingRequest**](UpdateScaffoldingCompletelyConcreteTangibleThingRequest.md) |  | [optional] |
 
 ### Return type
 
@@ -401,7 +401,7 @@ require 'bt_test'
 
 api_instance = BtTest::V1Api.new
 opts = {
-  unknown_base_type: TODO # UNKNOWN_BASE_TYPE | 
+  create_team_request: BtTest::CreateTeamRequest.new # CreateTeamRequest | 
 }
 
 begin
@@ -435,7 +435,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **unknown_base_type** | [**UNKNOWN_BASE_TYPE**](UNKNOWN_BASE_TYPE.md) |  | [optional] |
+| **create_team_request** | [**CreateTeamRequest**](CreateTeamRequest.md) |  | [optional] |
 
 ### Return type
 
@@ -468,7 +468,7 @@ require 'bt_test'
 api_instance = BtTest::V1Api.new
 team_id = 56 # Integer | Team ID
 opts = {
-  unknown_base_type: TODO # UNKNOWN_BASE_TYPE | 
+  create_webhooks_outgoing_endpoint_request: BtTest::CreateWebhooksOutgoingEndpointRequest.new # CreateWebhooksOutgoingEndpointRequest | 
 }
 
 begin
@@ -503,7 +503,7 @@ end
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
 | **team_id** | **Integer** | Team ID |  |
-| **unknown_base_type** | [**UNKNOWN_BASE_TYPE**](UNKNOWN_BASE_TYPE.md) |  | [optional] |
+| **create_webhooks_outgoing_endpoint_request** | [**CreateWebhooksOutgoingEndpointRequest**](CreateWebhooksOutgoingEndpointRequest.md) |  | [optional] |
 
 ### Return type
 
@@ -2179,7 +2179,7 @@ require 'bt_test'
 api_instance = BtTest::V1Api.new
 id = 56 # Integer | Goal ID
 opts = {
-  unknown_base_type: TODO # UNKNOWN_BASE_TYPE | 
+  create_goal_request: BtTest::CreateGoalRequest.new # CreateGoalRequest | 
 }
 
 begin
@@ -2214,7 +2214,7 @@ end
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
 | **id** | **Integer** | Goal ID |  |
-| **unknown_base_type** | [**UNKNOWN_BASE_TYPE**](UNKNOWN_BASE_TYPE.md) |  | [optional] |
+| **create_goal_request** | [**CreateGoalRequest**](CreateGoalRequest.md) |  | [optional] |
 
 ### Return type
 
@@ -2247,7 +2247,7 @@ require 'bt_test'
 api_instance = BtTest::V1Api.new
 id = 56 # Integer | Project ID
 opts = {
-  unknown_base_type: TODO # UNKNOWN_BASE_TYPE | 
+  create_project_request: BtTest::CreateProjectRequest.new # CreateProjectRequest | 
 }
 
 begin
@@ -2282,7 +2282,7 @@ end
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
 | **id** | **Integer** | Project ID |  |
-| **unknown_base_type** | [**UNKNOWN_BASE_TYPE**](UNKNOWN_BASE_TYPE.md) |  | [optional] |
+| **create_project_request** | [**CreateProjectRequest**](CreateProjectRequest.md) |  | [optional] |
 
 ### Return type
 
@@ -2315,7 +2315,7 @@ require 'bt_test'
 api_instance = BtTest::V1Api.new
 id = 56 # Integer | Tag ID
 opts = {
-  unknown_base_type: TODO # UNKNOWN_BASE_TYPE | 
+  create_projects_tag_request: BtTest::CreateProjectsTagRequest.new # CreateProjectsTagRequest | 
 }
 
 begin
@@ -2350,7 +2350,7 @@ end
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
 | **id** | **Integer** | Tag ID |  |
-| **unknown_base_type** | [**UNKNOWN_BASE_TYPE**](UNKNOWN_BASE_TYPE.md) |  | [optional] |
+| **create_projects_tag_request** | [**CreateProjectsTagRequest**](CreateProjectsTagRequest.md) |  | [optional] |
 
 ### Return type
 
@@ -2383,7 +2383,7 @@ require 'bt_test'
 api_instance = BtTest::V1Api.new
 id = 56 # Integer | Creative Concept ID
 opts = {
-  unknown_base_type: TODO # UNKNOWN_BASE_TYPE | 
+  create_scaffolding_absolutely_abstract_creative_concept_request: BtTest::CreateScaffoldingAbsolutelyAbstractCreativeConceptRequest.new # CreateScaffoldingAbsolutelyAbstractCreativeConceptRequest | 
 }
 
 begin
@@ -2418,7 +2418,7 @@ end
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
 | **id** | **Integer** | Creative Concept ID |  |
-| **unknown_base_type** | [**UNKNOWN_BASE_TYPE**](UNKNOWN_BASE_TYPE.md) |  | [optional] |
+| **create_scaffolding_absolutely_abstract_creative_concept_request** | [**CreateScaffoldingAbsolutelyAbstractCreativeConceptRequest**](CreateScaffoldingAbsolutelyAbstractCreativeConceptRequest.md) |  | [optional] |
 
 ### Return type
 
@@ -2451,7 +2451,7 @@ require 'bt_test'
 api_instance = BtTest::V1Api.new
 id = 56 # Integer | Tangible Thing ID
 opts = {
-  unknown_base_type: TODO # UNKNOWN_BASE_TYPE | 
+  update_scaffolding_completely_concrete_tangible_thing_request: BtTest::UpdateScaffoldingCompletelyConcreteTangibleThingRequest.new # UpdateScaffoldingCompletelyConcreteTangibleThingRequest | 
 }
 
 begin
@@ -2486,7 +2486,7 @@ end
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
 | **id** | **Integer** | Tangible Thing ID |  |
-| **unknown_base_type** | [**UNKNOWN_BASE_TYPE**](UNKNOWN_BASE_TYPE.md) |  | [optional] |
+| **update_scaffolding_completely_concrete_tangible_thing_request** | [**UpdateScaffoldingCompletelyConcreteTangibleThingRequest**](UpdateScaffoldingCompletelyConcreteTangibleThingRequest.md) |  | [optional] |
 
 ### Return type
 
@@ -2519,7 +2519,7 @@ require 'bt_test'
 api_instance = BtTest::V1Api.new
 id = 56 # Integer | Team ID
 opts = {
-  unknown_base_type: TODO # UNKNOWN_BASE_TYPE | 
+  create_team_request: BtTest::CreateTeamRequest.new # CreateTeamRequest | 
 }
 
 begin
@@ -2554,7 +2554,7 @@ end
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
 | **id** | **Integer** | Team ID |  |
-| **unknown_base_type** | [**UNKNOWN_BASE_TYPE**](UNKNOWN_BASE_TYPE.md) |  | [optional] |
+| **create_team_request** | [**CreateTeamRequest**](CreateTeamRequest.md) |  | [optional] |
 
 ### Return type
 
@@ -2587,7 +2587,7 @@ require 'bt_test'
 api_instance = BtTest::V1Api.new
 id = 56 # Integer | Endpoint ID
 opts = {
-  unknown_base_type: TODO # UNKNOWN_BASE_TYPE | 
+  create_webhooks_outgoing_endpoint_request: BtTest::CreateWebhooksOutgoingEndpointRequest.new # CreateWebhooksOutgoingEndpointRequest | 
 }
 
 begin
@@ -2622,7 +2622,7 @@ end
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
 | **id** | **Integer** | Endpoint ID |  |
-| **unknown_base_type** | [**UNKNOWN_BASE_TYPE**](UNKNOWN_BASE_TYPE.md) |  | [optional] |
+| **create_webhooks_outgoing_endpoint_request** | [**CreateWebhooksOutgoingEndpointRequest**](CreateWebhooksOutgoingEndpointRequest.md) |  | [optional] |
 
 ### Return type
 

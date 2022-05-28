@@ -7,6 +7,12 @@ Gemfile
 README.md
 Rakefile
 bt_test.gemspec
+docs/CreateGoalRequest.md
+docs/CreateProjectRequest.md
+docs/CreateProjectsTagRequest.md
+docs/CreateScaffoldingAbsolutelyAbstractCreativeConceptRequest.md
+docs/CreateTeamRequest.md
+docs/CreateWebhooksOutgoingEndpointRequest.md
 docs/Goal.md
 docs/GoalData.md
 docs/GoalDataAttributes.md
@@ -38,6 +44,7 @@ docs/Team.md
 docs/TeamData.md
 docs/TeamDataAttributes.md
 docs/TeamDataRelationships.md
+docs/UpdateScaffoldingCompletelyConcreteTangibleThingRequest.md
 docs/V1Api.md
 docs/WebhooksOutgoingDelivery.md
 docs/WebhooksOutgoingDeliveryAttempt.md
@@ -57,6 +64,12 @@ lib/bt_test/api/v1_api.rb
 lib/bt_test/api_client.rb
 lib/bt_test/api_error.rb
 lib/bt_test/configuration.rb
+lib/bt_test/models/create_goal_request.rb
+lib/bt_test/models/create_project_request.rb
+lib/bt_test/models/create_projects_tag_request.rb
+lib/bt_test/models/create_scaffolding_absolutely_abstract_creative_concept_request.rb
+lib/bt_test/models/create_team_request.rb
+lib/bt_test/models/create_webhooks_outgoing_endpoint_request.rb
 lib/bt_test/models/goal.rb
 lib/bt_test/models/goal_data.rb
 lib/bt_test/models/goal_data_attributes.rb
@@ -88,6 +101,7 @@ lib/bt_test/models/team.rb
 lib/bt_test/models/team_data.rb
 lib/bt_test/models/team_data_attributes.rb
 lib/bt_test/models/team_data_relationships.rb
+lib/bt_test/models/update_scaffolding_completely_concrete_tangible_thing_request.rb
 lib/bt_test/models/webhooks_outgoing_delivery.rb
 lib/bt_test/models/webhooks_outgoing_delivery_attempt.rb
 lib/bt_test/models/webhooks_outgoing_delivery_attempt_data.rb
@@ -104,6 +118,12 @@ lib/bt_test/version.rb
 spec/api/v1_api_spec.rb
 spec/api_client_spec.rb
 spec/configuration_spec.rb
+spec/models/create_goal_request_spec.rb
+spec/models/create_project_request_spec.rb
+spec/models/create_projects_tag_request_spec.rb
+spec/models/create_scaffolding_absolutely_abstract_creative_concept_request_spec.rb
+spec/models/create_team_request_spec.rb
+spec/models/create_webhooks_outgoing_endpoint_request_spec.rb
 spec/models/goal_data_attributes_spec.rb
 spec/models/goal_data_relationships_spec.rb
 spec/models/goal_data_spec.rb
@@ -135,6 +155,7 @@ spec/models/team_data_attributes_spec.rb
 spec/models/team_data_relationships_spec.rb
 spec/models/team_data_spec.rb
 spec/models/team_spec.rb
+spec/models/update_scaffolding_completely_concrete_tangible_thing_request_spec.rb
 spec/models/webhooks_outgoing_delivery_attempt_data_attributes_spec.rb
 spec/models/webhooks_outgoing_delivery_attempt_data_relationships_spec.rb
 spec/models/webhooks_outgoing_delivery_attempt_data_spec.rb
