@@ -303,19 +303,6 @@ describe 'V1Api' do
     end
   end
 
-  # unit tests for list_projects
-  # List Projects
-  # @param team_id Team ID
-  # @param [Hash] opts the optional parameters
-  # @option opts [Integer] :page Page of results to fetch.
-  # @option opts [Integer] :per_page Number of results to return per page.
-  # @return [Array<Project>]
-  describe 'list_projects test' do
-    it 'should work' do
-      # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
-    end
-  end
-
   # unit tests for list_projects_tags
   # List Tags
   # @param team_id Team ID
