@@ -11,5 +11,5 @@ OpenAPI Generator version: 6.0.0
 =end
 
 module BtTest
-  VERSION = '2.1.6'
+  VERSION = '2.1.7'
 end
