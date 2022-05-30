@@ -1514,6 +1514,73 @@ module BtTest
       return data, status_code, headers
     end
 
+    # List Projects
+    # @param team_id [Integer] Team ID
+    # @param [Hash] opts the optional parameters
+    # @option opts [Integer] :page Page of results to fetch. (default to 1)
+    # @option opts [Integer] :per_page Number of results to return per page. (default to 100)
+    # @return [Array<Project>]
+    def list_projects(team_id, opts = {})
+      data, _status_code, _headers = list_projects_with_http_info(team_id, opts)
+      data
+    end
+
+    # List Projects
+    # @param team_id [Integer] Team ID
+    # @param [Hash] opts the optional parameters
+    # @option opts [Integer] :page Page of results to fetch. (default to 1)
+    # @option opts [Integer] :per_page Number of results to return per page. (default to 100)
+    # @return [Array<(Array<Project>, Integer, Hash)>] Array<Project> data, response status code and response headers
+    def list_projects_with_http_info(team_id, opts = {})
+      if @api_client.config.debugging
+        @api_client.config.logger.debug 'Calling API: V1Api.list_projects ...'
+      end
+      # verify the required parameter 'team_id' is set
+      if @api_client.config.client_side_validation && team_id.nil?
+        fail ArgumentError, "Missing the required parameter 'team_id' when calling V1Api.list_projects"
+      end
+      # resource path
+      local_var_path = '/teams/{team_id}/projects'.sub('{' + 'team_id' + '}', CGI.escape(team_id.to_s))
+
+      # query parameters
+      query_params = opts[:query_params] || {}
+      query_params[:'page'] = opts[:'page'] if !opts[:'page'].nil?
+      query_params[:'per_page'] = opts[:'per_page'] if !opts[:'per_page'].nil?
+
+      # header parameters
+      header_params = opts[:header_params] || {}
+      # HTTP header 'Accept' (if needed)
+      header_params['Accept'] = @api_client.select_header_accept(['application/vnd.api+json'])
+
+      # form parameters
+      form_params = opts[:form_params] || {}
+
+      # http body (model)
+      post_body = opts[:debug_body]
+
+      # return_type
+      return_type = opts[:debug_return_type] || 'Array<Project>'
+
+      # auth_names
+      auth_names = opts[:debug_auth_names] || []
+
+      new_options = opts.merge(
+        :operation => :"V1Api.list_projects",
+        :header_params => header_params,
+        :query_params => query_params,
+        :form_params => form_params,
+        :body => post_body,
+        :auth_names => auth_names,
+        :return_type => return_type
+      )
+
+      data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
+      if @api_client.config.debugging
+        @api_client.config.logger.debug "API called: V1Api#list_projects\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+      end
+      return data, status_code, headers
+    end
+
     # List Tags
     # @param team_id [Integer] Team ID
     # @param [Hash] opts the optional parameters

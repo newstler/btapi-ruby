@@ -11,4 +11,4 @@ script:
   - bundle install --path vendor/bundle
   - bundle exec rspec
   - gem build bt_test.gemspec
-  - gem install ./bt_test-2.1.10.gem
+  - gem install ./bt_test-2.1.11.gem

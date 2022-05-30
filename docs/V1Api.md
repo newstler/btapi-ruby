@@ -28,6 +28,7 @@ All URIs are relative to *https://btapi.eu.ngrok.io/api/v1*
 | [**get_webhooks_outgoing_delivery_attempt**](V1Api.md#get_webhooks_outgoing_delivery_attempt) | **GET** /webhooks/outgoing/delivery_attempts/{id} |  |
 | [**get_webhooks_outgoing_endpoint**](V1Api.md#get_webhooks_outgoing_endpoint) | **GET** /webhooks/outgoing/endpoints/{id} |  |
 | [**list_goals**](V1Api.md#list_goals) | **GET** /projects/{project_id}/goals |  |
+| [**list_projects**](V1Api.md#list_projects) | **GET** /teams/{team_id}/projects |  |
 | [**list_projects_tags**](V1Api.md#list_projects_tags) | **GET** /teams/{team_id}/projects/tags |  |
 | [**list_scaffolding_absolutely_abstract_creative_concepts**](V1Api.md#list_scaffolding_absolutely_abstract_creative_concepts) | **GET** /teams/{team_id}/scaffolding/absolutely_abstract/creative_concepts |  |
 | [**list_scaffolding_completely_concrete_tangible_things**](V1Api.md#list_scaffolding_completely_concrete_tangible_things) | **GET** /scaffolding/absolutely_abstract/creative_concepts/{absolutely_abstract_creative_concept_id}/completely_concrete/tangible_things |  |
@@ -1592,6 +1593,76 @@ end
 ### Return type
 
 [**Array&lt;Goal&gt;**](Goal.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/vnd.api+json
+
+
+## list_projects
+
+> <Array<Project>> list_projects(team_id, opts)
+
+
+
+List Projects
+
+### Examples
+
+```ruby
+require 'time'
+require 'bt_test'
+
+api_instance = BtTest::V1Api.new
+team_id = 56 # Integer | Team ID
+opts = {
+  page: 56, # Integer | Page of results to fetch.
+  per_page: 56 # Integer | Number of results to return per page.
+}
+
+begin
+  
+  result = api_instance.list_projects(team_id, opts)
+  p result
+rescue BtTest::ApiError => e
+  puts "Error when calling V1Api->list_projects: #{e}"
+end
+```
+
+#### Using the list_projects_with_http_info variant
+
+This returns an Array which contains the response data, status code and headers.
+
+> <Array(<Array<Project>>, Integer, Hash)> list_projects_with_http_info(team_id, opts)
+
+```ruby
+begin
+  
+  data, status_code, headers = api_instance.list_projects_with_http_info(team_id, opts)
+  p status_code # => 2xx
+  p headers # => { ... }
+  p data # => <Array<Project>>
+rescue BtTest::ApiError => e
+  puts "Error when calling V1Api->list_projects_with_http_info: #{e}"
+end
+```
+
+### Parameters
+
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
+| **team_id** | **Integer** | Team ID |  |
+| **page** | **Integer** | Page of results to fetch. | [optional][default to 1] |
+| **per_page** | **Integer** | Number of results to return per page. | [optional][default to 100] |
+
+### Return type
+
+[**Array&lt;Project&gt;**](Project.md)
 
 ### Authorization
 
