@@ -13,7 +13,7 @@ OpenAPI Generator version: 6.0.0
 require 'cgi'
 
 module BtTest
-  class V1Api
+  class PlatformApi
     attr_accessor :api_client
 
     def initialize(api_client = ApiClient.default)
@@ -36,11 +36,11 @@ module BtTest
     # @return [Array<(Goal, Integer, Hash)>] Goal data, response status code and response headers
     def create_goal_with_http_info(project_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.create_goal ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.create_goal ...'
       end
       # verify the required parameter 'project_id' is set
       if @api_client.config.client_side_validation && project_id.nil?
-        fail ArgumentError, "Missing the required parameter 'project_id' when calling V1Api.create_goal"
+        fail ArgumentError, "Missing the required parameter 'project_id' when calling PlatformApi.create_goal"
       end
       # resource path
       local_var_path = '/projects/{project_id}/goals'.sub('{' + 'project_id' + '}', CGI.escape(project_id.to_s))
@@ -71,7 +71,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.create_goal",
+        :operation => :"PlatformApi.create_goal",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -82,7 +82,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:POST, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#create_goal\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#create_goal\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -104,11 +104,11 @@ module BtTest
     # @return [Array<(Project, Integer, Hash)>] Project data, response status code and response headers
     def create_project_with_http_info(team_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.create_project ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.create_project ...'
       end
       # verify the required parameter 'team_id' is set
       if @api_client.config.client_side_validation && team_id.nil?
-        fail ArgumentError, "Missing the required parameter 'team_id' when calling V1Api.create_project"
+        fail ArgumentError, "Missing the required parameter 'team_id' when calling PlatformApi.create_project"
       end
       # resource path
       local_var_path = '/teams/{team_id}/projects'.sub('{' + 'team_id' + '}', CGI.escape(team_id.to_s))
@@ -139,7 +139,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.create_project",
+        :operation => :"PlatformApi.create_project",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -150,7 +150,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:POST, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#create_project\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#create_project\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -172,11 +172,11 @@ module BtTest
     # @return [Array<(ProjectsTag, Integer, Hash)>] ProjectsTag data, response status code and response headers
     def create_projects_tag_with_http_info(team_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.create_projects_tag ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.create_projects_tag ...'
       end
       # verify the required parameter 'team_id' is set
       if @api_client.config.client_side_validation && team_id.nil?
-        fail ArgumentError, "Missing the required parameter 'team_id' when calling V1Api.create_projects_tag"
+        fail ArgumentError, "Missing the required parameter 'team_id' when calling PlatformApi.create_projects_tag"
       end
       # resource path
       local_var_path = '/teams/{team_id}/projects/tags'.sub('{' + 'team_id' + '}', CGI.escape(team_id.to_s))
@@ -207,7 +207,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.create_projects_tag",
+        :operation => :"PlatformApi.create_projects_tag",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -218,7 +218,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:POST, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#create_projects_tag\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#create_projects_tag\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -240,11 +240,11 @@ module BtTest
     # @return [Array<(ScaffoldingAbsolutelyAbstractCreativeConcept, Integer, Hash)>] ScaffoldingAbsolutelyAbstractCreativeConcept data, response status code and response headers
     def create_scaffolding_absolutely_abstract_creative_concept_with_http_info(team_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.create_scaffolding_absolutely_abstract_creative_concept ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.create_scaffolding_absolutely_abstract_creative_concept ...'
       end
       # verify the required parameter 'team_id' is set
       if @api_client.config.client_side_validation && team_id.nil?
-        fail ArgumentError, "Missing the required parameter 'team_id' when calling V1Api.create_scaffolding_absolutely_abstract_creative_concept"
+        fail ArgumentError, "Missing the required parameter 'team_id' when calling PlatformApi.create_scaffolding_absolutely_abstract_creative_concept"
       end
       # resource path
       local_var_path = '/teams/{team_id}/scaffolding/absolutely_abstract/creative_concepts'.sub('{' + 'team_id' + '}', CGI.escape(team_id.to_s))
@@ -275,7 +275,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.create_scaffolding_absolutely_abstract_creative_concept",
+        :operation => :"PlatformApi.create_scaffolding_absolutely_abstract_creative_concept",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -286,7 +286,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:POST, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#create_scaffolding_absolutely_abstract_creative_concept\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#create_scaffolding_absolutely_abstract_creative_concept\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -308,11 +308,11 @@ module BtTest
     # @return [Array<(ScaffoldingCompletelyConcreteTangibleThing, Integer, Hash)>] ScaffoldingCompletelyConcreteTangibleThing data, response status code and response headers
     def create_scaffolding_completely_concrete_tangible_thing_with_http_info(absolutely_abstract_creative_concept_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.create_scaffolding_completely_concrete_tangible_thing ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.create_scaffolding_completely_concrete_tangible_thing ...'
       end
       # verify the required parameter 'absolutely_abstract_creative_concept_id' is set
       if @api_client.config.client_side_validation && absolutely_abstract_creative_concept_id.nil?
-        fail ArgumentError, "Missing the required parameter 'absolutely_abstract_creative_concept_id' when calling V1Api.create_scaffolding_completely_concrete_tangible_thing"
+        fail ArgumentError, "Missing the required parameter 'absolutely_abstract_creative_concept_id' when calling PlatformApi.create_scaffolding_completely_concrete_tangible_thing"
       end
       # resource path
       local_var_path = '/scaffolding/absolutely_abstract/creative_concepts/{absolutely_abstract_creative_concept_id}/completely_concrete/tangible_things'.sub('{' + 'absolutely_abstract_creative_concept_id' + '}', CGI.escape(absolutely_abstract_creative_concept_id.to_s))
@@ -343,7 +343,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.create_scaffolding_completely_concrete_tangible_thing",
+        :operation => :"PlatformApi.create_scaffolding_completely_concrete_tangible_thing",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -354,7 +354,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:POST, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#create_scaffolding_completely_concrete_tangible_thing\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#create_scaffolding_completely_concrete_tangible_thing\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -374,7 +374,7 @@ module BtTest
     # @return [Array<(Team, Integer, Hash)>] Team data, response status code and response headers
     def create_team_with_http_info(opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.create_team ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.create_team ...'
       end
       # resource path
       local_var_path = '/teams'
@@ -405,7 +405,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.create_team",
+        :operation => :"PlatformApi.create_team",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -416,7 +416,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:POST, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#create_team\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#create_team\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -438,11 +438,11 @@ module BtTest
     # @return [Array<(WebhooksOutgoingEndpoint, Integer, Hash)>] WebhooksOutgoingEndpoint data, response status code and response headers
     def create_webhooks_outgoing_endpoint_with_http_info(team_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.create_webhooks_outgoing_endpoint ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.create_webhooks_outgoing_endpoint ...'
       end
       # verify the required parameter 'team_id' is set
       if @api_client.config.client_side_validation && team_id.nil?
-        fail ArgumentError, "Missing the required parameter 'team_id' when calling V1Api.create_webhooks_outgoing_endpoint"
+        fail ArgumentError, "Missing the required parameter 'team_id' when calling PlatformApi.create_webhooks_outgoing_endpoint"
       end
       # resource path
       local_var_path = '/teams/{team_id}/webhooks/outgoing/endpoints'.sub('{' + 'team_id' + '}', CGI.escape(team_id.to_s))
@@ -473,7 +473,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.create_webhooks_outgoing_endpoint",
+        :operation => :"PlatformApi.create_webhooks_outgoing_endpoint",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -484,7 +484,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:POST, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#create_webhooks_outgoing_endpoint\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#create_webhooks_outgoing_endpoint\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -504,11 +504,11 @@ module BtTest
     # @return [Array<(nil, Integer, Hash)>] nil, response status code and response headers
     def delete_goal_with_http_info(id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.delete_goal ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.delete_goal ...'
       end
       # verify the required parameter 'id' is set
       if @api_client.config.client_side_validation && id.nil?
-        fail ArgumentError, "Missing the required parameter 'id' when calling V1Api.delete_goal"
+        fail ArgumentError, "Missing the required parameter 'id' when calling PlatformApi.delete_goal"
       end
       # resource path
       local_var_path = '/goals/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
@@ -532,7 +532,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.delete_goal",
+        :operation => :"PlatformApi.delete_goal",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -543,7 +543,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:DELETE, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#delete_goal\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#delete_goal\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -563,11 +563,11 @@ module BtTest
     # @return [Array<(nil, Integer, Hash)>] nil, response status code and response headers
     def delete_project_with_http_info(id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.delete_project ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.delete_project ...'
       end
       # verify the required parameter 'id' is set
       if @api_client.config.client_side_validation && id.nil?
-        fail ArgumentError, "Missing the required parameter 'id' when calling V1Api.delete_project"
+        fail ArgumentError, "Missing the required parameter 'id' when calling PlatformApi.delete_project"
       end
       # resource path
       local_var_path = '/projects/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
@@ -591,7 +591,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.delete_project",
+        :operation => :"PlatformApi.delete_project",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -602,7 +602,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:DELETE, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#delete_project\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#delete_project\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -622,11 +622,11 @@ module BtTest
     # @return [Array<(nil, Integer, Hash)>] nil, response status code and response headers
     def delete_projects_tag_with_http_info(id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.delete_projects_tag ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.delete_projects_tag ...'
       end
       # verify the required parameter 'id' is set
       if @api_client.config.client_side_validation && id.nil?
-        fail ArgumentError, "Missing the required parameter 'id' when calling V1Api.delete_projects_tag"
+        fail ArgumentError, "Missing the required parameter 'id' when calling PlatformApi.delete_projects_tag"
       end
       # resource path
       local_var_path = '/projects/tags/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
@@ -650,7 +650,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.delete_projects_tag",
+        :operation => :"PlatformApi.delete_projects_tag",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -661,7 +661,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:DELETE, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#delete_projects_tag\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#delete_projects_tag\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -681,11 +681,11 @@ module BtTest
     # @return [Array<(nil, Integer, Hash)>] nil, response status code and response headers
     def delete_scaffolding_absolutely_abstract_creative_concept_with_http_info(id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.delete_scaffolding_absolutely_abstract_creative_concept ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.delete_scaffolding_absolutely_abstract_creative_concept ...'
       end
       # verify the required parameter 'id' is set
       if @api_client.config.client_side_validation && id.nil?
-        fail ArgumentError, "Missing the required parameter 'id' when calling V1Api.delete_scaffolding_absolutely_abstract_creative_concept"
+        fail ArgumentError, "Missing the required parameter 'id' when calling PlatformApi.delete_scaffolding_absolutely_abstract_creative_concept"
       end
       # resource path
       local_var_path = '/scaffolding/absolutely_abstract/creative_concepts/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
@@ -709,7 +709,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.delete_scaffolding_absolutely_abstract_creative_concept",
+        :operation => :"PlatformApi.delete_scaffolding_absolutely_abstract_creative_concept",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -720,7 +720,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:DELETE, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#delete_scaffolding_absolutely_abstract_creative_concept\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#delete_scaffolding_absolutely_abstract_creative_concept\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -740,11 +740,11 @@ module BtTest
     # @return [Array<(nil, Integer, Hash)>] nil, response status code and response headers
     def delete_scaffolding_completely_concrete_tangible_thing_with_http_info(id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.delete_scaffolding_completely_concrete_tangible_thing ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.delete_scaffolding_completely_concrete_tangible_thing ...'
       end
       # verify the required parameter 'id' is set
       if @api_client.config.client_side_validation && id.nil?
-        fail ArgumentError, "Missing the required parameter 'id' when calling V1Api.delete_scaffolding_completely_concrete_tangible_thing"
+        fail ArgumentError, "Missing the required parameter 'id' when calling PlatformApi.delete_scaffolding_completely_concrete_tangible_thing"
       end
       # resource path
       local_var_path = '/scaffolding/completely_concrete/tangible_things/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
@@ -768,7 +768,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.delete_scaffolding_completely_concrete_tangible_thing",
+        :operation => :"PlatformApi.delete_scaffolding_completely_concrete_tangible_thing",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -779,7 +779,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:DELETE, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#delete_scaffolding_completely_concrete_tangible_thing\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#delete_scaffolding_completely_concrete_tangible_thing\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -799,11 +799,11 @@ module BtTest
     # @return [Array<(nil, Integer, Hash)>] nil, response status code and response headers
     def delete_webhooks_outgoing_endpoint_with_http_info(id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.delete_webhooks_outgoing_endpoint ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.delete_webhooks_outgoing_endpoint ...'
       end
       # verify the required parameter 'id' is set
       if @api_client.config.client_side_validation && id.nil?
-        fail ArgumentError, "Missing the required parameter 'id' when calling V1Api.delete_webhooks_outgoing_endpoint"
+        fail ArgumentError, "Missing the required parameter 'id' when calling PlatformApi.delete_webhooks_outgoing_endpoint"
       end
       # resource path
       local_var_path = '/webhooks/outgoing/endpoints/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
@@ -827,7 +827,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.delete_webhooks_outgoing_endpoint",
+        :operation => :"PlatformApi.delete_webhooks_outgoing_endpoint",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -838,7 +838,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:DELETE, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#delete_webhooks_outgoing_endpoint\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#delete_webhooks_outgoing_endpoint\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -858,11 +858,11 @@ module BtTest
     # @return [Array<(Goal, Integer, Hash)>] Goal data, response status code and response headers
     def get_goal_with_http_info(id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.get_goal ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.get_goal ...'
       end
       # verify the required parameter 'id' is set
       if @api_client.config.client_side_validation && id.nil?
-        fail ArgumentError, "Missing the required parameter 'id' when calling V1Api.get_goal"
+        fail ArgumentError, "Missing the required parameter 'id' when calling PlatformApi.get_goal"
       end
       # resource path
       local_var_path = '/goals/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
@@ -888,7 +888,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.get_goal",
+        :operation => :"PlatformApi.get_goal",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -899,7 +899,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#get_goal\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#get_goal\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -917,7 +917,7 @@ module BtTest
     # @return [Array<(Me, Integer, Hash)>] Me data, response status code and response headers
     def get_me_with_http_info(opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.get_me ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.get_me ...'
       end
       # resource path
       local_var_path = '/me'
@@ -943,7 +943,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.get_me",
+        :operation => :"PlatformApi.get_me",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -954,7 +954,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#get_me\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#get_me\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -974,11 +974,11 @@ module BtTest
     # @return [Array<(Project, Integer, Hash)>] Project data, response status code and response headers
     def get_project_with_http_info(id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.get_project ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.get_project ...'
       end
       # verify the required parameter 'id' is set
       if @api_client.config.client_side_validation && id.nil?
-        fail ArgumentError, "Missing the required parameter 'id' when calling V1Api.get_project"
+        fail ArgumentError, "Missing the required parameter 'id' when calling PlatformApi.get_project"
       end
       # resource path
       local_var_path = '/projects/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
@@ -1004,7 +1004,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.get_project",
+        :operation => :"PlatformApi.get_project",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -1015,7 +1015,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#get_project\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#get_project\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -1035,11 +1035,11 @@ module BtTest
     # @return [Array<(ProjectsTag, Integer, Hash)>] ProjectsTag data, response status code and response headers
     def get_projects_tag_with_http_info(id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.get_projects_tag ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.get_projects_tag ...'
       end
       # verify the required parameter 'id' is set
       if @api_client.config.client_side_validation && id.nil?
-        fail ArgumentError, "Missing the required parameter 'id' when calling V1Api.get_projects_tag"
+        fail ArgumentError, "Missing the required parameter 'id' when calling PlatformApi.get_projects_tag"
       end
       # resource path
       local_var_path = '/projects/tags/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
@@ -1065,7 +1065,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.get_projects_tag",
+        :operation => :"PlatformApi.get_projects_tag",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -1076,7 +1076,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#get_projects_tag\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#get_projects_tag\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -1096,11 +1096,11 @@ module BtTest
     # @return [Array<(ScaffoldingAbsolutelyAbstractCreativeConcept, Integer, Hash)>] ScaffoldingAbsolutelyAbstractCreativeConcept data, response status code and response headers
     def get_scaffolding_absolutely_abstract_creative_concept_with_http_info(id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.get_scaffolding_absolutely_abstract_creative_concept ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.get_scaffolding_absolutely_abstract_creative_concept ...'
       end
       # verify the required parameter 'id' is set
       if @api_client.config.client_side_validation && id.nil?
-        fail ArgumentError, "Missing the required parameter 'id' when calling V1Api.get_scaffolding_absolutely_abstract_creative_concept"
+        fail ArgumentError, "Missing the required parameter 'id' when calling PlatformApi.get_scaffolding_absolutely_abstract_creative_concept"
       end
       # resource path
       local_var_path = '/scaffolding/absolutely_abstract/creative_concepts/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
@@ -1126,7 +1126,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.get_scaffolding_absolutely_abstract_creative_concept",
+        :operation => :"PlatformApi.get_scaffolding_absolutely_abstract_creative_concept",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -1137,7 +1137,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#get_scaffolding_absolutely_abstract_creative_concept\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#get_scaffolding_absolutely_abstract_creative_concept\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -1157,11 +1157,11 @@ module BtTest
     # @return [Array<(ScaffoldingCompletelyConcreteTangibleThing, Integer, Hash)>] ScaffoldingCompletelyConcreteTangibleThing data, response status code and response headers
     def get_scaffolding_completely_concrete_tangible_thing_with_http_info(id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.get_scaffolding_completely_concrete_tangible_thing ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.get_scaffolding_completely_concrete_tangible_thing ...'
       end
       # verify the required parameter 'id' is set
       if @api_client.config.client_side_validation && id.nil?
-        fail ArgumentError, "Missing the required parameter 'id' when calling V1Api.get_scaffolding_completely_concrete_tangible_thing"
+        fail ArgumentError, "Missing the required parameter 'id' when calling PlatformApi.get_scaffolding_completely_concrete_tangible_thing"
       end
       # resource path
       local_var_path = '/scaffolding/completely_concrete/tangible_things/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
@@ -1187,7 +1187,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.get_scaffolding_completely_concrete_tangible_thing",
+        :operation => :"PlatformApi.get_scaffolding_completely_concrete_tangible_thing",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -1198,7 +1198,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#get_scaffolding_completely_concrete_tangible_thing\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#get_scaffolding_completely_concrete_tangible_thing\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -1218,11 +1218,11 @@ module BtTest
     # @return [Array<(Team, Integer, Hash)>] Team data, response status code and response headers
     def get_team_with_http_info(id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.get_team ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.get_team ...'
       end
       # verify the required parameter 'id' is set
       if @api_client.config.client_side_validation && id.nil?
-        fail ArgumentError, "Missing the required parameter 'id' when calling V1Api.get_team"
+        fail ArgumentError, "Missing the required parameter 'id' when calling PlatformApi.get_team"
       end
       # resource path
       local_var_path = '/teams/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
@@ -1248,7 +1248,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.get_team",
+        :operation => :"PlatformApi.get_team",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -1259,7 +1259,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#get_team\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#get_team\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -1279,11 +1279,11 @@ module BtTest
     # @return [Array<(WebhooksOutgoingDelivery, Integer, Hash)>] WebhooksOutgoingDelivery data, response status code and response headers
     def get_webhooks_outgoing_delivery_with_http_info(id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.get_webhooks_outgoing_delivery ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.get_webhooks_outgoing_delivery ...'
       end
       # verify the required parameter 'id' is set
       if @api_client.config.client_side_validation && id.nil?
-        fail ArgumentError, "Missing the required parameter 'id' when calling V1Api.get_webhooks_outgoing_delivery"
+        fail ArgumentError, "Missing the required parameter 'id' when calling PlatformApi.get_webhooks_outgoing_delivery"
       end
       # resource path
       local_var_path = '/webhooks/outgoing/deliveries/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
@@ -1309,7 +1309,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.get_webhooks_outgoing_delivery",
+        :operation => :"PlatformApi.get_webhooks_outgoing_delivery",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -1320,7 +1320,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#get_webhooks_outgoing_delivery\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#get_webhooks_outgoing_delivery\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -1340,11 +1340,11 @@ module BtTest
     # @return [Array<(WebhooksOutgoingDeliveryAttempt, Integer, Hash)>] WebhooksOutgoingDeliveryAttempt data, response status code and response headers
     def get_webhooks_outgoing_delivery_attempt_with_http_info(id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.get_webhooks_outgoing_delivery_attempt ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.get_webhooks_outgoing_delivery_attempt ...'
       end
       # verify the required parameter 'id' is set
       if @api_client.config.client_side_validation && id.nil?
-        fail ArgumentError, "Missing the required parameter 'id' when calling V1Api.get_webhooks_outgoing_delivery_attempt"
+        fail ArgumentError, "Missing the required parameter 'id' when calling PlatformApi.get_webhooks_outgoing_delivery_attempt"
       end
       # resource path
       local_var_path = '/webhooks/outgoing/delivery_attempts/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
@@ -1370,7 +1370,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.get_webhooks_outgoing_delivery_attempt",
+        :operation => :"PlatformApi.get_webhooks_outgoing_delivery_attempt",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -1381,7 +1381,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#get_webhooks_outgoing_delivery_attempt\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#get_webhooks_outgoing_delivery_attempt\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -1401,11 +1401,11 @@ module BtTest
     # @return [Array<(WebhooksOutgoingEndpoint, Integer, Hash)>] WebhooksOutgoingEndpoint data, response status code and response headers
     def get_webhooks_outgoing_endpoint_with_http_info(id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.get_webhooks_outgoing_endpoint ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.get_webhooks_outgoing_endpoint ...'
       end
       # verify the required parameter 'id' is set
       if @api_client.config.client_side_validation && id.nil?
-        fail ArgumentError, "Missing the required parameter 'id' when calling V1Api.get_webhooks_outgoing_endpoint"
+        fail ArgumentError, "Missing the required parameter 'id' when calling PlatformApi.get_webhooks_outgoing_endpoint"
       end
       # resource path
       local_var_path = '/webhooks/outgoing/endpoints/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
@@ -1431,7 +1431,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.get_webhooks_outgoing_endpoint",
+        :operation => :"PlatformApi.get_webhooks_outgoing_endpoint",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -1442,7 +1442,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#get_webhooks_outgoing_endpoint\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#get_webhooks_outgoing_endpoint\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -1466,11 +1466,11 @@ module BtTest
     # @return [Array<(Array<Goal>, Integer, Hash)>] Array<Goal> data, response status code and response headers
     def list_goals_with_http_info(project_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.list_goals ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.list_goals ...'
       end
       # verify the required parameter 'project_id' is set
       if @api_client.config.client_side_validation && project_id.nil?
-        fail ArgumentError, "Missing the required parameter 'project_id' when calling V1Api.list_goals"
+        fail ArgumentError, "Missing the required parameter 'project_id' when calling PlatformApi.list_goals"
       end
       # resource path
       local_var_path = '/projects/{project_id}/goals'.sub('{' + 'project_id' + '}', CGI.escape(project_id.to_s))
@@ -1498,7 +1498,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.list_goals",
+        :operation => :"PlatformApi.list_goals",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -1509,7 +1509,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#list_goals\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#list_goals\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -1533,11 +1533,11 @@ module BtTest
     # @return [Array<(Array<Project>, Integer, Hash)>] Array<Project> data, response status code and response headers
     def list_projects_with_http_info(team_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.list_projects ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.list_projects ...'
       end
       # verify the required parameter 'team_id' is set
       if @api_client.config.client_side_validation && team_id.nil?
-        fail ArgumentError, "Missing the required parameter 'team_id' when calling V1Api.list_projects"
+        fail ArgumentError, "Missing the required parameter 'team_id' when calling PlatformApi.list_projects"
       end
       # resource path
       local_var_path = '/teams/{team_id}/projects'.sub('{' + 'team_id' + '}', CGI.escape(team_id.to_s))
@@ -1565,7 +1565,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.list_projects",
+        :operation => :"PlatformApi.list_projects",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -1576,7 +1576,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#list_projects\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#list_projects\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -1600,11 +1600,11 @@ module BtTest
     # @return [Array<(Array<ProjectsTag>, Integer, Hash)>] Array<ProjectsTag> data, response status code and response headers
     def list_projects_tags_with_http_info(team_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.list_projects_tags ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.list_projects_tags ...'
       end
       # verify the required parameter 'team_id' is set
       if @api_client.config.client_side_validation && team_id.nil?
-        fail ArgumentError, "Missing the required parameter 'team_id' when calling V1Api.list_projects_tags"
+        fail ArgumentError, "Missing the required parameter 'team_id' when calling PlatformApi.list_projects_tags"
       end
       # resource path
       local_var_path = '/teams/{team_id}/projects/tags'.sub('{' + 'team_id' + '}', CGI.escape(team_id.to_s))
@@ -1632,7 +1632,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.list_projects_tags",
+        :operation => :"PlatformApi.list_projects_tags",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -1643,7 +1643,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#list_projects_tags\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#list_projects_tags\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -1667,11 +1667,11 @@ module BtTest
     # @return [Array<(Array<ScaffoldingAbsolutelyAbstractCreativeConcept>, Integer, Hash)>] Array<ScaffoldingAbsolutelyAbstractCreativeConcept> data, response status code and response headers
     def list_scaffolding_absolutely_abstract_creative_concepts_with_http_info(team_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.list_scaffolding_absolutely_abstract_creative_concepts ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.list_scaffolding_absolutely_abstract_creative_concepts ...'
       end
       # verify the required parameter 'team_id' is set
       if @api_client.config.client_side_validation && team_id.nil?
-        fail ArgumentError, "Missing the required parameter 'team_id' when calling V1Api.list_scaffolding_absolutely_abstract_creative_concepts"
+        fail ArgumentError, "Missing the required parameter 'team_id' when calling PlatformApi.list_scaffolding_absolutely_abstract_creative_concepts"
       end
       # resource path
       local_var_path = '/teams/{team_id}/scaffolding/absolutely_abstract/creative_concepts'.sub('{' + 'team_id' + '}', CGI.escape(team_id.to_s))
@@ -1699,7 +1699,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.list_scaffolding_absolutely_abstract_creative_concepts",
+        :operation => :"PlatformApi.list_scaffolding_absolutely_abstract_creative_concepts",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -1710,7 +1710,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#list_scaffolding_absolutely_abstract_creative_concepts\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#list_scaffolding_absolutely_abstract_creative_concepts\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -1734,11 +1734,11 @@ module BtTest
     # @return [Array<(Array<ScaffoldingCompletelyConcreteTangibleThing>, Integer, Hash)>] Array<ScaffoldingCompletelyConcreteTangibleThing> data, response status code and response headers
     def list_scaffolding_completely_concrete_tangible_things_with_http_info(absolutely_abstract_creative_concept_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.list_scaffolding_completely_concrete_tangible_things ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.list_scaffolding_completely_concrete_tangible_things ...'
       end
       # verify the required parameter 'absolutely_abstract_creative_concept_id' is set
       if @api_client.config.client_side_validation && absolutely_abstract_creative_concept_id.nil?
-        fail ArgumentError, "Missing the required parameter 'absolutely_abstract_creative_concept_id' when calling V1Api.list_scaffolding_completely_concrete_tangible_things"
+        fail ArgumentError, "Missing the required parameter 'absolutely_abstract_creative_concept_id' when calling PlatformApi.list_scaffolding_completely_concrete_tangible_things"
       end
       # resource path
       local_var_path = '/scaffolding/absolutely_abstract/creative_concepts/{absolutely_abstract_creative_concept_id}/completely_concrete/tangible_things'.sub('{' + 'absolutely_abstract_creative_concept_id' + '}', CGI.escape(absolutely_abstract_creative_concept_id.to_s))
@@ -1766,7 +1766,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.list_scaffolding_completely_concrete_tangible_things",
+        :operation => :"PlatformApi.list_scaffolding_completely_concrete_tangible_things",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -1777,7 +1777,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#list_scaffolding_completely_concrete_tangible_things\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#list_scaffolding_completely_concrete_tangible_things\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -1799,7 +1799,7 @@ module BtTest
     # @return [Array<(Array<Team>, Integer, Hash)>] Array<Team> data, response status code and response headers
     def list_teams_with_http_info(opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.list_teams ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.list_teams ...'
       end
       # resource path
       local_var_path = '/teams'
@@ -1827,7 +1827,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.list_teams",
+        :operation => :"PlatformApi.list_teams",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -1838,7 +1838,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#list_teams\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#list_teams\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -1862,11 +1862,11 @@ module BtTest
     # @return [Array<(Array<WebhooksOutgoingDeliveryAttempt>, Integer, Hash)>] Array<WebhooksOutgoingDeliveryAttempt> data, response status code and response headers
     def list_webhooks_outgoing_delivery_attempts_with_http_info(delivery_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.list_webhooks_outgoing_delivery_attempts ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.list_webhooks_outgoing_delivery_attempts ...'
       end
       # verify the required parameter 'delivery_id' is set
       if @api_client.config.client_side_validation && delivery_id.nil?
-        fail ArgumentError, "Missing the required parameter 'delivery_id' when calling V1Api.list_webhooks_outgoing_delivery_attempts"
+        fail ArgumentError, "Missing the required parameter 'delivery_id' when calling PlatformApi.list_webhooks_outgoing_delivery_attempts"
       end
       # resource path
       local_var_path = '/webhooks/outgoing/deliveries/{delivery_id}/delivery_attempts'.sub('{' + 'delivery_id' + '}', CGI.escape(delivery_id.to_s))
@@ -1894,7 +1894,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.list_webhooks_outgoing_delivery_attempts",
+        :operation => :"PlatformApi.list_webhooks_outgoing_delivery_attempts",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -1905,7 +1905,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#list_webhooks_outgoing_delivery_attempts\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#list_webhooks_outgoing_delivery_attempts\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -1929,11 +1929,11 @@ module BtTest
     # @return [Array<(Array<WebhooksOutgoingDelivery>, Integer, Hash)>] Array<WebhooksOutgoingDelivery> data, response status code and response headers
     def list_webhooks_outgoing_deliverys_with_http_info(endpoint_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.list_webhooks_outgoing_deliverys ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.list_webhooks_outgoing_deliverys ...'
       end
       # verify the required parameter 'endpoint_id' is set
       if @api_client.config.client_side_validation && endpoint_id.nil?
-        fail ArgumentError, "Missing the required parameter 'endpoint_id' when calling V1Api.list_webhooks_outgoing_deliverys"
+        fail ArgumentError, "Missing the required parameter 'endpoint_id' when calling PlatformApi.list_webhooks_outgoing_deliverys"
       end
       # resource path
       local_var_path = '/webhooks/outgoing/endpoints/{endpoint_id}/deliveries'.sub('{' + 'endpoint_id' + '}', CGI.escape(endpoint_id.to_s))
@@ -1961,7 +1961,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.list_webhooks_outgoing_deliverys",
+        :operation => :"PlatformApi.list_webhooks_outgoing_deliverys",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -1972,7 +1972,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#list_webhooks_outgoing_deliverys\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#list_webhooks_outgoing_deliverys\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -1996,11 +1996,11 @@ module BtTest
     # @return [Array<(Array<WebhooksOutgoingEndpoint>, Integer, Hash)>] Array<WebhooksOutgoingEndpoint> data, response status code and response headers
     def list_webhooks_outgoing_endpoints_with_http_info(team_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.list_webhooks_outgoing_endpoints ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.list_webhooks_outgoing_endpoints ...'
       end
       # verify the required parameter 'team_id' is set
       if @api_client.config.client_side_validation && team_id.nil?
-        fail ArgumentError, "Missing the required parameter 'team_id' when calling V1Api.list_webhooks_outgoing_endpoints"
+        fail ArgumentError, "Missing the required parameter 'team_id' when calling PlatformApi.list_webhooks_outgoing_endpoints"
       end
       # resource path
       local_var_path = '/teams/{team_id}/webhooks/outgoing/endpoints'.sub('{' + 'team_id' + '}', CGI.escape(team_id.to_s))
@@ -2028,7 +2028,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.list_webhooks_outgoing_endpoints",
+        :operation => :"PlatformApi.list_webhooks_outgoing_endpoints",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -2039,7 +2039,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:GET, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#list_webhooks_outgoing_endpoints\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#list_webhooks_outgoing_endpoints\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -2061,11 +2061,11 @@ module BtTest
     # @return [Array<(Goal, Integer, Hash)>] Goal data, response status code and response headers
     def update_goal_with_http_info(id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.update_goal ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.update_goal ...'
       end
       # verify the required parameter 'id' is set
       if @api_client.config.client_side_validation && id.nil?
-        fail ArgumentError, "Missing the required parameter 'id' when calling V1Api.update_goal"
+        fail ArgumentError, "Missing the required parameter 'id' when calling PlatformApi.update_goal"
       end
       # resource path
       local_var_path = '/goals/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
@@ -2096,7 +2096,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.update_goal",
+        :operation => :"PlatformApi.update_goal",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -2107,7 +2107,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:PUT, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#update_goal\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#update_goal\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -2129,11 +2129,11 @@ module BtTest
     # @return [Array<(Project, Integer, Hash)>] Project data, response status code and response headers
     def update_project_with_http_info(id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.update_project ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.update_project ...'
       end
       # verify the required parameter 'id' is set
       if @api_client.config.client_side_validation && id.nil?
-        fail ArgumentError, "Missing the required parameter 'id' when calling V1Api.update_project"
+        fail ArgumentError, "Missing the required parameter 'id' when calling PlatformApi.update_project"
       end
       # resource path
       local_var_path = '/projects/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
@@ -2164,7 +2164,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.update_project",
+        :operation => :"PlatformApi.update_project",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -2175,7 +2175,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:PUT, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#update_project\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#update_project\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -2197,11 +2197,11 @@ module BtTest
     # @return [Array<(ProjectsTag, Integer, Hash)>] ProjectsTag data, response status code and response headers
     def update_projects_tag_with_http_info(id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.update_projects_tag ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.update_projects_tag ...'
       end
       # verify the required parameter 'id' is set
       if @api_client.config.client_side_validation && id.nil?
-        fail ArgumentError, "Missing the required parameter 'id' when calling V1Api.update_projects_tag"
+        fail ArgumentError, "Missing the required parameter 'id' when calling PlatformApi.update_projects_tag"
       end
       # resource path
       local_var_path = '/projects/tags/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
@@ -2232,7 +2232,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.update_projects_tag",
+        :operation => :"PlatformApi.update_projects_tag",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -2243,7 +2243,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:PUT, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#update_projects_tag\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#update_projects_tag\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -2265,11 +2265,11 @@ module BtTest
     # @return [Array<(ScaffoldingAbsolutelyAbstractCreativeConcept, Integer, Hash)>] ScaffoldingAbsolutelyAbstractCreativeConcept data, response status code and response headers
     def update_scaffolding_absolutely_abstract_creative_concept_with_http_info(id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.update_scaffolding_absolutely_abstract_creative_concept ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.update_scaffolding_absolutely_abstract_creative_concept ...'
       end
       # verify the required parameter 'id' is set
       if @api_client.config.client_side_validation && id.nil?
-        fail ArgumentError, "Missing the required parameter 'id' when calling V1Api.update_scaffolding_absolutely_abstract_creative_concept"
+        fail ArgumentError, "Missing the required parameter 'id' when calling PlatformApi.update_scaffolding_absolutely_abstract_creative_concept"
       end
       # resource path
       local_var_path = '/scaffolding/absolutely_abstract/creative_concepts/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
@@ -2300,7 +2300,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.update_scaffolding_absolutely_abstract_creative_concept",
+        :operation => :"PlatformApi.update_scaffolding_absolutely_abstract_creative_concept",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -2311,7 +2311,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:PUT, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#update_scaffolding_absolutely_abstract_creative_concept\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#update_scaffolding_absolutely_abstract_creative_concept\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -2333,11 +2333,11 @@ module BtTest
     # @return [Array<(ScaffoldingCompletelyConcreteTangibleThing, Integer, Hash)>] ScaffoldingCompletelyConcreteTangibleThing data, response status code and response headers
     def update_scaffolding_completely_concrete_tangible_thing_with_http_info(id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.update_scaffolding_completely_concrete_tangible_thing ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.update_scaffolding_completely_concrete_tangible_thing ...'
       end
       # verify the required parameter 'id' is set
       if @api_client.config.client_side_validation && id.nil?
-        fail ArgumentError, "Missing the required parameter 'id' when calling V1Api.update_scaffolding_completely_concrete_tangible_thing"
+        fail ArgumentError, "Missing the required parameter 'id' when calling PlatformApi.update_scaffolding_completely_concrete_tangible_thing"
       end
       # resource path
       local_var_path = '/scaffolding/completely_concrete/tangible_things/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
@@ -2368,7 +2368,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.update_scaffolding_completely_concrete_tangible_thing",
+        :operation => :"PlatformApi.update_scaffolding_completely_concrete_tangible_thing",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -2379,7 +2379,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:PUT, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#update_scaffolding_completely_concrete_tangible_thing\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#update_scaffolding_completely_concrete_tangible_thing\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -2401,11 +2401,11 @@ module BtTest
     # @return [Array<(Team, Integer, Hash)>] Team data, response status code and response headers
     def update_team_with_http_info(id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.update_team ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.update_team ...'
       end
       # verify the required parameter 'id' is set
       if @api_client.config.client_side_validation && id.nil?
-        fail ArgumentError, "Missing the required parameter 'id' when calling V1Api.update_team"
+        fail ArgumentError, "Missing the required parameter 'id' when calling PlatformApi.update_team"
       end
       # resource path
       local_var_path = '/teams/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
@@ -2436,7 +2436,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.update_team",
+        :operation => :"PlatformApi.update_team",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -2447,7 +2447,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:PUT, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#update_team\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#update_team\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -2469,11 +2469,11 @@ module BtTest
     # @return [Array<(WebhooksOutgoingEndpoint, Integer, Hash)>] WebhooksOutgoingEndpoint data, response status code and response headers
     def update_webhooks_outgoing_endpoint_with_http_info(id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: V1Api.update_webhooks_outgoing_endpoint ...'
+        @api_client.config.logger.debug 'Calling API: PlatformApi.update_webhooks_outgoing_endpoint ...'
       end
       # verify the required parameter 'id' is set
       if @api_client.config.client_side_validation && id.nil?
-        fail ArgumentError, "Missing the required parameter 'id' when calling V1Api.update_webhooks_outgoing_endpoint"
+        fail ArgumentError, "Missing the required parameter 'id' when calling PlatformApi.update_webhooks_outgoing_endpoint"
       end
       # resource path
       local_var_path = '/webhooks/outgoing/endpoints/{id}'.sub('{' + 'id' + '}', CGI.escape(id.to_s))
@@ -2504,7 +2504,7 @@ module BtTest
       auth_names = opts[:debug_auth_names] || []
 
       new_options = opts.merge(
-        :operation => :"V1Api.update_webhooks_outgoing_endpoint",
+        :operation => :"PlatformApi.update_webhooks_outgoing_endpoint",
         :header_params => header_params,
         :query_params => query_params,
         :form_params => form_params,
@@ -2515,7 +2515,7 @@ module BtTest
 
       data, status_code, headers = @api_client.call_api(:PUT, local_var_path, new_options)
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: V1Api#update_webhooks_outgoing_endpoint\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: PlatformApi#update_webhooks_outgoing_endpoint\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end

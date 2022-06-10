@@ -21,6 +21,7 @@ docs/Me.md
 docs/MeData.md
 docs/MeDataAttributes.md
 docs/MeDataRelationships.md
+docs/PlatformApi.md
 docs/Project.md
 docs/ProjectData.md
 docs/ProjectDataAttributes.md
@@ -45,7 +46,6 @@ docs/TeamData.md
 docs/TeamDataAttributes.md
 docs/TeamDataRelationships.md
 docs/UpdateScaffoldingCompletelyConcreteTangibleThingRequest.md
-docs/V1Api.md
 docs/WebhooksOutgoingDelivery.md
 docs/WebhooksOutgoingDeliveryAttempt.md
 docs/WebhooksOutgoingDeliveryAttemptData.md
@@ -60,7 +60,7 @@ docs/WebhooksOutgoingEndpointDataAttributes.md
 docs/WebhooksOutgoingEndpointDataRelationships.md
 git_push.sh
 lib/bt_test.rb
-lib/bt_test/api/v1_api.rb
+lib/bt_test/api/platform_api.rb
 lib/bt_test/api_client.rb
 lib/bt_test/api_error.rb
 lib/bt_test/configuration.rb
@@ -115,7 +115,7 @@ lib/bt_test/models/webhooks_outgoing_endpoint_data.rb
 lib/bt_test/models/webhooks_outgoing_endpoint_data_attributes.rb
 lib/bt_test/models/webhooks_outgoing_endpoint_data_relationships.rb
 lib/bt_test/version.rb
-spec/api/v1_api_spec.rb
+spec/api/platform_api_spec.rb
 spec/api_client_spec.rb
 spec/configuration_spec.rb
 spec/models/create_goal_request_spec.rb

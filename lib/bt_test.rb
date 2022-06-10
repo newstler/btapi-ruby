@@ -69,7 +69,7 @@ require 'bt_test/models/webhooks_outgoing_endpoint_data_attributes'
 require 'bt_test/models/webhooks_outgoing_endpoint_data_relationships'
 
 # APIs
-require 'bt_test/api/v1_api'
+require 'bt_test/api/platform_api'
 
 module BtTest
   class << self

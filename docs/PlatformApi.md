@@ -1,48 +1,48 @@
-# BtTest::V1Api
+# BtTest::PlatformApi
 
 All URIs are relative to *https://btapi.eu.ngrok.io/api/v1*
 
 | Method | HTTP request | Description |
 | ------ | ------------ | ----------- |
-| [**create_goal**](V1Api.md#create_goal) | **POST** /projects/{project_id}/goals |  |
-| [**create_project**](V1Api.md#create_project) | **POST** /teams/{team_id}/projects |  |
-| [**create_projects_tag**](V1Api.md#create_projects_tag) | **POST** /teams/{team_id}/projects/tags |  |
-| [**create_scaffolding_absolutely_abstract_creative_concept**](V1Api.md#create_scaffolding_absolutely_abstract_creative_concept) | **POST** /teams/{team_id}/scaffolding/absolutely_abstract/creative_concepts |  |
-| [**create_scaffolding_completely_concrete_tangible_thing**](V1Api.md#create_scaffolding_completely_concrete_tangible_thing) | **POST** /scaffolding/absolutely_abstract/creative_concepts/{absolutely_abstract_creative_concept_id}/completely_concrete/tangible_things |  |
-| [**create_team**](V1Api.md#create_team) | **POST** /teams |  |
-| [**create_webhooks_outgoing_endpoint**](V1Api.md#create_webhooks_outgoing_endpoint) | **POST** /teams/{team_id}/webhooks/outgoing/endpoints |  |
-| [**delete_goal**](V1Api.md#delete_goal) | **DELETE** /goals/{id} |  |
-| [**delete_project**](V1Api.md#delete_project) | **DELETE** /projects/{id} |  |
-| [**delete_projects_tag**](V1Api.md#delete_projects_tag) | **DELETE** /projects/tags/{id} |  |
-| [**delete_scaffolding_absolutely_abstract_creative_concept**](V1Api.md#delete_scaffolding_absolutely_abstract_creative_concept) | **DELETE** /scaffolding/absolutely_abstract/creative_concepts/{id} |  |
-| [**delete_scaffolding_completely_concrete_tangible_thing**](V1Api.md#delete_scaffolding_completely_concrete_tangible_thing) | **DELETE** /scaffolding/completely_concrete/tangible_things/{id} |  |
-| [**delete_webhooks_outgoing_endpoint**](V1Api.md#delete_webhooks_outgoing_endpoint) | **DELETE** /webhooks/outgoing/endpoints/{id} |  |
-| [**get_goal**](V1Api.md#get_goal) | **GET** /goals/{id} |  |
-| [**get_me**](V1Api.md#get_me) | **GET** /me |  |
-| [**get_project**](V1Api.md#get_project) | **GET** /projects/{id} |  |
-| [**get_projects_tag**](V1Api.md#get_projects_tag) | **GET** /projects/tags/{id} |  |
-| [**get_scaffolding_absolutely_abstract_creative_concept**](V1Api.md#get_scaffolding_absolutely_abstract_creative_concept) | **GET** /scaffolding/absolutely_abstract/creative_concepts/{id} |  |
-| [**get_scaffolding_completely_concrete_tangible_thing**](V1Api.md#get_scaffolding_completely_concrete_tangible_thing) | **GET** /scaffolding/completely_concrete/tangible_things/{id} |  |
-| [**get_team**](V1Api.md#get_team) | **GET** /teams/{id} |  |
-| [**get_webhooks_outgoing_delivery**](V1Api.md#get_webhooks_outgoing_delivery) | **GET** /webhooks/outgoing/deliveries/{id} |  |
-| [**get_webhooks_outgoing_delivery_attempt**](V1Api.md#get_webhooks_outgoing_delivery_attempt) | **GET** /webhooks/outgoing/delivery_attempts/{id} |  |
-| [**get_webhooks_outgoing_endpoint**](V1Api.md#get_webhooks_outgoing_endpoint) | **GET** /webhooks/outgoing/endpoints/{id} |  |
-| [**list_goals**](V1Api.md#list_goals) | **GET** /projects/{project_id}/goals |  |
-| [**list_projects**](V1Api.md#list_projects) | **GET** /teams/{team_id}/projects |  |
-| [**list_projects_tags**](V1Api.md#list_projects_tags) | **GET** /teams/{team_id}/projects/tags |  |
-| [**list_scaffolding_absolutely_abstract_creative_concepts**](V1Api.md#list_scaffolding_absolutely_abstract_creative_concepts) | **GET** /teams/{team_id}/scaffolding/absolutely_abstract/creative_concepts |  |
-| [**list_scaffolding_completely_concrete_tangible_things**](V1Api.md#list_scaffolding_completely_concrete_tangible_things) | **GET** /scaffolding/absolutely_abstract/creative_concepts/{absolutely_abstract_creative_concept_id}/completely_concrete/tangible_things |  |
-| [**list_teams**](V1Api.md#list_teams) | **GET** /teams |  |
-| [**list_webhooks_outgoing_delivery_attempts**](V1Api.md#list_webhooks_outgoing_delivery_attempts) | **GET** /webhooks/outgoing/deliveries/{delivery_id}/delivery_attempts |  |
-| [**list_webhooks_outgoing_deliverys**](V1Api.md#list_webhooks_outgoing_deliverys) | **GET** /webhooks/outgoing/endpoints/{endpoint_id}/deliveries |  |
-| [**list_webhooks_outgoing_endpoints**](V1Api.md#list_webhooks_outgoing_endpoints) | **GET** /teams/{team_id}/webhooks/outgoing/endpoints |  |
-| [**update_goal**](V1Api.md#update_goal) | **PUT** /goals/{id} |  |
-| [**update_project**](V1Api.md#update_project) | **PUT** /projects/{id} |  |
-| [**update_projects_tag**](V1Api.md#update_projects_tag) | **PUT** /projects/tags/{id} |  |
-| [**update_scaffolding_absolutely_abstract_creative_concept**](V1Api.md#update_scaffolding_absolutely_abstract_creative_concept) | **PUT** /scaffolding/absolutely_abstract/creative_concepts/{id} |  |
-| [**update_scaffolding_completely_concrete_tangible_thing**](V1Api.md#update_scaffolding_completely_concrete_tangible_thing) | **PUT** /scaffolding/completely_concrete/tangible_things/{id} |  |
-| [**update_team**](V1Api.md#update_team) | **PUT** /teams/{id} |  |
-| [**update_webhooks_outgoing_endpoint**](V1Api.md#update_webhooks_outgoing_endpoint) | **PUT** /webhooks/outgoing/endpoints/{id} |  |
+| [**create_goal**](PlatformApi.md#create_goal) | **POST** /projects/{project_id}/goals |  |
+| [**create_project**](PlatformApi.md#create_project) | **POST** /teams/{team_id}/projects |  |
+| [**create_projects_tag**](PlatformApi.md#create_projects_tag) | **POST** /teams/{team_id}/projects/tags |  |
+| [**create_scaffolding_absolutely_abstract_creative_concept**](PlatformApi.md#create_scaffolding_absolutely_abstract_creative_concept) | **POST** /teams/{team_id}/scaffolding/absolutely_abstract/creative_concepts |  |
+| [**create_scaffolding_completely_concrete_tangible_thing**](PlatformApi.md#create_scaffolding_completely_concrete_tangible_thing) | **POST** /scaffolding/absolutely_abstract/creative_concepts/{absolutely_abstract_creative_concept_id}/completely_concrete/tangible_things |  |
+| [**create_team**](PlatformApi.md#create_team) | **POST** /teams |  |
+| [**create_webhooks_outgoing_endpoint**](PlatformApi.md#create_webhooks_outgoing_endpoint) | **POST** /teams/{team_id}/webhooks/outgoing/endpoints |  |
+| [**delete_goal**](PlatformApi.md#delete_goal) | **DELETE** /goals/{id} |  |
+| [**delete_project**](PlatformApi.md#delete_project) | **DELETE** /projects/{id} |  |
+| [**delete_projects_tag**](PlatformApi.md#delete_projects_tag) | **DELETE** /projects/tags/{id} |  |
+| [**delete_scaffolding_absolutely_abstract_creative_concept**](PlatformApi.md#delete_scaffolding_absolutely_abstract_creative_concept) | **DELETE** /scaffolding/absolutely_abstract/creative_concepts/{id} |  |
+| [**delete_scaffolding_completely_concrete_tangible_thing**](PlatformApi.md#delete_scaffolding_completely_concrete_tangible_thing) | **DELETE** /scaffolding/completely_concrete/tangible_things/{id} |  |
+| [**delete_webhooks_outgoing_endpoint**](PlatformApi.md#delete_webhooks_outgoing_endpoint) | **DELETE** /webhooks/outgoing/endpoints/{id} |  |
+| [**get_goal**](PlatformApi.md#get_goal) | **GET** /goals/{id} |  |
+| [**get_me**](PlatformApi.md#get_me) | **GET** /me |  |
+| [**get_project**](PlatformApi.md#get_project) | **GET** /projects/{id} |  |
+| [**get_projects_tag**](PlatformApi.md#get_projects_tag) | **GET** /projects/tags/{id} |  |
+| [**get_scaffolding_absolutely_abstract_creative_concept**](PlatformApi.md#get_scaffolding_absolutely_abstract_creative_concept) | **GET** /scaffolding/absolutely_abstract/creative_concepts/{id} |  |
+| [**get_scaffolding_completely_concrete_tangible_thing**](PlatformApi.md#get_scaffolding_completely_concrete_tangible_thing) | **GET** /scaffolding/completely_concrete/tangible_things/{id} |  |
+| [**get_team**](PlatformApi.md#get_team) | **GET** /teams/{id} |  |
+| [**get_webhooks_outgoing_delivery**](PlatformApi.md#get_webhooks_outgoing_delivery) | **GET** /webhooks/outgoing/deliveries/{id} |  |
+| [**get_webhooks_outgoing_delivery_attempt**](PlatformApi.md#get_webhooks_outgoing_delivery_attempt) | **GET** /webhooks/outgoing/delivery_attempts/{id} |  |
+| [**get_webhooks_outgoing_endpoint**](PlatformApi.md#get_webhooks_outgoing_endpoint) | **GET** /webhooks/outgoing/endpoints/{id} |  |
+| [**list_goals**](PlatformApi.md#list_goals) | **GET** /projects/{project_id}/goals |  |
+| [**list_projects**](PlatformApi.md#list_projects) | **GET** /teams/{team_id}/projects |  |
+| [**list_projects_tags**](PlatformApi.md#list_projects_tags) | **GET** /teams/{team_id}/projects/tags |  |
+| [**list_scaffolding_absolutely_abstract_creative_concepts**](PlatformApi.md#list_scaffolding_absolutely_abstract_creative_concepts) | **GET** /teams/{team_id}/scaffolding/absolutely_abstract/creative_concepts |  |
+| [**list_scaffolding_completely_concrete_tangible_things**](PlatformApi.md#list_scaffolding_completely_concrete_tangible_things) | **GET** /scaffolding/absolutely_abstract/creative_concepts/{absolutely_abstract_creative_concept_id}/completely_concrete/tangible_things |  |
+| [**list_teams**](PlatformApi.md#list_teams) | **GET** /teams |  |
+| [**list_webhooks_outgoing_delivery_attempts**](PlatformApi.md#list_webhooks_outgoing_delivery_attempts) | **GET** /webhooks/outgoing/deliveries/{delivery_id}/delivery_attempts |  |
+| [**list_webhooks_outgoing_deliverys**](PlatformApi.md#list_webhooks_outgoing_deliverys) | **GET** /webhooks/outgoing/endpoints/{endpoint_id}/deliveries |  |
+| [**list_webhooks_outgoing_endpoints**](PlatformApi.md#list_webhooks_outgoing_endpoints) | **GET** /teams/{team_id}/webhooks/outgoing/endpoints |  |
+| [**update_goal**](PlatformApi.md#update_goal) | **PUT** /goals/{id} |  |
+| [**update_project**](PlatformApi.md#update_project) | **PUT** /projects/{id} |  |
+| [**update_projects_tag**](PlatformApi.md#update_projects_tag) | **PUT** /projects/tags/{id} |  |
+| [**update_scaffolding_absolutely_abstract_creative_concept**](PlatformApi.md#update_scaffolding_absolutely_abstract_creative_concept) | **PUT** /scaffolding/absolutely_abstract/creative_concepts/{id} |  |
+| [**update_scaffolding_completely_concrete_tangible_thing**](PlatformApi.md#update_scaffolding_completely_concrete_tangible_thing) | **PUT** /scaffolding/completely_concrete/tangible_things/{id} |  |
+| [**update_team**](PlatformApi.md#update_team) | **PUT** /teams/{id} |  |
+| [**update_webhooks_outgoing_endpoint**](PlatformApi.md#update_webhooks_outgoing_endpoint) | **PUT** /webhooks/outgoing/endpoints/{id} |  |
 
 
 ## create_goal
@@ -59,7 +59,7 @@ Add a New Goal
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 project_id = 56 # Integer | Project ID
 opts = {
   create_goal_request: BtTest::CreateGoalRequest.new # CreateGoalRequest | 
@@ -70,7 +70,7 @@ begin
   result = api_instance.create_goal(project_id, opts)
   p result
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->create_goal: #{e}"
+  puts "Error when calling PlatformApi->create_goal: #{e}"
 end
 ```
 
@@ -88,7 +88,7 @@ begin
   p headers # => { ... }
   p data # => <Goal>
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->create_goal_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->create_goal_with_http_info: #{e}"
 end
 ```
 
@@ -127,7 +127,7 @@ Add a New Project
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 team_id = 56 # Integer | Team ID
 opts = {
   create_project_request: BtTest::CreateProjectRequest.new # CreateProjectRequest | 
@@ -138,7 +138,7 @@ begin
   result = api_instance.create_project(team_id, opts)
   p result
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->create_project: #{e}"
+  puts "Error when calling PlatformApi->create_project: #{e}"
 end
 ```
 
@@ -156,7 +156,7 @@ begin
   p headers # => { ... }
   p data # => <Project>
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->create_project_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->create_project_with_http_info: #{e}"
 end
 ```
 
@@ -195,7 +195,7 @@ Add a New Tag
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 team_id = 56 # Integer | Team ID
 opts = {
   create_projects_tag_request: BtTest::CreateProjectsTagRequest.new # CreateProjectsTagRequest | 
@@ -206,7 +206,7 @@ begin
   result = api_instance.create_projects_tag(team_id, opts)
   p result
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->create_projects_tag: #{e}"
+  puts "Error when calling PlatformApi->create_projects_tag: #{e}"
 end
 ```
 
@@ -224,7 +224,7 @@ begin
   p headers # => { ... }
   p data # => <ProjectsTag>
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->create_projects_tag_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->create_projects_tag_with_http_info: #{e}"
 end
 ```
 
@@ -263,7 +263,7 @@ Add a New Creative Concept
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 team_id = 56 # Integer | Team ID
 opts = {
   create_scaffolding_absolutely_abstract_creative_concept_request: BtTest::CreateScaffoldingAbsolutelyAbstractCreativeConceptRequest.new # CreateScaffoldingAbsolutelyAbstractCreativeConceptRequest | 
@@ -274,7 +274,7 @@ begin
   result = api_instance.create_scaffolding_absolutely_abstract_creative_concept(team_id, opts)
   p result
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->create_scaffolding_absolutely_abstract_creative_concept: #{e}"
+  puts "Error when calling PlatformApi->create_scaffolding_absolutely_abstract_creative_concept: #{e}"
 end
 ```
 
@@ -292,7 +292,7 @@ begin
   p headers # => { ... }
   p data # => <ScaffoldingAbsolutelyAbstractCreativeConcept>
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->create_scaffolding_absolutely_abstract_creative_concept_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->create_scaffolding_absolutely_abstract_creative_concept_with_http_info: #{e}"
 end
 ```
 
@@ -331,7 +331,7 @@ Add a New Tangible Thing
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 absolutely_abstract_creative_concept_id = 56 # Integer | Creative Concept ID
 opts = {
   update_scaffolding_completely_concrete_tangible_thing_request: BtTest::UpdateScaffoldingCompletelyConcreteTangibleThingRequest.new # UpdateScaffoldingCompletelyConcreteTangibleThingRequest | 
@@ -342,7 +342,7 @@ begin
   result = api_instance.create_scaffolding_completely_concrete_tangible_thing(absolutely_abstract_creative_concept_id, opts)
   p result
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->create_scaffolding_completely_concrete_tangible_thing: #{e}"
+  puts "Error when calling PlatformApi->create_scaffolding_completely_concrete_tangible_thing: #{e}"
 end
 ```
 
@@ -360,7 +360,7 @@ begin
   p headers # => { ... }
   p data # => <ScaffoldingCompletelyConcreteTangibleThing>
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->create_scaffolding_completely_concrete_tangible_thing_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->create_scaffolding_completely_concrete_tangible_thing_with_http_info: #{e}"
 end
 ```
 
@@ -399,7 +399,7 @@ Add a New Team
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 opts = {
   create_team_request: BtTest::CreateTeamRequest.new # CreateTeamRequest | 
 }
@@ -409,7 +409,7 @@ begin
   result = api_instance.create_team(opts)
   p result
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->create_team: #{e}"
+  puts "Error when calling PlatformApi->create_team: #{e}"
 end
 ```
 
@@ -427,7 +427,7 @@ begin
   p headers # => { ... }
   p data # => <Team>
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->create_team_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->create_team_with_http_info: #{e}"
 end
 ```
 
@@ -465,7 +465,7 @@ Add a New Endpoint
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 team_id = 56 # Integer | Team ID
 opts = {
   create_webhooks_outgoing_endpoint_request: BtTest::CreateWebhooksOutgoingEndpointRequest.new # CreateWebhooksOutgoingEndpointRequest | 
@@ -476,7 +476,7 @@ begin
   result = api_instance.create_webhooks_outgoing_endpoint(team_id, opts)
   p result
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->create_webhooks_outgoing_endpoint: #{e}"
+  puts "Error when calling PlatformApi->create_webhooks_outgoing_endpoint: #{e}"
 end
 ```
 
@@ -494,7 +494,7 @@ begin
   p headers # => { ... }
   p data # => <WebhooksOutgoingEndpoint>
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->create_webhooks_outgoing_endpoint_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->create_webhooks_outgoing_endpoint_with_http_info: #{e}"
 end
 ```
 
@@ -533,14 +533,14 @@ Delete a Goal
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Goal ID
 
 begin
   
   api_instance.delete_goal(id)
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->delete_goal: #{e}"
+  puts "Error when calling PlatformApi->delete_goal: #{e}"
 end
 ```
 
@@ -558,7 +558,7 @@ begin
   p headers # => { ... }
   p data # => nil
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->delete_goal_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->delete_goal_with_http_info: #{e}"
 end
 ```
 
@@ -596,14 +596,14 @@ Delete a Project
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Project ID
 
 begin
   
   api_instance.delete_project(id)
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->delete_project: #{e}"
+  puts "Error when calling PlatformApi->delete_project: #{e}"
 end
 ```
 
@@ -621,7 +621,7 @@ begin
   p headers # => { ... }
   p data # => nil
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->delete_project_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->delete_project_with_http_info: #{e}"
 end
 ```
 
@@ -659,14 +659,14 @@ Delete a Tag
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Tag ID
 
 begin
   
   api_instance.delete_projects_tag(id)
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->delete_projects_tag: #{e}"
+  puts "Error when calling PlatformApi->delete_projects_tag: #{e}"
 end
 ```
 
@@ -684,7 +684,7 @@ begin
   p headers # => { ... }
   p data # => nil
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->delete_projects_tag_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->delete_projects_tag_with_http_info: #{e}"
 end
 ```
 
@@ -722,14 +722,14 @@ Delete a Creative Concept
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Creative Concept ID
 
 begin
   
   api_instance.delete_scaffolding_absolutely_abstract_creative_concept(id)
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->delete_scaffolding_absolutely_abstract_creative_concept: #{e}"
+  puts "Error when calling PlatformApi->delete_scaffolding_absolutely_abstract_creative_concept: #{e}"
 end
 ```
 
@@ -747,7 +747,7 @@ begin
   p headers # => { ... }
   p data # => nil
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->delete_scaffolding_absolutely_abstract_creative_concept_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->delete_scaffolding_absolutely_abstract_creative_concept_with_http_info: #{e}"
 end
 ```
 
@@ -785,14 +785,14 @@ Delete a Tangible Thing
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Tangible Thing ID
 
 begin
   
   api_instance.delete_scaffolding_completely_concrete_tangible_thing(id)
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->delete_scaffolding_completely_concrete_tangible_thing: #{e}"
+  puts "Error when calling PlatformApi->delete_scaffolding_completely_concrete_tangible_thing: #{e}"
 end
 ```
 
@@ -810,7 +810,7 @@ begin
   p headers # => { ... }
   p data # => nil
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->delete_scaffolding_completely_concrete_tangible_thing_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->delete_scaffolding_completely_concrete_tangible_thing_with_http_info: #{e}"
 end
 ```
 
@@ -848,14 +848,14 @@ Delete a Endpoint
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Endpoint ID
 
 begin
   
   api_instance.delete_webhooks_outgoing_endpoint(id)
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->delete_webhooks_outgoing_endpoint: #{e}"
+  puts "Error when calling PlatformApi->delete_webhooks_outgoing_endpoint: #{e}"
 end
 ```
 
@@ -873,7 +873,7 @@ begin
   p headers # => { ... }
   p data # => nil
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->delete_webhooks_outgoing_endpoint_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->delete_webhooks_outgoing_endpoint_with_http_info: #{e}"
 end
 ```
 
@@ -911,7 +911,7 @@ Retrieve a Goal
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Goal ID
 
 begin
@@ -919,7 +919,7 @@ begin
   result = api_instance.get_goal(id)
   p result
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->get_goal: #{e}"
+  puts "Error when calling PlatformApi->get_goal: #{e}"
 end
 ```
 
@@ -937,7 +937,7 @@ begin
   p headers # => { ... }
   p data # => <Goal>
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->get_goal_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->get_goal_with_http_info: #{e}"
 end
 ```
 
@@ -975,14 +975,14 @@ Retrieve info about the current user
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 
 begin
   
   result = api_instance.get_me
   p result
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->get_me: #{e}"
+  puts "Error when calling PlatformApi->get_me: #{e}"
 end
 ```
 
@@ -1000,7 +1000,7 @@ begin
   p headers # => { ... }
   p data # => <Me>
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->get_me_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->get_me_with_http_info: #{e}"
 end
 ```
 
@@ -1036,7 +1036,7 @@ Retrieve a Project
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Project ID
 
 begin
@@ -1044,7 +1044,7 @@ begin
   result = api_instance.get_project(id)
   p result
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->get_project: #{e}"
+  puts "Error when calling PlatformApi->get_project: #{e}"
 end
 ```
 
@@ -1062,7 +1062,7 @@ begin
   p headers # => { ... }
   p data # => <Project>
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->get_project_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->get_project_with_http_info: #{e}"
 end
 ```
 
@@ -1100,7 +1100,7 @@ Retrieve a Tag
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Tag ID
 
 begin
@@ -1108,7 +1108,7 @@ begin
   result = api_instance.get_projects_tag(id)
   p result
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->get_projects_tag: #{e}"
+  puts "Error when calling PlatformApi->get_projects_tag: #{e}"
 end
 ```
 
@@ -1126,7 +1126,7 @@ begin
   p headers # => { ... }
   p data # => <ProjectsTag>
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->get_projects_tag_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->get_projects_tag_with_http_info: #{e}"
 end
 ```
 
@@ -1164,7 +1164,7 @@ Retrieve a Creative Concept
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Creative Concept ID
 
 begin
@@ -1172,7 +1172,7 @@ begin
   result = api_instance.get_scaffolding_absolutely_abstract_creative_concept(id)
   p result
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->get_scaffolding_absolutely_abstract_creative_concept: #{e}"
+  puts "Error when calling PlatformApi->get_scaffolding_absolutely_abstract_creative_concept: #{e}"
 end
 ```
 
@@ -1190,7 +1190,7 @@ begin
   p headers # => { ... }
   p data # => <ScaffoldingAbsolutelyAbstractCreativeConcept>
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->get_scaffolding_absolutely_abstract_creative_concept_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->get_scaffolding_absolutely_abstract_creative_concept_with_http_info: #{e}"
 end
 ```
 
@@ -1228,7 +1228,7 @@ Retrieve a Tangible Thing
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Tangible Thing ID
 
 begin
@@ -1236,7 +1236,7 @@ begin
   result = api_instance.get_scaffolding_completely_concrete_tangible_thing(id)
   p result
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->get_scaffolding_completely_concrete_tangible_thing: #{e}"
+  puts "Error when calling PlatformApi->get_scaffolding_completely_concrete_tangible_thing: #{e}"
 end
 ```
 
@@ -1254,7 +1254,7 @@ begin
   p headers # => { ... }
   p data # => <ScaffoldingCompletelyConcreteTangibleThing>
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->get_scaffolding_completely_concrete_tangible_thing_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->get_scaffolding_completely_concrete_tangible_thing_with_http_info: #{e}"
 end
 ```
 
@@ -1292,7 +1292,7 @@ Retrieve a Team
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Team ID
 
 begin
@@ -1300,7 +1300,7 @@ begin
   result = api_instance.get_team(id)
   p result
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->get_team: #{e}"
+  puts "Error when calling PlatformApi->get_team: #{e}"
 end
 ```
 
@@ -1318,7 +1318,7 @@ begin
   p headers # => { ... }
   p data # => <Team>
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->get_team_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->get_team_with_http_info: #{e}"
 end
 ```
 
@@ -1356,7 +1356,7 @@ Retrieve a Delivery
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Delivery ID
 
 begin
@@ -1364,7 +1364,7 @@ begin
   result = api_instance.get_webhooks_outgoing_delivery(id)
   p result
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->get_webhooks_outgoing_delivery: #{e}"
+  puts "Error when calling PlatformApi->get_webhooks_outgoing_delivery: #{e}"
 end
 ```
 
@@ -1382,7 +1382,7 @@ begin
   p headers # => { ... }
   p data # => <WebhooksOutgoingDelivery>
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->get_webhooks_outgoing_delivery_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->get_webhooks_outgoing_delivery_with_http_info: #{e}"
 end
 ```
 
@@ -1420,7 +1420,7 @@ Retrieve a Delivery Attempt
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Delivery Attempt ID
 
 begin
@@ -1428,7 +1428,7 @@ begin
   result = api_instance.get_webhooks_outgoing_delivery_attempt(id)
   p result
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->get_webhooks_outgoing_delivery_attempt: #{e}"
+  puts "Error when calling PlatformApi->get_webhooks_outgoing_delivery_attempt: #{e}"
 end
 ```
 
@@ -1446,7 +1446,7 @@ begin
   p headers # => { ... }
   p data # => <WebhooksOutgoingDeliveryAttempt>
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->get_webhooks_outgoing_delivery_attempt_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->get_webhooks_outgoing_delivery_attempt_with_http_info: #{e}"
 end
 ```
 
@@ -1484,7 +1484,7 @@ Retrieve a Endpoint
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Endpoint ID
 
 begin
@@ -1492,7 +1492,7 @@ begin
   result = api_instance.get_webhooks_outgoing_endpoint(id)
   p result
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->get_webhooks_outgoing_endpoint: #{e}"
+  puts "Error when calling PlatformApi->get_webhooks_outgoing_endpoint: #{e}"
 end
 ```
 
@@ -1510,7 +1510,7 @@ begin
   p headers # => { ... }
   p data # => <WebhooksOutgoingEndpoint>
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->get_webhooks_outgoing_endpoint_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->get_webhooks_outgoing_endpoint_with_http_info: #{e}"
 end
 ```
 
@@ -1548,7 +1548,7 @@ List Goals
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 project_id = 56 # Integer | Project ID
 opts = {
   page: 56, # Integer | Page of results to fetch.
@@ -1560,7 +1560,7 @@ begin
   result = api_instance.list_goals(project_id, opts)
   p result
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->list_goals: #{e}"
+  puts "Error when calling PlatformApi->list_goals: #{e}"
 end
 ```
 
@@ -1578,7 +1578,7 @@ begin
   p headers # => { ... }
   p data # => <Array<Goal>>
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->list_goals_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->list_goals_with_http_info: #{e}"
 end
 ```
 
@@ -1618,7 +1618,7 @@ List Projects
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 team_id = 56 # Integer | Team ID
 opts = {
   page: 56, # Integer | Page of results to fetch.
@@ -1630,7 +1630,7 @@ begin
   result = api_instance.list_projects(team_id, opts)
   p result
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->list_projects: #{e}"
+  puts "Error when calling PlatformApi->list_projects: #{e}"
 end
 ```
 
@@ -1648,7 +1648,7 @@ begin
   p headers # => { ... }
   p data # => <Array<Project>>
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->list_projects_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->list_projects_with_http_info: #{e}"
 end
 ```
 
@@ -1688,7 +1688,7 @@ List Tags
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 team_id = 56 # Integer | Team ID
 opts = {
   page: 56, # Integer | Page of results to fetch.
@@ -1700,7 +1700,7 @@ begin
   result = api_instance.list_projects_tags(team_id, opts)
   p result
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->list_projects_tags: #{e}"
+  puts "Error when calling PlatformApi->list_projects_tags: #{e}"
 end
 ```
 
@@ -1718,7 +1718,7 @@ begin
   p headers # => { ... }
   p data # => <Array<ProjectsTag>>
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->list_projects_tags_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->list_projects_tags_with_http_info: #{e}"
 end
 ```
 
@@ -1758,7 +1758,7 @@ List Creative Concepts
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 team_id = 56 # Integer | Team ID
 opts = {
   page: 56, # Integer | Page of results to fetch.
@@ -1770,7 +1770,7 @@ begin
   result = api_instance.list_scaffolding_absolutely_abstract_creative_concepts(team_id, opts)
   p result
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->list_scaffolding_absolutely_abstract_creative_concepts: #{e}"
+  puts "Error when calling PlatformApi->list_scaffolding_absolutely_abstract_creative_concepts: #{e}"
 end
 ```
 
@@ -1788,7 +1788,7 @@ begin
   p headers # => { ... }
   p data # => <Array<ScaffoldingAbsolutelyAbstractCreativeConcept>>
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->list_scaffolding_absolutely_abstract_creative_concepts_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->list_scaffolding_absolutely_abstract_creative_concepts_with_http_info: #{e}"
 end
 ```
 
@@ -1828,7 +1828,7 @@ List Tangible Things
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 absolutely_abstract_creative_concept_id = 56 # Integer | Creative Concept ID
 opts = {
   page: 56, # Integer | Page of results to fetch.
@@ -1840,7 +1840,7 @@ begin
   result = api_instance.list_scaffolding_completely_concrete_tangible_things(absolutely_abstract_creative_concept_id, opts)
   p result
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->list_scaffolding_completely_concrete_tangible_things: #{e}"
+  puts "Error when calling PlatformApi->list_scaffolding_completely_concrete_tangible_things: #{e}"
 end
 ```
 
@@ -1858,7 +1858,7 @@ begin
   p headers # => { ... }
   p data # => <Array<ScaffoldingCompletelyConcreteTangibleThing>>
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->list_scaffolding_completely_concrete_tangible_things_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->list_scaffolding_completely_concrete_tangible_things_with_http_info: #{e}"
 end
 ```
 
@@ -1898,7 +1898,7 @@ List Teams
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 opts = {
   page: 56, # Integer | Page of results to fetch.
   per_page: 56 # Integer | Number of results to return per page.
@@ -1909,7 +1909,7 @@ begin
   result = api_instance.list_teams(opts)
   p result
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->list_teams: #{e}"
+  puts "Error when calling PlatformApi->list_teams: #{e}"
 end
 ```
 
@@ -1927,7 +1927,7 @@ begin
   p headers # => { ... }
   p data # => <Array<Team>>
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->list_teams_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->list_teams_with_http_info: #{e}"
 end
 ```
 
@@ -1966,7 +1966,7 @@ List Delivery Attempts
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 delivery_id = 56 # Integer | Delivery ID
 opts = {
   page: 56, # Integer | Page of results to fetch.
@@ -1978,7 +1978,7 @@ begin
   result = api_instance.list_webhooks_outgoing_delivery_attempts(delivery_id, opts)
   p result
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->list_webhooks_outgoing_delivery_attempts: #{e}"
+  puts "Error when calling PlatformApi->list_webhooks_outgoing_delivery_attempts: #{e}"
 end
 ```
 
@@ -1996,7 +1996,7 @@ begin
   p headers # => { ... }
   p data # => <Array<WebhooksOutgoingDeliveryAttempt>>
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->list_webhooks_outgoing_delivery_attempts_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->list_webhooks_outgoing_delivery_attempts_with_http_info: #{e}"
 end
 ```
 
@@ -2036,7 +2036,7 @@ List Deliveries
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 endpoint_id = 56 # Integer | Endpoint ID
 opts = {
   page: 56, # Integer | Page of results to fetch.
@@ -2048,7 +2048,7 @@ begin
   result = api_instance.list_webhooks_outgoing_deliverys(endpoint_id, opts)
   p result
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->list_webhooks_outgoing_deliverys: #{e}"
+  puts "Error when calling PlatformApi->list_webhooks_outgoing_deliverys: #{e}"
 end
 ```
 
@@ -2066,7 +2066,7 @@ begin
   p headers # => { ... }
   p data # => <Array<WebhooksOutgoingDelivery>>
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->list_webhooks_outgoing_deliverys_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->list_webhooks_outgoing_deliverys_with_http_info: #{e}"
 end
 ```
 
@@ -2106,7 +2106,7 @@ List Endpoints
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 team_id = 56 # Integer | Team ID
 opts = {
   page: 56, # Integer | Page of results to fetch.
@@ -2118,7 +2118,7 @@ begin
   result = api_instance.list_webhooks_outgoing_endpoints(team_id, opts)
   p result
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->list_webhooks_outgoing_endpoints: #{e}"
+  puts "Error when calling PlatformApi->list_webhooks_outgoing_endpoints: #{e}"
 end
 ```
 
@@ -2136,7 +2136,7 @@ begin
   p headers # => { ... }
   p data # => <Array<WebhooksOutgoingEndpoint>>
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->list_webhooks_outgoing_endpoints_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->list_webhooks_outgoing_endpoints_with_http_info: #{e}"
 end
 ```
 
@@ -2176,7 +2176,7 @@ Update a Goal
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Goal ID
 opts = {
   create_goal_request: BtTest::CreateGoalRequest.new # CreateGoalRequest | 
@@ -2187,7 +2187,7 @@ begin
   result = api_instance.update_goal(id, opts)
   p result
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->update_goal: #{e}"
+  puts "Error when calling PlatformApi->update_goal: #{e}"
 end
 ```
 
@@ -2205,7 +2205,7 @@ begin
   p headers # => { ... }
   p data # => <Goal>
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->update_goal_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->update_goal_with_http_info: #{e}"
 end
 ```
 
@@ -2244,7 +2244,7 @@ Update a Project
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Project ID
 opts = {
   create_project_request: BtTest::CreateProjectRequest.new # CreateProjectRequest | 
@@ -2255,7 +2255,7 @@ begin
   result = api_instance.update_project(id, opts)
   p result
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->update_project: #{e}"
+  puts "Error when calling PlatformApi->update_project: #{e}"
 end
 ```
 
@@ -2273,7 +2273,7 @@ begin
   p headers # => { ... }
   p data # => <Project>
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->update_project_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->update_project_with_http_info: #{e}"
 end
 ```
 
@@ -2312,7 +2312,7 @@ Update a Tag
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Tag ID
 opts = {
   create_projects_tag_request: BtTest::CreateProjectsTagRequest.new # CreateProjectsTagRequest | 
@@ -2323,7 +2323,7 @@ begin
   result = api_instance.update_projects_tag(id, opts)
   p result
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->update_projects_tag: #{e}"
+  puts "Error when calling PlatformApi->update_projects_tag: #{e}"
 end
 ```
 
@@ -2341,7 +2341,7 @@ begin
   p headers # => { ... }
   p data # => <ProjectsTag>
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->update_projects_tag_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->update_projects_tag_with_http_info: #{e}"
 end
 ```
 
@@ -2380,7 +2380,7 @@ Update a Creative Concept
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Creative Concept ID
 opts = {
   create_scaffolding_absolutely_abstract_creative_concept_request: BtTest::CreateScaffoldingAbsolutelyAbstractCreativeConceptRequest.new # CreateScaffoldingAbsolutelyAbstractCreativeConceptRequest | 
@@ -2391,7 +2391,7 @@ begin
   result = api_instance.update_scaffolding_absolutely_abstract_creative_concept(id, opts)
   p result
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->update_scaffolding_absolutely_abstract_creative_concept: #{e}"
+  puts "Error when calling PlatformApi->update_scaffolding_absolutely_abstract_creative_concept: #{e}"
 end
 ```
 
@@ -2409,7 +2409,7 @@ begin
   p headers # => { ... }
   p data # => <ScaffoldingAbsolutelyAbstractCreativeConcept>
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->update_scaffolding_absolutely_abstract_creative_concept_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->update_scaffolding_absolutely_abstract_creative_concept_with_http_info: #{e}"
 end
 ```
 
@@ -2448,7 +2448,7 @@ Update a Tangible Thing
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Tangible Thing ID
 opts = {
   update_scaffolding_completely_concrete_tangible_thing_request: BtTest::UpdateScaffoldingCompletelyConcreteTangibleThingRequest.new # UpdateScaffoldingCompletelyConcreteTangibleThingRequest | 
@@ -2459,7 +2459,7 @@ begin
   result = api_instance.update_scaffolding_completely_concrete_tangible_thing(id, opts)
   p result
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->update_scaffolding_completely_concrete_tangible_thing: #{e}"
+  puts "Error when calling PlatformApi->update_scaffolding_completely_concrete_tangible_thing: #{e}"
 end
 ```
 
@@ -2477,7 +2477,7 @@ begin
   p headers # => { ... }
   p data # => <ScaffoldingCompletelyConcreteTangibleThing>
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->update_scaffolding_completely_concrete_tangible_thing_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->update_scaffolding_completely_concrete_tangible_thing_with_http_info: #{e}"
 end
 ```
 
@@ -2516,7 +2516,7 @@ Update a Team
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Team ID
 opts = {
   create_team_request: BtTest::CreateTeamRequest.new # CreateTeamRequest | 
@@ -2527,7 +2527,7 @@ begin
   result = api_instance.update_team(id, opts)
   p result
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->update_team: #{e}"
+  puts "Error when calling PlatformApi->update_team: #{e}"
 end
 ```
 
@@ -2545,7 +2545,7 @@ begin
   p headers # => { ... }
   p data # => <Team>
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->update_team_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->update_team_with_http_info: #{e}"
 end
 ```
 
@@ -2584,7 +2584,7 @@ Update a Endpoint
 require 'time'
 require 'bt_test'
 
-api_instance = BtTest::V1Api.new
+api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Endpoint ID
 opts = {
   create_webhooks_outgoing_endpoint_request: BtTest::CreateWebhooksOutgoingEndpointRequest.new # CreateWebhooksOutgoingEndpointRequest | 
@@ -2595,7 +2595,7 @@ begin
   result = api_instance.update_webhooks_outgoing_endpoint(id, opts)
   p result
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->update_webhooks_outgoing_endpoint: #{e}"
+  puts "Error when calling PlatformApi->update_webhooks_outgoing_endpoint: #{e}"
 end
 ```
 
@@ -2613,7 +2613,7 @@ begin
   p headers # => { ... }
   p data # => <WebhooksOutgoingEndpoint>
 rescue BtTest::ApiError => e
-  puts "Error when calling V1Api->update_webhooks_outgoing_endpoint_with_http_info: #{e}"
+  puts "Error when calling PlatformApi->update_webhooks_outgoing_endpoint_with_http_info: #{e}"
 end
 ```
 
