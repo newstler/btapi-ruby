@@ -58,6 +58,11 @@ Add a New Goal
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 project_id = 56 # Integer | Project ID
@@ -105,7 +110,7 @@ end
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -126,6 +131,11 @@ Add a New Project
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 team_id = 56 # Integer | Team ID
@@ -173,7 +183,7 @@ end
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -194,6 +204,11 @@ Add a New Tag
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 team_id = 56 # Integer | Team ID
@@ -241,7 +256,7 @@ end
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -262,6 +277,11 @@ Add a New Creative Concept
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 team_id = 56 # Integer | Team ID
@@ -309,7 +329,7 @@ end
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -330,6 +350,11 @@ Add a New Tangible Thing
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 absolutely_abstract_creative_concept_id = 56 # Integer | Creative Concept ID
@@ -377,7 +402,7 @@ end
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -398,6 +423,11 @@ Add a New Team
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 opts = {
@@ -443,7 +473,7 @@ end
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -464,6 +494,11 @@ Add a New Endpoint
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 team_id = 56 # Integer | Team ID
@@ -511,7 +546,7 @@ end
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -532,6 +567,11 @@ Delete a Goal
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Goal ID
@@ -574,7 +614,7 @@ nil (empty response body)
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -595,6 +635,11 @@ Delete a Project
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Project ID
@@ -637,7 +682,7 @@ nil (empty response body)
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -658,6 +703,11 @@ Delete a Tag
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Tag ID
@@ -700,7 +750,7 @@ nil (empty response body)
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -721,6 +771,11 @@ Delete a Creative Concept
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Creative Concept ID
@@ -763,7 +818,7 @@ nil (empty response body)
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -784,6 +839,11 @@ Delete a Tangible Thing
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Tangible Thing ID
@@ -826,7 +886,7 @@ nil (empty response body)
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -847,6 +907,11 @@ Delete a Endpoint
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Endpoint ID
@@ -889,7 +954,7 @@ nil (empty response body)
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -910,6 +975,11 @@ Retrieve a Goal
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Goal ID
@@ -953,7 +1023,7 @@ end
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -974,6 +1044,11 @@ Retrieve info about the current user
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 
@@ -1014,7 +1089,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -1035,6 +1110,11 @@ Retrieve a Project
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Project ID
@@ -1078,7 +1158,7 @@ end
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -1099,6 +1179,11 @@ Retrieve a Tag
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Tag ID
@@ -1142,7 +1227,7 @@ end
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -1163,6 +1248,11 @@ Retrieve a Creative Concept
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Creative Concept ID
@@ -1206,7 +1296,7 @@ end
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -1227,6 +1317,11 @@ Retrieve a Tangible Thing
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Tangible Thing ID
@@ -1270,7 +1365,7 @@ end
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -1291,6 +1386,11 @@ Retrieve a Team
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Team ID
@@ -1334,7 +1434,7 @@ end
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -1355,6 +1455,11 @@ Retrieve a Delivery
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Delivery ID
@@ -1398,7 +1503,7 @@ end
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -1419,6 +1524,11 @@ Retrieve a Delivery Attempt
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Delivery Attempt ID
@@ -1462,7 +1572,7 @@ end
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -1483,6 +1593,11 @@ Retrieve a Endpoint
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Endpoint ID
@@ -1526,7 +1641,7 @@ end
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -1547,6 +1662,11 @@ List Goals
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 project_id = 56 # Integer | Project ID
@@ -1596,7 +1716,7 @@ end
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -1617,6 +1737,11 @@ List Projects
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 team_id = 56 # Integer | Team ID
@@ -1666,7 +1791,7 @@ end
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -1687,6 +1812,11 @@ List Tags
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 team_id = 56 # Integer | Team ID
@@ -1736,7 +1866,7 @@ end
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -1757,6 +1887,11 @@ List Creative Concepts
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 team_id = 56 # Integer | Team ID
@@ -1806,7 +1941,7 @@ end
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -1827,6 +1962,11 @@ List Tangible Things
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 absolutely_abstract_creative_concept_id = 56 # Integer | Creative Concept ID
@@ -1876,7 +2016,7 @@ end
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -1897,6 +2037,11 @@ List Teams
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 opts = {
@@ -1944,7 +2089,7 @@ end
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -1965,6 +2110,11 @@ List Delivery Attempts
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 delivery_id = 56 # Integer | Delivery ID
@@ -2014,7 +2164,7 @@ end
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -2035,6 +2185,11 @@ List Deliveries
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 endpoint_id = 56 # Integer | Endpoint ID
@@ -2084,7 +2239,7 @@ end
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -2105,6 +2260,11 @@ List Endpoints
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 team_id = 56 # Integer | Team ID
@@ -2154,7 +2314,7 @@ end
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -2175,6 +2335,11 @@ Update a Goal
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Goal ID
@@ -2222,7 +2387,7 @@ end
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -2243,6 +2408,11 @@ Update a Project
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Project ID
@@ -2290,7 +2460,7 @@ end
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -2311,6 +2481,11 @@ Update a Tag
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Tag ID
@@ -2358,7 +2533,7 @@ end
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -2379,6 +2554,11 @@ Update a Creative Concept
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Creative Concept ID
@@ -2426,7 +2606,7 @@ end
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -2447,6 +2627,11 @@ Update a Tangible Thing
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Tangible Thing ID
@@ -2494,7 +2679,7 @@ end
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -2515,6 +2700,11 @@ Update a Team
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Team ID
@@ -2562,7 +2752,7 @@ end
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -2583,6 +2773,11 @@ Update a Endpoint
 ```ruby
 require 'time'
 require 'bt_test'
+# setup authorization
+BtTest.configure do |config|
+  # Configure Bearer authorization (Auth token): bearerAuth
+  config.access_token = 'YOUR_BEARER_TOKEN'
+end
 
 api_instance = BtTest::PlatformApi.new
 id = 56 # Integer | Endpoint ID
@@ -2630,7 +2825,7 @@ end
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 

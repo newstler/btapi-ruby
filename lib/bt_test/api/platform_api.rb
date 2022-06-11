@@ -68,7 +68,7 @@ module BtTest
       return_type = opts[:debug_return_type] || 'Goal'
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.create_goal",
@@ -136,7 +136,7 @@ module BtTest
       return_type = opts[:debug_return_type] || 'Project'
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.create_project",
@@ -204,7 +204,7 @@ module BtTest
       return_type = opts[:debug_return_type] || 'ProjectsTag'
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.create_projects_tag",
@@ -272,7 +272,7 @@ module BtTest
       return_type = opts[:debug_return_type] || 'ScaffoldingAbsolutelyAbstractCreativeConcept'
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.create_scaffolding_absolutely_abstract_creative_concept",
@@ -340,7 +340,7 @@ module BtTest
       return_type = opts[:debug_return_type] || 'ScaffoldingCompletelyConcreteTangibleThing'
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.create_scaffolding_completely_concrete_tangible_thing",
@@ -402,7 +402,7 @@ module BtTest
       return_type = opts[:debug_return_type] || 'Team'
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.create_team",
@@ -470,7 +470,7 @@ module BtTest
       return_type = opts[:debug_return_type] || 'WebhooksOutgoingEndpoint'
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.create_webhooks_outgoing_endpoint",
@@ -529,7 +529,7 @@ module BtTest
       return_type = opts[:debug_return_type]
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.delete_goal",
@@ -588,7 +588,7 @@ module BtTest
       return_type = opts[:debug_return_type]
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.delete_project",
@@ -647,7 +647,7 @@ module BtTest
       return_type = opts[:debug_return_type]
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.delete_projects_tag",
@@ -706,7 +706,7 @@ module BtTest
       return_type = opts[:debug_return_type]
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.delete_scaffolding_absolutely_abstract_creative_concept",
@@ -765,7 +765,7 @@ module BtTest
       return_type = opts[:debug_return_type]
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.delete_scaffolding_completely_concrete_tangible_thing",
@@ -824,7 +824,7 @@ module BtTest
       return_type = opts[:debug_return_type]
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.delete_webhooks_outgoing_endpoint",
@@ -885,7 +885,7 @@ module BtTest
       return_type = opts[:debug_return_type] || 'Goal'
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.get_goal",
@@ -940,7 +940,7 @@ module BtTest
       return_type = opts[:debug_return_type] || 'Me'
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.get_me",
@@ -1001,7 +1001,7 @@ module BtTest
       return_type = opts[:debug_return_type] || 'Project'
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.get_project",
@@ -1062,7 +1062,7 @@ module BtTest
       return_type = opts[:debug_return_type] || 'ProjectsTag'
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.get_projects_tag",
@@ -1123,7 +1123,7 @@ module BtTest
       return_type = opts[:debug_return_type] || 'ScaffoldingAbsolutelyAbstractCreativeConcept'
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.get_scaffolding_absolutely_abstract_creative_concept",
@@ -1184,7 +1184,7 @@ module BtTest
       return_type = opts[:debug_return_type] || 'ScaffoldingCompletelyConcreteTangibleThing'
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.get_scaffolding_completely_concrete_tangible_thing",
@@ -1245,7 +1245,7 @@ module BtTest
       return_type = opts[:debug_return_type] || 'Team'
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.get_team",
@@ -1306,7 +1306,7 @@ module BtTest
       return_type = opts[:debug_return_type] || 'WebhooksOutgoingDelivery'
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.get_webhooks_outgoing_delivery",
@@ -1367,7 +1367,7 @@ module BtTest
       return_type = opts[:debug_return_type] || 'WebhooksOutgoingDeliveryAttempt'
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.get_webhooks_outgoing_delivery_attempt",
@@ -1428,7 +1428,7 @@ module BtTest
       return_type = opts[:debug_return_type] || 'WebhooksOutgoingEndpoint'
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.get_webhooks_outgoing_endpoint",
@@ -1495,7 +1495,7 @@ module BtTest
       return_type = opts[:debug_return_type] || 'Array<Goal>'
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.list_goals",
@@ -1562,7 +1562,7 @@ module BtTest
       return_type = opts[:debug_return_type] || 'Array<Project>'
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.list_projects",
@@ -1629,7 +1629,7 @@ module BtTest
       return_type = opts[:debug_return_type] || 'Array<ProjectsTag>'
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.list_projects_tags",
@@ -1696,7 +1696,7 @@ module BtTest
       return_type = opts[:debug_return_type] || 'Array<ScaffoldingAbsolutelyAbstractCreativeConcept>'
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.list_scaffolding_absolutely_abstract_creative_concepts",
@@ -1763,7 +1763,7 @@ module BtTest
       return_type = opts[:debug_return_type] || 'Array<ScaffoldingCompletelyConcreteTangibleThing>'
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.list_scaffolding_completely_concrete_tangible_things",
@@ -1824,7 +1824,7 @@ module BtTest
       return_type = opts[:debug_return_type] || 'Array<Team>'
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.list_teams",
@@ -1891,7 +1891,7 @@ module BtTest
       return_type = opts[:debug_return_type] || 'Array<WebhooksOutgoingDeliveryAttempt>'
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.list_webhooks_outgoing_delivery_attempts",
@@ -1958,7 +1958,7 @@ module BtTest
       return_type = opts[:debug_return_type] || 'Array<WebhooksOutgoingDelivery>'
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.list_webhooks_outgoing_deliverys",
@@ -2025,7 +2025,7 @@ module BtTest
       return_type = opts[:debug_return_type] || 'Array<WebhooksOutgoingEndpoint>'
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.list_webhooks_outgoing_endpoints",
@@ -2093,7 +2093,7 @@ module BtTest
       return_type = opts[:debug_return_type] || 'Goal'
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.update_goal",
@@ -2161,7 +2161,7 @@ module BtTest
       return_type = opts[:debug_return_type] || 'Project'
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.update_project",
@@ -2229,7 +2229,7 @@ module BtTest
       return_type = opts[:debug_return_type] || 'ProjectsTag'
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.update_projects_tag",
@@ -2297,7 +2297,7 @@ module BtTest
       return_type = opts[:debug_return_type] || 'ScaffoldingAbsolutelyAbstractCreativeConcept'
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.update_scaffolding_absolutely_abstract_creative_concept",
@@ -2365,7 +2365,7 @@ module BtTest
       return_type = opts[:debug_return_type] || 'ScaffoldingCompletelyConcreteTangibleThing'
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.update_scaffolding_completely_concrete_tangible_thing",
@@ -2433,7 +2433,7 @@ module BtTest
       return_type = opts[:debug_return_type] || 'Team'
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.update_team",
@@ -2501,7 +2501,7 @@ module BtTest
       return_type = opts[:debug_return_type] || 'WebhooksOutgoingEndpoint'
 
       # auth_names
-      auth_names = opts[:debug_auth_names] || []
+      auth_names = opts[:debug_auth_names] || ['bearerAuth']
 
       new_options = opts.merge(
         :operation => :"PlatformApi.update_webhooks_outgoing_endpoint",
